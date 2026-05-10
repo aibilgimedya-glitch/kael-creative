@@ -655,11 +655,11 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
 .process-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;flex:1;position:relative;}
 .process-grid::before{content:"";position:absolute;top:140px;left:8%;right:8%;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(220,80,0,0.5) 15%,rgba(220,80,0,0.5) 85%,transparent 100%);z-index:0;opacity:0;transition:opacity 1.2s ease 0.5s;}
 .process-grid.in-view::before{opacity:1;}
-.process-grid .travel-dot{position:absolute;top:135px;left:8%;width:11px;height:11px;background:var(--accent);border-radius:50%;box-shadow:0 0 16px rgba(220,80,0,0.9),0 0 4px rgba(220,80,0,1);z-index:2;opacity:0;transition:opacity 0.6s ease 1.4s;}
-.process-grid.in-view .travel-dot{opacity:1;animation:travelDot 5s cubic-bezier(.65,.05,.36,1) infinite;}
-@keyframes travelDot{0%{left:8%;}45%{left:50%;}55%{left:50%;}100%{left:84%;}}
+.process-grid .travel-dot{position:absolute;top:135px;left:8%;width:13px;height:13px;background:var(--accent);border-radius:50%;box-shadow:0 0 24px rgba(220,80,0,1),0 0 6px rgba(255,140,66,1);z-index:5;opacity:0;transition:opacity 0.4s ease;will-change:left,transform;}
+.process-grid.in-view .travel-dot{opacity:1;}
+.process-grid .travel-dot::after{content:"";position:absolute;top:50%;left:50%;width:32px;height:32px;border-radius:50%;background:radial-gradient(circle,rgba(220,80,0,0.4) 0%,transparent 70%);transform:translate(-50%,-50%);}
 
-.process-step{padding:44px 36px 32px;border:1px solid var(--border);position:relative;opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .4s ease,border-color .4s ease,background .4s ease;background:rgba(10,6,4,0.5);z-index:1;cursor:default;}
+.process-step{padding:44px 36px 32px;border:1px solid var(--border);position:relative;opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .4s ease,border-color .4s ease,background .4s ease,box-shadow .4s ease;background:rgba(10,6,4,0.5);z-index:1;cursor:default;overflow:visible;}
 .process-step.visible{opacity:1;transform:translateY(0);}
 .process-step:hover{border-color:rgba(220,80,0,0.55);background:rgba(220,80,0,0.04);transform:translateY(-4px);}
 .process-step:nth-child(1){transition-delay:0.05s;}
@@ -680,6 +680,45 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
 .process-meta{display:flex;justify-content:space-between;align-items:center;padding-top:18px;border-top:1px solid rgba(255,237,199,0.08);font-family:'DM Mono',monospace;}
 .process-meta .meta-label{font-size:9px;letter-spacing:0.28em;color:var(--dim);}
 .process-meta .meta-value{font-size:11px;color:var(--accent);letter-spacing:0.12em;font-weight:500;}
+
+/* 5-FRAME DRAMATIC FLOW STATES */
+.process-step.is-active{border-color:rgba(220,80,0,0.75);background:rgba(220,80,0,0.06);box-shadow:0 0 50px rgba(220,80,0,0.22),inset 0 0 40px rgba(220,80,0,0.05);}
+.process-step.is-active .step-icon{border-color:rgba(220,80,0,0.9);background:rgba(220,80,0,0.12);animation:iconPulse 1.6s ease-in-out infinite;}
+.process-step.is-active .step-status{color:#ff8c42;}
+.process-step.is-active .step-status::before{box-shadow:0 0 14px rgba(255,140,66,1);}
+.process-step.is-completed{border-color:rgba(255,237,199,0.16);}
+.process-step.is-completed .process-num,.process-step.is-completed .process-name{opacity:0.45;}
+.process-step.is-completed .step-icon{border-color:rgba(255,237,199,0.22);background:transparent;opacity:0.5;}
+.process-step.is-completed .step-status{color:rgba(255,237,199,0.4);}
+.process-step.is-completed .step-status::before{animation:none;opacity:0.4;}
+
+@keyframes iconPulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(220,80,0,0.5);}50%{transform:scale(1.08);box-shadow:0 0 0 14px rgba(220,80,0,0);}}
+
+/* COMPLETION CHECKMARK STAMP */
+.step-checkmark{position:absolute;top:14px;left:14px;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:17px;opacity:0;transform:scale(0.3) rotate(-45deg);box-shadow:0 0 20px rgba(220,80,0,0.7);pointer-events:none;z-index:3;}
+.process-step.is-completed .step-checkmark{opacity:1;transform:scale(1) rotate(0deg);transition:opacity .35s ease,transform .5s cubic-bezier(.34,1.56,.64,1);}
+
+/* AI AGENT ORBIT (STEP 02) */
+.ai-orbit{position:absolute;top:55%;left:50%;width:1px;height:1px;pointer-events:none;opacity:0;transition:opacity .5s ease;}
+.process-step.is-active .ai-orbit{opacity:1;animation:agentOrbit 9s linear infinite;}
+.ai-orbit-dot{position:absolute;top:0;left:0;width:5px;height:5px;background:var(--accent);border-radius:50%;box-shadow:0 0 8px rgba(220,80,0,0.85);}
+.ai-orbit-dot::before{content:"";position:absolute;top:50%;left:50%;width:14px;height:14px;border-radius:50%;border:1px solid rgba(220,80,0,0.3);transform:translate(-50%,-50%);animation:dotRing 2s ease-out infinite;}
+@keyframes agentOrbit{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+@keyframes dotRing{0%{transform:translate(-50%,-50%) scale(0.4);opacity:1;}100%{transform:translate(-50%,-50%) scale(2.2);opacity:0;}}
+
+/* EXPLOSION BURST (STEP 03) */
+.step-explosion{position:absolute;top:50%;left:50%;width:8px;height:8px;border-radius:50%;background:var(--accent);transform:translate(-50%,-50%) scale(0);pointer-events:none;opacity:0;z-index:0;}
+.process-step.is-delivered .step-explosion{animation:explosionBurst 1.4s cubic-bezier(.22,.61,.36,1) forwards;}
+@keyframes explosionBurst{
+  0%{transform:translate(-50%,-50%) scale(0);box-shadow:0 0 0 0 rgba(220,80,0,0.95),0 0 0 0 rgba(255,140,66,0.6);opacity:1;}
+  50%{box-shadow:0 0 0 80px rgba(220,80,0,0.05),0 0 0 140px rgba(255,140,66,0);opacity:0.8;}
+  100%{transform:translate(-50%,-50%) scale(0.4);box-shadow:0 0 0 220px rgba(220,80,0,0),0 0 0 280px rgba(255,140,66,0);opacity:0;}
+}
+
+/* DELIVERED 96% STAT POP */
+.process-step.is-delivered{border-color:rgba(220,80,0,0.85);background:rgba(220,80,0,0.08);box-shadow:0 0 60px rgba(220,80,0,0.28),inset 0 0 50px rgba(220,80,0,0.07);}
+.process-step.is-delivered .step-icon{border-color:rgba(220,80,0,1);background:rgba(220,80,0,0.18);transform:scale(1.08);}
+.process-step.is-delivered .process-meta .meta-value{font-size:14px;text-shadow:0 0 20px rgba(220,80,0,0.6);}
 
 /* ═══════════════════════════════════════════
    SECTION — BİZ KİMİZ
@@ -800,6 +839,8 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
   .process-grid{grid-template-columns:1fr;}
   .process-grid::before, .process-grid .travel-dot{display:none;}
   .process-step{padding:32px 24px 24px;}
+  .ai-orbit{display:none;}
+  .step-explosion{display:none;}
   #about{padding:100px 24px 60px;}
   .about-stats{grid-template-columns:1fr;}
   .about-body{grid-template-columns:1fr;}
@@ -969,6 +1010,7 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
     <div class="metric-eyebrow" id="metric-story" style="transition: all 0.4s ease; font-size: 13px; font-weight: 700; letter-spacing: 0.35em; text-shadow: 0 0 15px rgba(220,80,0,0.4); margin-bottom: 30px;">GELENEKSEL AJANSLAR</div>
     <div class="metric-huge" id="vaporize-wrapper" style="position: relative; width: 100%;">
       <div id="metric-text-measurer" style="user-select: none; text-align: center; transition: opacity 0.5s ease, transform 0.5s ease;"><span class="accent">3</span> HAFTA.</div>
+      <span id="metric-strike" aria-hidden="true" style="position:absolute;top:50%;left:8%;width:84%;height:8px;background:linear-gradient(90deg,transparent 0%,#dc5000 8%,#ff8c42 50%,#dc5000 92%,transparent 100%);transform:translateY(-50%) scaleX(0);transform-origin:left center;box-shadow:0 0 32px rgba(220,80,0,0.85),0 0 16px rgba(255,140,66,0.6);border-radius:4px;will-change:transform;pointer-events:none;z-index:5;"></span>
     </div>
     <div class="metric-cap" id="metric-cap">Brief'ten teslim klasörüne kadar — büyük ajansların ortalaması.</div>
   </div>
@@ -1106,6 +1148,7 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
   <div class="process-grid">
     <div class="travel-dot"></div>
     <div class="process-step">
+      <div class="step-checkmark" aria-hidden="true">✓</div>
       <div class="step-status">ONLINE</div>
       <div class="step-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v1a7 7 0 0 1-14 0v-1M12 18v4M8 22h8"/></svg>
@@ -1119,6 +1162,7 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
       </div>
     </div>
     <div class="process-step">
+      <div class="step-checkmark" aria-hidden="true">✓</div>
       <div class="step-status">RUNNING</div>
       <div class="step-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="18" r="2.5"/><circle cx="12" cy="12" r="2.5"/><path d="M8 7l3 3m5-3l-3 3m-5 7l3-3m5 3l-3-3"/></svg>
@@ -1128,10 +1172,12 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
       <div class="process-desc">9 AI agent paralel.<br>Yönetmen kalite kontrolü.</div>
       <div class="process-meta">
         <span class="meta-label">AJAN</span>
-        <span class="meta-value">6 PARALEL</span>
+        <span class="meta-value">9 PARALEL</span>
       </div>
     </div>
     <div class="process-step">
+      <div class="step-explosion" aria-hidden="true"></div>
+      <div class="step-checkmark" aria-hidden="true">✓</div>
       <div class="step-status">DELIVERED</div>
       <div class="step-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/></svg>
@@ -1271,10 +1317,6 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
 
 <!-- SECTION — BİZ KİMİZ -->
 <section id="about">
-  <picture>
-    <source srcset="sigils/about.webp" type="image/webp">
-    <img class="ink-drop-bg ink-bloom ink-about" src="sigils/about.png" alt="KAEL Creative biz kimiz sigil — sistem dokunması" width="1024" height="1024" loading="lazy" decoding="async">
-  </picture>
   <div class="about-header">
     <div class="section-label fade-up">07 / BİZ</div>
     <div class="about-title fade-up">1 BRIEF GİRER.<br>PROJE <span style="color:var(--accent);">ÇIKAR.</span></div>
@@ -1872,55 +1914,140 @@ if (_isTouch) {
   });
 })();
 
-// Process section — pinned 3-step storytelling
+// Process section — 5-frame dramatic scroll storytelling
 const processSteps = gsap.utils.toArray('.process-step');
+const processGridEl_anim = document.querySelector('#process .process-grid');
+const travelDotEl = document.querySelector('#process .travel-dot');
+
 if (processSteps.length) {
+  // Build AI agent orbit inside step 02 (9 dots in circular formation)
+  const step02 = processSteps[1];
+  if (step02 && !step02.querySelector('.ai-orbit')) {
+    const orbit = document.createElement('div');
+    orbit.className = 'ai-orbit';
+    orbit.setAttribute('aria-hidden', 'true');
+    const radius = 90;
+    for (let i = 0; i < 9; i++) {
+      const angle = (i / 9) * Math.PI * 2;
+      const x = Math.cos(angle) * radius;
+      const y = Math.sin(angle) * radius;
+      const dot = document.createElement('div');
+      dot.className = 'ai-orbit-dot';
+      dot.style.transform = `translate(${x}px, ${y}px)`;
+      orbit.appendChild(dot);
+    }
+    step02.appendChild(orbit);
+  }
+
+  // Helper: apply frame state to all 3 steps + travel dot
+  const applyFrame = (frame, travelLeftPct) => {
+    // Frame mapping:
+    //   0 = step 01 active
+    //   1 = step 01 completed, travel dot moving toward 02
+    //   2 = step 02 active (9 ajan orbit)
+    //   3 = step 02 completed, travel dot moving toward 03
+    //   4 = step 03 active + delivered (explosion)
+    processSteps.forEach((s, i) => {
+      const isActive = (i === 0 && frame === 0) || (i === 1 && frame === 2) || (i === 2 && frame === 4);
+      const isCompleted = (i === 0 && frame >= 1) || (i === 1 && frame >= 3);
+      const isDelivered = (i === 2 && frame === 4);
+      s.classList.toggle('is-active', isActive);
+      s.classList.toggle('is-completed', isCompleted && !isActive);
+      s.classList.toggle('is-delivered', isDelivered);
+    });
+    if (travelDotEl) {
+      gsap.to(travelDotEl, { left: travelLeftPct + '%', duration: 0.25, ease: 'power2.out', overwrite: 'auto' });
+    }
+  };
+
+  // Compute travel-dot left% based on overall progress (8% → 84% across the timeline)
+  const computeTravelLeft = (progress) => {
+    if (progress < 0.18) return 8;
+    if (progress < 0.40) return 8 + ((progress - 0.18) / 0.22) * 42;  // 8 → 50
+    if (progress < 0.65) return 50;
+    if (progress < 0.85) return 50 + ((progress - 0.65) / 0.20) * 34; // 50 → 84
+    return 84;
+  };
+
+  const progressToFrame = (p) => {
+    if (p < 0.18) return 0;
+    if (p < 0.40) return 1;
+    if (p < 0.65) return 2;
+    if (p < 0.85) return 3;
+    return 4;
+  };
+
   let mm = gsap.matchMedia();
 
-  // Reduced motion -> pin yok, tüm step'ler 1 opacity
+  // Reduced motion -> tüm step'ler görünür, animasyon yok
   mm.add("(prefers-reduced-motion: reduce)", () => {
     gsap.set(processSteps, { opacity: 1, scale: 1 });
+    processSteps.forEach(s => s.classList.add('is-active'));
   });
 
-  // Desktop (min-width: 768px, motion ok) -> pin: true
+  // Desktop -> pinned 5-frame timeline (250% scroll for daha dramatik tempo)
   mm.add("(min-width: 768px) and (prefers-reduced-motion: no-preference)", () => {
-    gsap.set(processSteps, { opacity: 0.15, scale: 0.95 });
+    gsap.set(processSteps, { opacity: 0.18, scale: 0.94 });
     gsap.set(processSteps[0], { opacity: 1, scale: 1 });
+    if (travelDotEl) gsap.set(travelDotEl, { left: '8%' });
+
+    let lastFrame = -1;
     ScrollTrigger.create({
       trigger: '#process',
       start: 'top top',
-      end: '+=200%',
+      end: '+=250%',
       pin: true,
       scrub: 1,
       onUpdate: (self) => {
-        const progress = self.progress;
-        processSteps.forEach((step, i) => {
-          const stepProgress = progress * 3;
-          const isActive = stepProgress >= i && stepProgress < i + 1.2;
-          gsap.to(step, { opacity: isActive ? 1 : 0.15, scale: isActive ? 1 : 0.95, duration: 0.3, overwrite: true });
+        const p = self.progress;
+        const frame = progressToFrame(p);
+        const travelLeft = computeTravelLeft(p);
+        if (frame !== lastFrame) {
+          applyFrame(frame, travelLeft);
+          lastFrame = frame;
+        } else if (travelDotEl) {
+          gsap.set(travelDotEl, { left: travelLeft + '%' });
+        }
+        // Opacity / scale per state
+        processSteps.forEach((s) => {
+          const active = s.classList.contains('is-active');
+          const delivered = s.classList.contains('is-delivered');
+          const completed = s.classList.contains('is-completed');
+          const opacity = (active || delivered) ? 1 : (completed ? 0.72 : 0.18);
+          const scale = (active || delivered) ? 1 : (completed ? 0.97 : 0.94);
+          gsap.to(s, { opacity, scale, duration: 0.35, overwrite: 'auto' });
         });
       }
     });
   });
 
-  // Mobile (max-width: 767px, motion ok) -> pin: false, scrub yok
+  // Mobile -> trigger-per-step (no pin, no scrub)
   mm.add("(max-width: 767px) and (prefers-reduced-motion: no-preference)", () => {
-    gsap.set(processSteps, { opacity: 0.15, scale: 0.95 });
-    gsap.set(processSteps[0], { opacity: 1, scale: 1 });
-    ScrollTrigger.create({
-      trigger: '#process',
-      start: 'top center',
-      end: 'bottom center',
-      pin: false,
-      scrub: 1,
-      onUpdate: (self) => {
-        const progress = self.progress;
-        processSteps.forEach((step, i) => {
-          const stepProgress = progress * 3;
-          const isActive = stepProgress >= i && stepProgress < i + 1.2;
-          gsap.to(step, { opacity: isActive ? 1 : 0.15, scale: isActive ? 1 : 0.95, duration: 0.3, overwrite: true });
-        });
-      }
+    gsap.set(processSteps, { opacity: 0.25, scale: 0.96 });
+    processSteps.forEach((step, i) => {
+      ScrollTrigger.create({
+        trigger: step,
+        start: 'top 78%',
+        onEnter: () => {
+          // Mark previous as completed
+          if (i > 0) {
+            processSteps[i - 1].classList.remove('is-active');
+            processSteps[i - 1].classList.add('is-completed');
+          }
+          // Activate current
+          step.classList.add('is-active');
+          if (i === 2) step.classList.add('is-delivered');
+          gsap.to(step, { opacity: 1, scale: 1, duration: 0.5, overwrite: 'auto' });
+          // Dim others
+          processSteps.forEach((other, j) => {
+            if (j !== i && !other.classList.contains('is-completed')) {
+              gsap.to(other, { opacity: 0.28, scale: 0.96, duration: 0.3 });
+            } else if (other.classList.contains('is-completed')) {
+              gsap.to(other, { opacity: 0.72, scale: 0.97, duration: 0.3 });
+            }
+          });
+        }
+      });
     });
   });
 }
@@ -2429,6 +2556,10 @@ if (metricMeasurer) {
 
     if (isKael) {
       // ═══ WOW: KAEL CRASH ═══
+      // 0. "3 HAFTA" üstüne çapraz çizgi çekilir (sol→sağ, accent glow)
+      const strike = document.getElementById('metric-strike');
+      if (strike) gsap.to(strike, { scaleX: 1, duration: 0.45, ease: 'power2.inOut' });
+
       // 1. "3 HAFTA." titrer ve bozulur
       gsap.to(metricMeasurer, {
         keyframes: [
@@ -2438,6 +2569,7 @@ if (metricMeasurer) {
           { x:  5,  skewX:  1, filter: 'blur(1px)', duration: 0.05 },
           { x:  0,  skewX:  0, filter: 'blur(0)',   duration: 0.04 },
         ],
+        delay: 0.40,
         onComplete: () => {
           // 2. Turuncu shockwave flash
           const flash = document.createElement('div');
