@@ -329,6 +329,41 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 #manifesto{background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 48px;}
 .manifesto-text{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(50px,9vw,120px);line-height:.9;color:var(--cream);}
 
+/* ─── MANIFESTO VERSUS — scroll-driven dramatik dönüşüm ─── */
+.manifesto-versus{display:flex;flex-direction:column;align-items:center;gap:clamp(20px,3vw,40px);position:relative;}
+.versus-line{position:relative;display:flex;flex-direction:column;align-items:center;line-height:.85;will-change:opacity,transform,filter;}
+.versus-label{font-family:'DM Mono',ui-monospace,monospace;font-weight:500;font-size:clamp(10px,1.2vw,14px);letter-spacing:0.35em;text-transform:uppercase;margin-bottom:clamp(8px,1vw,14px);}
+.versus-value{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:900;font-size:clamp(64px,12vw,180px);line-height:.85;letter-spacing:-0.01em;}
+
+/* "AJANSTA 3 HAFTA" — eski/donuk başlar, sönükleşir */
+.versus-old .versus-label{color:var(--dim);}
+.versus-old .versus-value{color:var(--muted);opacity:.6;}
+.versus-old{filter:saturate(.4);}
+
+/* Çapraz çizgi — scroll progress ile çizilir */
+.versus-strike{position:absolute;top:50%;left:-4%;width:108%;height:6px;background:linear-gradient(90deg,transparent 0,#dc5000 12%,#ff6b1a 50%,#dc5000 88%,transparent 100%);transform:translateY(-50%) scaleX(0);transform-origin:left center;box-shadow:0 0 24px rgba(220,80,0,0.6);will-change:transform;border-radius:2px;}
+
+/* "KAEL'DE 72 SAAT" — sönük başlar, patlar */
+.versus-new{opacity:0;transform:translateY(40px) scale(.85);filter:blur(20px);}
+.versus-new .versus-label{color:var(--accent);}
+.versus-new .versus-value{color:var(--cream);background:linear-gradient(180deg,#FFEDC7 0%,#ff8c42 50%,#dc5000 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0 0 60px rgba(220,80,0,0.4);}
+
+/* "SÖZDÜR." — stamp gibi belirir */
+.versus-promise{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(28px,4vw,56px);letter-spacing:0.3em;color:var(--cream);opacity:0;transform:scale(2) rotate(-3deg);filter:blur(12px);margin-top:clamp(12px,2vw,24px);}
+
+@media(max-width:767px){
+  .versus-strike{height:4px;}
+  .versus-value{font-size:clamp(52px,16vw,90px);}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .versus-old{filter:none;}
+  .versus-old .versus-value{opacity:1;}
+  .versus-strike{transform:translateY(-50%) scaleX(1);}
+  .versus-new{opacity:1;transform:none;filter:none;}
+  .versus-promise{opacity:1;transform:none;filter:none;}
+}
+
 
 .manifesto-text .line{
   display:block;
@@ -898,10 +933,17 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
     <source srcset="sigils/manifesto.webp" type="image/webp">
     <img class="ink-drop-bg ink-bloom ink-manifesto" src="sigils/manifesto.png" alt="KAEL Creative manifesto sigil — mürekkep yayılması" width="1376" height="768" loading="lazy" decoding="async">
   </picture>
-  <div class="manifesto-text">
-    <span class="line">72 SAATTE AI VİDEO.</span>
-    <span class="line">7 GÜNDE WEB SİTESİ.</span>
-    <span class="line">SÖZDÜR.</span>
+  <div class="manifesto-text manifesto-versus" aria-label="Ajansta 3 hafta — KAEL'de 72 saat — Sözdür">
+    <span class="versus-line versus-old">
+      <span class="versus-label">AJANSTA</span>
+      <span class="versus-value">3 HAFTA</span>
+      <span class="versus-strike" aria-hidden="true"></span>
+    </span>
+    <span class="versus-line versus-new">
+      <span class="versus-label">KAEL'DE</span>
+      <span class="versus-value">72 SAAT</span>
+    </span>
+    <span class="versus-line versus-promise">SÖZDÜR.</span>
   </div>
   <div class="manifesto-sub">20 KİŞİLİK EKİBİN ÇIKTISI. 1 EKRANDAN.</div>
   <div class="sec-footnote">toplantı yok — gerçekten yok</div>
@@ -1751,6 +1793,95 @@ if (_isTouch) {
 }
 
 // ─── HERO NARRATIVE REMOVED (Replaced by Cinematic Preloader) ───
+
+// ─── MANIFESTO VERSUS — scroll-driven dramatik dönüşüm ───
+// "AJANSTA 3 HAFTA" → çapraz çizgi → sönüş → "KAEL'DE 72 SAAT" patlar → "SÖZDÜR" stamp
+(function manifestoVersus(){
+  const sec = document.querySelector('#manifesto');
+  if (!sec) return;
+  const oldLine = sec.querySelector('.versus-old');
+  const strike = sec.querySelector('.versus-strike');
+  const newLine = sec.querySelector('.versus-new');
+  const promise = sec.querySelector('.versus-promise');
+  if (!oldLine || !strike || !newLine || !promise) return;
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduceMotion) {
+    gsap.set([strike], { scaleX: 1 });
+    gsap.set([newLine, promise], { opacity: 1, y: 0, scale: 1, filter: 'blur(0)' });
+    return;
+  }
+
+  const mm = gsap.matchMedia();
+
+  // Desktop: pin + scrub timeline (dramatik)
+  mm.add('(min-width: 768px)', () => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '#manifesto',
+        start: 'top top',
+        end: '+=180%',
+        pin: true,
+        scrub: 1.2,
+        anticipatePin: 1,
+      }
+    });
+
+    // Frame 1 (0 → 0.3): "AJANSTA 3 HAFTA" görünür, sönükleşir
+    tl.to(oldLine, { opacity: 1, duration: 0.1 }, 0);
+
+    // Frame 2 (0.3 → 0.55): Çapraz çizgi çekilir
+    tl.to(strike, { scaleX: 1, duration: 0.25, ease: 'power2.inOut' }, 0.30);
+
+    // Frame 3 (0.50 → 0.70): "3 HAFTA" sönmeye başlar
+    tl.to(oldLine, { opacity: 0.18, scale: 0.85, filter: 'saturate(0.1) blur(2px)', duration: 0.2, ease: 'power2.in' }, 0.50);
+
+    // Frame 4 (0.55 → 0.85): "72 SAAT" patlar
+    tl.fromTo(newLine,
+      { opacity: 0, y: 40, scale: 0.85, filter: 'blur(20px)' },
+      { opacity: 1, y: 0, scale: 1, filter: 'blur(0)', duration: 0.30, ease: 'power3.out' },
+      0.55
+    );
+
+    // Glow pulse (0.70 → 0.78) "72 SAAT" şarjlanır
+    tl.to(newLine.querySelector('.versus-value'), {
+      textShadow: '0 0 80px rgba(220,80,0,0.8), 0 0 120px rgba(220,80,0,0.4)',
+      duration: 0.08, yoyo: true, repeat: 1, ease: 'power1.inOut'
+    }, 0.70);
+
+    // Frame 5 (0.80 → 0.95): "SÖZDÜR" stamp
+    tl.fromTo(promise,
+      { opacity: 0, scale: 2, rotate: -3, filter: 'blur(12px)' },
+      { opacity: 1, scale: 1, rotate: 0, filter: 'blur(0)', duration: 0.15, ease: 'back.out(1.8)' },
+      0.80
+    );
+
+    return () => { tl.kill(); };
+  });
+
+  // Mobile: pin yok, IntersectionObserver bazlı stagger
+  mm.add('(max-width: 767px)', () => {
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        gsap.set(oldLine, { opacity: 1 });
+        gsap.to(strike, { scaleX: 1, duration: 0.5, ease: 'power2.inOut', delay: 0.3 });
+        gsap.to(oldLine, { opacity: 0.25, scale: 0.9, filter: 'saturate(0.2)', duration: 0.4, delay: 0.7 });
+        gsap.fromTo(newLine,
+          { opacity: 0, y: 30, scale: 0.9, filter: 'blur(12px)' },
+          { opacity: 1, y: 0, scale: 1, filter: 'blur(0)', duration: 0.6, ease: 'power3.out', delay: 0.9 }
+        );
+        gsap.fromTo(promise,
+          { opacity: 0, scale: 1.6, filter: 'blur(8px)' },
+          { opacity: 1, scale: 1, filter: 'blur(0)', duration: 0.4, ease: 'back.out(1.6)', delay: 1.4 }
+        );
+        obs.unobserve(e.target);
+      });
+    }, { threshold: 0.3 });
+    obs.observe(sec);
+    return () => obs.disconnect();
+  });
+})();
 
 // Process section — pinned 3-step storytelling
 const processSteps = gsap.utils.toArray('.process-step');
