@@ -1,0 +1,12 @@
+# Local dev
+_serve.py
+_audit.md
+_checklist_kael.md
+_contrast_audit.md
+.DS_Store
+*.log
+
+# Backup
+*.bak
+index.html.bak
+apply_phase3.py

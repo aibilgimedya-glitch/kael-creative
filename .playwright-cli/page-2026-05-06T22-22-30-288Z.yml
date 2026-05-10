@@ -1,0 +1,502 @@
+- generic [active] [ref=e1]:
+  - button [ref=e4] [cursor=pointer]: GEÇ →
+  - generic:
+    - img
+    - generic: KAEL · SİSTEM YÜKLENİYOR
+  - generic:
+    - generic: 01 / 17
+    - generic: HERO
+  - navigation [ref=e5]:
+    - link "KAEL" [ref=e6] [cursor=pointer]:
+      - /url: "#hero"
+    - generic [ref=e7]:
+      - link "HİZMETLER" [ref=e8] [cursor=pointer]:
+        - /url: "#ai-video"
+      - link "İŞLER" [ref=e9] [cursor=pointer]:
+        - /url: "#works"
+      - link "SÜREÇ" [ref=e10] [cursor=pointer]:
+        - /url: "#process"
+      - link "BİZ" [ref=e11] [cursor=pointer]:
+        - /url: "#about"
+      - link "SSS" [ref=e12] [cursor=pointer]:
+        - /url: "#faq"
+      - link "MİSYONLAR" [ref=e13] [cursor=pointer]:
+        - /url: "#missions"
+      - link "İLETİŞİM" [ref=e14] [cursor=pointer]:
+        - /url: "#cta"
+  - generic [ref=e15]:
+    - generic [ref=e17]: BİR AJANS DEĞİL. BİR SİSTEM.
+    - generic [ref=e18]:
+      - generic [ref=e19]: KA
+      - generic [ref=e20]: EL
+    - generic [ref=e21]: 1 yönetmen. 6 AI ajan. 0 koordinasyon toplantısı.
+    - generic [ref=e22]:
+      - text: 10'da bir bütçe.
+      - text: 10 kat hız.
+      - text: Brief'i ver — gerisini sistem halleder.
+    - generic [ref=e23]:
+      - generic [ref=e24]: KAEL CREATIVE
+      - generic [ref=e25]: KKTC & GLOBAL
+      - separator [ref=e26]
+      - generic [ref=e27]:
+        - text: Video · Web · Sistem.
+        - text: Üçü de 14 günden kısa.
+    - link "PROJEMİ KONUŞALIM →" [ref=e28] [cursor=pointer]:
+      - /url: "#cta"
+      - text: PROJEMİ KONUŞALIM
+      - generic [ref=e29]: →
+    - generic [ref=e30]: "*15 DAKİKA YETERLİ. KAHVE BİZDEN."
+    - generic [ref=e31]: KAEL CREATIVE — v1.0
+    - generic [ref=e33]: SCROLL TO CONTINUE
+  - generic [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e37]: 72 SAATTE AI VİDEO.
+      - generic [ref=e38]: 7 GÜNDE WEB SİTESİ.
+      - generic [ref=e39]: SÖZDÜR.
+    - generic [ref=e40]: 20 KİŞİLİK EKİBİN ÇIKTISI. 1 EKRANDAN.
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - generic [ref=e43]: "9"
+        - generic [ref=e44]: AI AJAN
+      - generic [ref=e45]:
+        - generic [ref=e46]: "3"
+        - generic [ref=e47]: HİZMET
+      - generic [ref=e48]:
+        - generic [ref=e49]: ∞
+        - generic [ref=e50]: ÜRETİM
+    - generic [ref=e51]: KAEL CREATIVE — v1.0
+  - generic [ref=e53]:
+    - generic [ref=e54]:
+      - generic [ref=e55]: GELENEKSEL AJANSLAR
+      - generic [ref=e57]:
+        - text: Brief alındıktan teslim klasörüne kadar.
+        - text: Ortalama, abartı değil.
+    - generic [ref=e58]: KAEL CREATIVE — v1.0
+  - generic [ref=e59]:
+    - generic [ref=e60]:
+      - generic [ref=e61]: 01 / AI VİDEO
+      - generic [ref=e62]:
+        - text: AI
+        - text: VİDEO
+      - generic [ref=e63]:
+        - text: Brief Pazartesi.
+        - text: Teslim Perşembe.
+      - generic [ref=e64]: SOSYAL MEDYA REELS — REKLAM FİLMİ — ÜRÜN TANITIMI — MOCKUMENTARY
+      - generic [ref=e65]:
+        - text: ● PARALEL AJAN ÇEKİRDEĞİ
+        - generic [ref=e66]: ™
+    - generic [ref=e67]:
+      - generic [ref=e68]:
+        - generic [ref=e69]: "01"
+        - generic [ref=e70]:
+          - generic [ref=e71]: BRİFİNG
+          - generic [ref=e72]: Fikir. Kitle. Platform. 15 dakika.
+      - generic [ref=e73]:
+        - generic [ref=e74]: "02"
+        - generic [ref=e75]:
+          - generic [ref=e76]: SENARYO
+          - generic [ref=e77]: Script. Shot list. Ses brief.
+      - generic [ref=e78]:
+        - generic [ref=e79]: "03"
+        - generic [ref=e80]:
+          - generic [ref=e81]: ÜRETİM
+          - generic [ref=e82]: AI pipeline. Görsel. Video. Ses.
+      - generic [ref=e83]:
+        - generic [ref=e84]: "04"
+        - generic [ref=e85]:
+          - generic [ref=e86]: KURGU
+          - generic [ref=e87]: Profesyonel kurgu. Renk. Ses mix.
+      - generic [ref=e88]:
+        - generic [ref=e89]: "05"
+        - generic [ref=e90]:
+          - generic [ref=e91]: TESLİM
+          - generic [ref=e92]: MP4. Reels. Stories. Tüm formatlar.
+    - generic [ref=e93]: KAEL CREATIVE — v1.0
+  - generic [ref=e94]:
+    - generic [ref=e95]:
+      - generic [ref=e96]: İŞLERİMİZDEN
+      - heading "GÖSTER, ANLATMA." [level=2] [ref=e97]:
+        - text: GÖSTER,
+        - text: ANLATMA.
+    - generic [ref=e99]: ▶ ÖRNEK KARELER · ÜZERİNE GEL, OYNAT
+    - generic [ref=e106]:
+      - link "AI VİDEO · MOCKUMENTARY KOZMİK RAFET 10 BÖLÜM · HIGGSFIELD · SEEDANCE":
+        - /url: https://www.youtube.com/@kozmikrafet
+        - generic [ref=e107] [cursor=pointer]:
+          - generic [ref=e108]: AI VİDEO · MOCKUMENTARY
+          - generic [ref=e109]: KOZMİK RAFET
+          - generic [ref=e110]: 10 BÖLÜM · HIGGSFIELD · SEEDANCE
+      - link "AI VİDEO · BELGESEL VAHŞİ SOHBET 10 BÖLÜM · KARAKTER TUTARLILIĞI":
+        - /url: https://www.youtube.com/@vahsisohbet
+        - generic [ref=e111] [cursor=pointer]:
+          - generic [ref=e112]: AI VİDEO · BELGESEL
+          - generic [ref=e113]: VAHŞİ SOHBET
+          - generic [ref=e114]: 10 BÖLÜM · KARAKTER TUTARLILIĞI
+      - link "WEB TASARIM · SAAS PAPİRUS FATURA AI · 21 GÜNDE CANLI →":
+        - /url: https://papirus.app
+        - generic [ref=e115] [cursor=pointer]:
+          - generic [ref=e116]: WEB TASARIM · SAAS
+          - generic [ref=e117]: PAPİRUS
+          - generic [ref=e118]: FATURA AI · 21 GÜNDE CANLI →
+      - link "İÇERİK SİSTEMİ · YOUTUBE KAEL LAB HAFTALIK YAYIN · YOUTUBE →":
+        - /url: https://www.youtube.com/@yigitkaya
+        - generic [ref=e119] [cursor=pointer]:
+          - generic [ref=e120]: İÇERİK SİSTEMİ · YOUTUBE
+          - generic [ref=e121]: KAEL LAB
+          - generic [ref=e122]: HAFTALIK YAYIN · YOUTUBE →
+    - generic [ref=e123]: KAEL CREATIVE — v1.0
+  - generic [ref=e125]:
+    - generic [ref=e126]:
+      - generic [ref=e127]: NASIL ÇALIŞIYORUZ?
+      - heading "3 ADIMDA İŞ BİTİRİYORUZ." [level=2] [ref=e128]:
+        - text: 3 ADIMDA
+        - text: İŞ BİTİRİYORUZ.
+      - generic [ref=e129]:
+        - text: ● BRIEF-OTOMATIK PROTOKOL
+        - generic [ref=e130]: ™
+    - generic [ref=e131]:
+      - generic [ref=e132]:
+        - generic [ref=e133]: "01"
+        - generic [ref=e134]: BRİFİNG
+        - generic [ref=e135]:
+          - text: 15 dakikalık Zoom.
+          - text: Sonrası bizim derdimiz.
+      - generic [ref=e136]:
+        - generic [ref=e137]: "02"
+        - generic [ref=e138]: ÜRETİM
+        - generic [ref=e139]:
+          - text: 6 AI ajan paralel.
+          - text: Yönetmen kalite kontrolü.
+      - generic [ref=e140]:
+        - generic [ref=e141]: "03"
+        - generic [ref=e142]: TESLİM
+        - generic [ref=e143]:
+          - text: Söz verdiğimiz tarih.
+          - text: Söz verdiğimiz dosya.
+    - generic [ref=e144]: KAEL CREATIVE — v1.0
+  - generic [ref=e145]:
+    - generic [ref=e146]: DUYURU · 14 NİSAN 2026
+    - generic [ref=e147]:
+      - text: KOORDİNASYON TOPLANTISI
+      - text: ÖLDÜ.
+    - generic [ref=e148]:
+      - text: …çünkü hiç yapmıyoruz. Aynı bilgiyi 6 toplantıda
+      - text: tekrar etmenin AI çağında bir karşılığı yok.
+    - generic [ref=e149]: "*BU TOPLANTI DA TEORİKTİR."
+    - generic [ref=e150]: KAEL CREATIVE — v1.0
+  - generic [ref=e151]:
+    - generic [ref=e152]:
+      - generic [ref=e153]: 02 / WEB TASARIM
+      - generic [ref=e154]:
+        - text: WEB
+        - text: TASARIM
+      - generic [ref=e155]:
+        - text: Scroll'da takılır.
+        - text: Mobilde uçar. 7 günde canlı.
+      - generic [ref=e156]:
+        - text: Bu siteyi biz yaptık.
+        - text: Sizinkini de yaparız.
+      - generic [ref=e157]:
+        - text: ● SES-RENK DİSİPLİNİ
+        - generic [ref=e158]: ™
+    - generic [ref=e159]:
+      - generic [ref=e160]:
+        - generic [ref=e161]: "01"
+        - generic [ref=e162]: SCROLL ANİMASYONLAR
+        - generic [ref=e163]: Oryzo, Linear, Vercel seviyesi sinematik scroll. Bounce rate %40 düşer.
+      - generic [ref=e164]:
+        - generic [ref=e165]: "02"
+        - generic [ref=e166]: MOBILE-FIRST
+        - generic [ref=e167]: Lighthouse 95+. Her cihazda 1 saniye altı yüklenme.
+      - generic [ref=e168]:
+        - generic [ref=e169]: "03"
+        - generic [ref=e170]: 7 GÜNDE TESLİM
+        - generic [ref=e171]: Standart ajanslar 6 hafta alır. Biz 7 günde canlıya alıyoruz. Söz.
+    - generic [ref=e172]: KAEL CREATIVE — v1.0
+  - generic [ref=e173]:
+    - generic [ref=e174]:
+      - generic [ref=e175]: 03 / SOSYAL MEDYA
+      - generic [ref=e176]:
+        - text: SOSYAL
+        - text: MEDYA
+      - generic [ref=e177]:
+        - text: Haftada 4 reels.
+        - text: Hesabınız her gün canlı.
+      - generic [ref=e178]: INSTAGRAM — TIKTOK — YOUTUBE SHORTS — LINKEDIN — X
+      - generic [ref=e179]:
+        - text: ● ÇOKLU PLATFORM ÇEKİRDEĞİ
+        - generic [ref=e180]: ™
+    - generic [ref=e181]:
+      - generic [ref=e182]:
+        - generic [ref=e183]: "01"
+        - generic [ref=e184]: HAFTALIK 4 REELS
+        - generic [ref=e185]: Pazartesi brief, Cuma 4 reels canlı. Editöryel takvim sizin onayınızda.
+      - generic [ref=e186]:
+        - generic [ref=e187]: "02"
+        - generic [ref=e188]: PLATFORM-SPESİFİK
+        - generic [ref=e189]: Her platforma kendi formatı. 9:16 / 1:1 / 16:9. Caption + hook + hashtag ayrı yazılır.
+      - generic [ref=e190]:
+        - generic [ref=e191]: "03"
+        - generic [ref=e192]: BRAND TUTARLILIĞI
+        - generic [ref=e193]: DNA kilitli. Yüz, ışık, ton 100 reels boyunca aynı. Karakter kayması yok.
+    - generic [ref=e194]: KAEL CREATIVE — v1.0
+  - generic [ref=e195]:
+    - generic [ref=e196]:
+      - generic [ref=e197]: 04 / OTONOM SİSTEMLER
+      - generic [ref=e198]:
+        - text: SİSTEM
+        - text: KUR
+      - generic [ref=e199]:
+        - text: İçerik bitince iş başlar.
+        - text: Sistem 7/24 çalışır.
+      - generic [ref=e200]:
+        - text: Randevu · Sipariş · AI Asistan · Fatura.
+        - text: Hangisini kurduysak, hâlâ çalışıyor.
+      - generic [ref=e201]:
+        - text: ● SİSTEM-7/24 ÇEKİRDEK
+        - generic [ref=e202]: ™
+    - generic [ref=e204]:
+      - generic [ref=e205]: CASE STUDY
+      - generic [ref=e206]: PAPİRUS
+      - generic [ref=e207]: Fatura AI SaaS — KKTC & Türkiye
+      - generic [ref=e209]:
+        - generic [ref=e210]: — 3 haftada sıfırdan canlıya alındı
+        - generic [ref=e211]: — KDV otomatik hesaplama
+        - generic [ref=e212]: — B2B fatura network
+        - generic [ref=e213]: — Excel import + AI eşleştirme
+      - link "papirus.app →" [ref=e214] [cursor=pointer]:
+        - /url: https://papirus.app
+    - generic [ref=e215]: KAEL CREATIVE — v1.0
+  - generic [ref=e216]:
+    - generic [ref=e217]: BU BİR İMZA
+    - generic [ref=e218]:
+      - generic [ref=e219]: K
+      - generic [ref=e220]: A
+      - generic [ref=e221]: E
+      - generic [ref=e222]: L
+    - generic [ref=e223]: Bir ajans değil. Bir sistem.
+    - generic [ref=e224]: KAEL CREATIVE — v1.0
+  - generic [ref=e225]:
+    - generic [ref=e226]:
+      - generic [ref=e227]: BİZ KİMİZ?
+      - generic [ref=e228]:
+        - text: BİR AJANS DEĞİL.
+        - text: BİR SİSTEM.
+      - generic [ref=e229]: AI-NATIVE STUDIO · KKTC + GLOBAL
+      - generic [ref=e230]:
+        - text: ● KOORDİNASYON-SIFIR MİMARİ
+        - generic [ref=e231]: ™
+    - generic [ref=e232]:
+      - generic [ref=e233]:
+        - generic [ref=e234]: "1"
+        - generic [ref=e235]: DİREKTÖR
+        - generic [ref=e236]: İnsan karar alır
+      - generic [ref=e237]:
+        - generic [ref=e238]: "9"
+        - generic [ref=e239]: AI AJAN
+        - generic [ref=e240]: Durmadan üretir
+      - generic [ref=e241]:
+        - generic [ref=e242]: "3"
+        - generic [ref=e243]: HİZMET
+        - generic [ref=e244]: Video · Web · Sistem
+    - generic [ref=e245]:
+      - generic [ref=e246]:
+        - generic [ref=e247]: BÜYÜK AJANS KAPASİTESİ.
+        - generic [ref=e248]:
+          - text: Büyük ajansta 6 toplantı.
+          - text: Bizde 1 brief.
+          - text: Aynı çıktı. Beşte bir bütçe.
+      - generic [ref=e249]:
+        - generic [ref=e250]: FARK NEREDE?
+        - generic [ref=e251]:
+          - text: Mockumentary'den fatura SaaS'ına kadar — aynı pipeline.
+          - text: Tek WhatsApp. Tek fatura.
+    - generic [ref=e252]: KAEL CREATIVE — v1.0
+  - generic [ref=e253]:
+    - generic [ref=e254]:
+      - generic [ref=e255]: NEDEN KAEL?
+      - heading "FARKIN FARKI." [level=2] [ref=e256]:
+        - text: FARKIN
+        - text: FARKI.
+    - generic [ref=e257]:
+      - generic [ref=e258]:
+        - generic [ref=e259]: "01"
+        - generic [ref=e260]: HIZ
+        - generic [ref=e261]:
+          - text: Onlar 3 hafta. Biz 72 saat.
+          - text: Hesap basit.
+          - text: "TESLİM ORANI: 96%"
+      - generic [ref=e262]:
+        - generic [ref=e263]: "02"
+        - generic [ref=e264]: KALİTE
+        - generic [ref=e265]:
+          - text: Sinematik AI pipeline.
+          - text: Hollywood standartı, KKTC fiyatında.
+          - text: "LIGHTHOUSE AVG: 95+"
+      - generic [ref=e266]:
+        - generic [ref=e267]: "03"
+        - generic [ref=e268]: TAM PAKET
+        - generic [ref=e269]:
+          - text: Video. Web. Sistem.
+          - text: Tek WhatsApp. Tek fatura.
+          - text: "KOORDİNASYON TOPLANTISI: 0"
+      - generic [ref=e270]:
+        - generic [ref=e271]: "04"
+        - generic [ref=e272]: ŞEFFAFLIK
+        - generic [ref=e273]:
+          - text: Sabit fiyat. Sabit takvim.
+          - text: Sürpriz yok.
+          - text: "SÜRPRİZ FATURA SAYISI: 0"
+    - generic [ref=e274]: KAEL CREATIVE — v1.0
+  - generic [ref=e275]:
+    - generic [ref=e276]:
+      - generic [ref=e277]: SIK SORULAN
+      - heading "SORULAR." [level=2] [ref=e278]
+      - generic [ref=e279]:
+        - text: Daha fazla sorun varsa
+        - text: "direkt yaz: ai.bilgimedya@gmail.com"
+    - generic [ref=e280]:
+      - generic [ref=e281]:
+        - generic [ref=e282] [cursor=pointer]:
+          - text: AI yaptığı için kalite düşmez mi?
+          - generic [ref=e283]: +
+        - generic [ref=e284]: Sinematik AI pipeline. Hollywood standardında üretim araçları. Her kare yönetmen onayından geçer.
+      - generic [ref=e285]:
+        - generic [ref=e286] [cursor=pointer]:
+          - text: Kaç revize hakkım var?
+          - generic [ref=e287]: +
+        - generic [ref=e288]: 2 major revize pakete dahil. Minor revize (renk, kesim, ses) sınırsız. Major üzeri saatlik ücretlendirilir.
+      - generic [ref=e289]:
+        - generic [ref=e290] [cursor=pointer]:
+          - text: Telif hakları kime ait?
+          - generic [ref=e291]: +
+        - generic [ref=e292]: "%100 size. Teslim edilen tüm dosyalar (MP4, kaynak kod, Figma) müşterinin. Sözleşmeyle sabit."
+      - generic [ref=e293]:
+        - generic [ref=e294] [cursor=pointer]:
+          - text: Ne kadar sürede teslim?
+          - generic [ref=e295]: +
+        - generic [ref=e296]: "AI Video: 72 saat. Web sitesi: 7 gün. Otonom sistem: 14 gün. Brief netse takvim aksamıyor."
+      - generic [ref=e297]:
+        - generic [ref=e298] [cursor=pointer]:
+          - text: Ödeme nasıl yapılır?
+          - generic [ref=e299]: +
+        - generic [ref=e300]: "%50 başlangıç + %50 teslimde. Banka havale veya Wise. KKTC içi TL, dışı USD/EUR."
+      - generic [ref=e301]:
+        - generic [ref=e302] [cursor=pointer]:
+          - text: Aylık paket bitince ne olur?
+          - generic [ref=e303]: +
+        - generic [ref=e304]: Aboneliği iptal edebilirsin, geçmiş içerikler senin. İstersen tek seferlik proje olarak da çalışırız.
+    - generic [ref=e305]: KAEL CREATIVE — v1.0
+  - generic [ref=e306]:
+    - generic [ref=e307]:
+      - generic [ref=e308]: MİSYONLAR
+      - heading "PAKETİNİZİ SEÇİN." [level=2] [ref=e309]
+    - generic [ref=e310]:
+      - text: PAKET DEĞİL, MİSYON — NE İSTERSEN ONU ALIRSIN
+      - text: "*sözleşmesiz iptal. faturada sürpriz yok. KKTC için GBP/EUR karşılığı talebe göre faturalanır."
+    - generic [ref=e311]:
+      - generic [ref=e312]:
+        - generic [ref=e313]: BAŞLANGIÇ
+        - generic [ref=e314]: GÖRÜNÜRLÜK
+        - generic [ref=e315]: ₺8.999/ay
+        - generic [ref=e316]: aylık ödeme
+        - generic [ref=e317]:
+          - text: Her hafta 4 reels.
+          - text: Sosyal medyada her gün aktifsiniz.
+        - generic [ref=e318]:
+          - generic [ref=e319]: — AI video içerik üretimi
+          - generic [ref=e320]: — Sosyal medya yönetimi
+          - generic [ref=e321]: — Reels & Shorts formatı
+          - generic [ref=e322]: — Aylık 8 içerik
+          - generic [ref=e323]: — E-posta destek
+        - link "BAŞLA" [ref=e324] [cursor=pointer]:
+          - /url: "#cta"
+      - generic [ref=e325]:
+        - generic [ref=e326]: ● POPÜLER
+        - generic [ref=e327]: VARLIK
+        - generic [ref=e328]: ₺14.999/ay
+        - generic [ref=e329]: aylık ödeme
+        - generic [ref=e330]:
+          - text: Web + sosyal medya + marka kimliği.
+          - text: Tek pipeline.
+        - generic [ref=e331]:
+          - generic [ref=e332]: — Premium web sitesi
+          - generic [ref=e333]: — Marka kimliği tasarımı
+          - generic [ref=e334]: — AI video paketi dahil
+          - generic [ref=e335]: — WhatsApp destek
+          - generic [ref=e336]: — Aylık performans raporu
+        - link "SEÇ" [ref=e337] [cursor=pointer]:
+          - /url: "#cta"
+      - generic [ref=e338]:
+        - generic [ref=e339]: KURUMSAL
+        - generic [ref=e340]: SİSTEM
+        - generic [ref=e341]: ₺24.999/ay
+        - generic [ref=e342]: aylık ödeme
+        - generic [ref=e343]:
+          - text: İçerik değil — operasyonel sistem.
+          - text: Otomasyon kurulur.
+        - generic [ref=e344]:
+          - generic [ref=e345]: — Tam AI altyapı kurulumu
+          - generic [ref=e346]: — Otomasyon & API entegrasyon
+          - generic [ref=e347]: — Dashboard & raporlama
+          - generic [ref=e348]: — Varlik paketi dahil
+          - generic [ref=e349]: — Öncelikli destek & SLA
+        - link "KONUŞALIM" [ref=e350] [cursor=pointer]:
+          - /url: "#cta"
+    - generic [ref=e351]: KAEL CREATIVE — v1.0
+  - generic [ref=e352]:
+    - generic [ref=e353]: SON KOŞUL
+    - generic [ref=e354]:
+      - text: KAHVE
+      - text: BİZDEN.
+    - generic [ref=e355]:
+      - text: Brief 15 dakika. Kahveyi getiriyorsan
+      - text: ofise davet ediyoruz. Lefkoşa'da.
+    - generic [ref=e356]: "*FİLTRE / ESPRESSO / TÜRK KAHVESİ FARK ETMEZ."
+    - generic [ref=e357]: KAEL CREATIVE — v1.0
+  - generic [ref=e358]:
+    - generic [ref=e360]:
+      - text: BRİFİNİ
+      - text: YAZ.
+      - text: YARIN BAŞLARIZ.
+    - generic [ref=e361]: BU AY 1 KOLTUK AÇIK.
+    - generic [ref=e362]:
+      - textbox "AD SOYAD" [ref=e363]
+      - textbox "E-POSTA" [ref=e364]
+      - 'textbox "PROJE BRIEF: NE, NE ZAMAN, KAÇ DAKİKA?" [ref=e365]'
+      - button "BRİFİ GÖNDER →" [ref=e366] [cursor=pointer]
+    - link "ai.bilgimedya@gmail.com" [ref=e368] [cursor=pointer]:
+      - /url: mailto:ai.bilgimedya@gmail.com
+    - generic [ref=e369]:
+      - generic [ref=e370]: BUILT BY KAEL
+      - generic [ref=e371]: POWERED BY AI
+    - generic [ref=e372]: KAEL CREATIVE — v1.0
+    - generic [ref=e373]:
+      - generic [ref=e374]:
+        - generic [ref=e375]: SYS
+        - generic [ref=e376]: KAEL.creative
+        - generic [ref=e377]: /
+        - generic [ref=e378]: VER
+        - generic [ref=e379]: v1.0.0
+        - generic [ref=e380]: /
+        - generic [ref=e381]: BUILD
+        - generic [ref=e382]: "240504"
+        - generic [ref=e383]: /
+        - generic [ref=e384]: SECTIONS
+        - generic [ref=e385]: "15"
+        - generic [ref=e386]: /
+        - generic [ref=e387]: SIGILS
+        - generic [ref=e388]: "5"
+      - generic [ref=e389]:
+        - generic [ref=e390]: LOC
+        - generic [ref=e391]: 35.1856° N · 33.3823° E
+        - generic [ref=e392]: /
+        - generic [ref=e393]: TZ
+        - generic [ref=e394]: UTC+3
+        - generic [ref=e395]: /
+        - generic [ref=e396]: CONTACT
+        - generic [ref=e397]: ai.bilgimedya@gmail.com
+      - generic [ref=e399]: © 2026 KAEL CREATIVE — Sistem her zaman çalışıyor.
+  - link "PROJE BAŞLAT →":
+    - /url: "#cta"
+    - text: PROJE BAŞLAT →

@@ -1,0 +1,47 @@
+- generic [ref=e1]:
+  - link "Skip to content":
+    - /url: "#geist-skip-nav"
+  - generic [ref=e3]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - img [ref=e9]
+          - img [ref=e10]
+          - img [ref=e13]
+        - generic [ref=e15]:
+          - heading "Continue with Vercel" [level=1] [ref=e16]
+          - paragraph [ref=e17]: Use your Vercel account to sign in to Vercel
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - textbox "Email" [active] [ref=e21]:
+            - /placeholder: Email Address
+          - button "Continue with Email" [ref=e22] [cursor=pointer]:
+            - generic [ref=e23]: Continue with Email
+        - generic [ref=e25]:
+          - button "Continue with Google" [ref=e26] [cursor=pointer]:
+            - img [ref=e29]
+            - generic [ref=e35]: Continue with Google
+          - button "Continue with GitHub" [ref=e36] [cursor=pointer]:
+            - img [ref=e38]
+            - generic [ref=e42]: Continue with GitHub
+          - button "Continue with Apple" [ref=e43] [cursor=pointer]:
+            - img [ref=e45]
+            - generic [ref=e48]: Continue with Apple
+          - button "Show other options" [ref=e49] [cursor=pointer]:
+            - generic [ref=e50]: Show other options
+      - paragraph [ref=e52]:
+        - text: Don't have an account?
+        - link "Sign Up" [ref=e53] [cursor=pointer]:
+          - /url: /oauth/device?user_code=ZBXG-RHGN&mode=signup
+    - contentinfo [ref=e54]:
+      - generic [ref=e56]:
+        - link "Terms" [ref=e57] [cursor=pointer]:
+          - /url: /legal/terms
+        - link "Privacy Policy" [ref=e58] [cursor=pointer]:
+          - /url: /legal/privacy-policy
+  - alert [ref=e59]
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - img
