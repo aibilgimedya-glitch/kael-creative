@@ -29,11 +29,9 @@
     }
   ],
   "redirects": [
-    { "source": "/kvkk", "destination": "/kvkk.html", "permanent": true },
-    { "source": "/privacy", "destination": "/privacy.html", "permanent": true },
-    { "source": "/cookies", "destination": "/cerez-politikasi.html", "permanent": true },
-    { "source": "/cerezler", "destination": "/cerez-politikasi.html", "permanent": true },
-    { "source": "/terms", "destination": "/kullanim-kosullari.html", "permanent": true },
-    { "source": "/kullanim", "destination": "/kullanim-kosullari.html", "permanent": true }
+    { "source": "/cookies", "destination": "/cerez-politikasi", "permanent": true },
+    { "source": "/cerezler", "destination": "/cerez-politikasi", "permanent": true },
+    { "source": "/terms", "destination": "/kullanim-kosullari", "permanent": true },
+    { "source": "/kullanim", "destination": "/kullanim-kosullari", "permanent": true }
   ]
 }
