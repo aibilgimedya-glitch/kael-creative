@@ -1009,8 +1009,8 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
     <div class="metric-vs">BRİEF'TEN TESLİM'E</div>
     <div class="metric-eyebrow" id="metric-story" style="transition: all 0.4s ease; font-size: 13px; font-weight: 700; letter-spacing: 0.35em; text-shadow: 0 0 15px rgba(220,80,0,0.4); margin-bottom: 30px;">GELENEKSEL AJANSLAR</div>
     <div class="metric-huge" id="vaporize-wrapper" style="position: relative; width: 100%;">
-      <div id="metric-text-measurer" style="user-select: none; text-align: center; transition: opacity 0.5s ease, transform 0.5s ease;"><span class="accent">3</span> HAFTA.</div>
-      <span id="metric-strike" aria-hidden="true" style="position:absolute;top:50%;left:8%;width:84%;height:8px;background:linear-gradient(90deg,transparent 0%,#dc5000 8%,#ff8c42 50%,#dc5000 92%,transparent 100%);transform:translateY(-50%) scaleX(0);transform-origin:left center;box-shadow:0 0 32px rgba(220,80,0,0.85),0 0 16px rgba(255,140,66,0.6);border-radius:4px;will-change:transform;pointer-events:none;z-index:5;"></span>
+      <div id="metric-text-measurer" style="user-select: none; text-align: center; transition: opacity 0.5s ease, transform 0.5s ease; font-variant-numeric: tabular-nums; will-change: transform, opacity, filter;"><span class="accent">3</span> HAFTA.</div>
+      <div id="metric-embers" aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;z-index:7;overflow:visible;"></div>
     </div>
     <div class="metric-cap" id="metric-cap">Brief'ten teslim klasörüne kadar — büyük ajansların ortalaması.</div>
   </div>
@@ -2555,64 +2555,101 @@ if (metricMeasurer) {
     const capText = document.getElementById('metric-cap');
 
     if (isKael) {
-      // ═══ WOW: KAEL CRASH ═══
-      // 0. "3 HAFTA" üstüne çapraz çizgi çekilir (sol→sağ, accent glow)
-      const strike = document.getElementById('metric-strike');
-      if (strike) gsap.to(strike, { scaleX: 1, duration: 0.45, ease: 'power2.inOut' });
-
-      // 1. "3 HAFTA." titrer ve bozulur
+      // ═══ KONSEY A+ : ODOMETER 504 → 72 + EMBER ═══
+      // Sahne 1: "3 HAFTA." yumuşak fade (üstünü çizmek YOK — yazı kendi içinden değişiyor)
       gsap.to(metricMeasurer, {
-        keyframes: [
-          { x: -14, skewX: -4, filter: 'blur(2px) hue-rotate(25deg)', duration: 0.06 },
-          { x: 10,  skewX:  3, filter: 'blur(5px) hue-rotate(-15deg)', duration: 0.06 },
-          { x: -7,  skewX: -2, filter: 'blur(3px)', duration: 0.05 },
-          { x:  5,  skewX:  1, filter: 'blur(1px)', duration: 0.05 },
-          { x:  0,  skewX:  0, filter: 'blur(0)',   duration: 0.04 },
-        ],
-        delay: 0.40,
+        opacity: 0.25, scale: 0.96, filter: 'blur(2px)', duration: 0.22, ease: 'power2.in',
         onComplete: () => {
-          // 2. Turuncu shockwave flash
-          const flash = document.createElement('div');
-          flash.style.cssText = 'position:fixed;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 50%,rgba(220,80,0,0.55),transparent 70%);z-index:9990;pointer-events:none;';
-          document.body.appendChild(flash);
-          gsap.fromTo(flash, { opacity: 0 }, { opacity: 1, duration: 0.1, ease: 'power3.out',
-            onComplete: () => gsap.to(flash, { opacity: 0, duration: 0.55, ease: 'power2.out', onComplete: () => flash.remove() })
+          // Sahne 2: Aynı element içinde odometer'a geç — "504 SAAT." başlangıç
+          metricMeasurer.innerHTML = '<span class="accent" id="odo-num">504</span> SAAT.';
+          gsap.set(metricMeasurer, { opacity: 1, scale: 1, filter: 'blur(0)' });
+          const odoNum = document.getElementById('odo-num');
+
+          // Sahne 3: 504 → 72 hızlı geri sayım (~0.85s, expo easing)
+          const counter = { v: 504 };
+          gsap.to(counter, {
+            v: 72, duration: 0.85, ease: 'expo.out',
+            onUpdate: () => { if (odoNum) odoNum.textContent = Math.round(counter.v); },
+            onComplete: () => {
+              // 72'de durunca: tam değer garantile
+              if (odoNum) odoNum.textContent = '72';
+
+              // Sahne 4a: Turuncu shockwave flash
+              const flash = document.createElement('div');
+              flash.style.cssText = 'position:fixed;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 50%,rgba(220,80,0,0.55),transparent 70%);z-index:9990;pointer-events:none;';
+              document.body.appendChild(flash);
+              gsap.fromTo(flash, { opacity: 0 }, { opacity: 1, duration: 0.1, ease: 'power3.out',
+                onComplete: () => gsap.to(flash, { opacity: 0, duration: 0.55, ease: 'power2.out', onComplete: () => flash.remove() })
+              });
+
+              // Sahne 4b: Scale pulse on number (climax)
+              gsap.fromTo(metricMeasurer,
+                { scale: 1 },
+                { scale: 1.16, duration: 0.18, ease: 'power3.out', yoyo: true, repeat: 1 }
+              );
+
+              // Sahne 4c: 6 ember zerresi yukarı uçar
+              const emberContainer = document.getElementById('metric-embers');
+              if (emberContainer) {
+                emberContainer.innerHTML = '';
+                for (let k = 0; k < 6; k++) {
+                  const ember = document.createElement('div');
+                  const startX = (Math.random() - 0.5) * 240;
+                  const targetX = startX + (Math.random() - 0.5) * 160;
+                  const targetY = -(220 + Math.random() * 200);
+                  const size = 4 + Math.random() * 3;
+                  ember.style.cssText = `position:absolute;left:50%;top:50%;width:${size}px;height:${size}px;border-radius:50%;background:#ff8c42;box-shadow:0 0 12px rgba(220,80,0,0.95),0 0 4px rgba(255,200,140,1);pointer-events:none;transform:translate(${startX}px,0px);will-change:transform,opacity;`;
+                  emberContainer.appendChild(ember);
+                  gsap.to(ember, {
+                    x: targetX - startX, y: targetY, opacity: 0, scale: 0.3,
+                    duration: 1.4 + Math.random() * 0.7,
+                    ease: 'power2.out',
+                    delay: k * 0.04,
+                    onComplete: () => ember.remove()
+                  });
+                }
+              }
+
+              // Sahne 5: "72 SAAT." final hero text (renderText ile temizle, subtle morph)
+              renderText(texts[i]); // "<span class='accent'>72</span> SAAT."
+              gsap.fromTo(metricMeasurer,
+                { opacity: 0.85 },
+                { opacity: 1, duration: 0.35, ease: 'power2.out' }
+              );
+
+              // Sahne 6: Eyebrow + cap güncelle
+              if (capText && story.cap) capText.innerHTML = story.cap;
+              if (storyText) {
+                storyText.innerText = story.eyebrow;
+                gsap.fromTo(storyText,
+                  { opacity: 0, scale: 0.8, color: 'var(--cream)' },
+                  { opacity: 1, scale: 1.18, color: 'var(--accent)',
+                    textShadow: '0 0 30px rgba(220,80,0,0.9)', duration: 0.5, ease: 'back.out(1.5)' }
+                );
+                if (capText) gsap.to(capText, { color: 'var(--cream)', duration: 0.4, delay: 0.3 });
+              }
+
+              // Sahne 7: Arka plan bloom
+              const grid = document.querySelector('.metric-grid-overlay');
+              if (grid) {
+                grid.style.transition = 'background 0.15s ease';
+                grid.style.background = 'radial-gradient(circle at 50% 50%, rgba(220,80,0,0.3) 0%, transparent 80%)';
+                setTimeout(() => {
+                  grid.style.transition = 'background 1.2s ease';
+                  grid.style.background = 'radial-gradient(circle at 50% 50%, rgba(220,80,0,0.05) 0%, transparent 60%)';
+                }, 200);
+              }
+            }
           });
-
-          // 3. "72 SAAT." merkezden patlar — scale 3 → 1, blur clear
-          renderText(texts[i]);
-          gsap.fromTo(metricMeasurer,
-            { opacity: 0, scale: 3, filter: 'blur(60px)', x: 0, skewX: 0 },
-            { opacity: 1, scale: 1, filter: 'blur(0)',    duration: 1.0, ease: 'expo.out' }
-          );
-
-          // 4. Eyebrow + cap güncelle
-          if (capText && story.cap) capText.innerHTML = story.cap;
-          if (storyText) {
-            storyText.innerText = story.eyebrow;
-            gsap.fromTo(storyText,
-              { opacity: 0, scale: 0.8, color: 'var(--cream)' },
-              { opacity: 1, scale: 1.18, color: 'var(--accent)',
-                textShadow: '0 0 30px rgba(220,80,0,0.9)', duration: 0.5, ease: 'back.out(1.5)' }
-            );
-            if (capText) gsap.to(capText, { color: 'var(--cream)', duration: 0.4, delay: 0.3 });
-          }
-
-          // 5. Arka plan bloom
-          const grid = document.querySelector('.metric-grid-overlay');
-          if (grid) {
-            grid.style.transition = 'background 0.15s ease';
-            grid.style.background = 'radial-gradient(circle at 50% 50%, rgba(220,80,0,0.3) 0%, transparent 80%)';
-            setTimeout(() => {
-              grid.style.transition = 'background 1.2s ease';
-              grid.style.background = 'radial-gradient(circle at 50% 50%, rgba(220,80,0,0.05) 0%, transparent 60%)';
-            }, 200);
-          }
         }
       });
 
     } else {
       // ═══ Geri dönüş: temiz fade ═══
+      // Embers temizle (eğer kaldıysa)
+      const emberContainer = document.getElementById('metric-embers');
+      if (emberContainer) emberContainer.innerHTML = '';
+
       gsap.to(metricMeasurer, { opacity: 0, scale: 0.92, filter: 'blur(8px)', duration: 0.35, ease: 'power2.in',
         onComplete: () => {
           renderText(texts[i]);
