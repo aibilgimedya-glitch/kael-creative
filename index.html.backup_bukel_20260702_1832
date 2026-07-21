@@ -1,0 +1,2932 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAEL Creative — Bir Ajans Değil. Bir Sistem.</title>
+<meta name="description" content="Ajansın 10 katı hızlı, 10 kat ucuz. 1 yönetmen, 9 AI agent. 72 saatte AI video, 7 günde web sitesi. KAEL — AI-native yaratıcı stüdyo, Kıbrıs.">
+<meta name="keywords" content="AI video, web tasarım, marka kimlik, sosyal medya, AI ajans, Kıbrıs ajans, KKTC web, AI sistem kurulumu, Higgsfield, Seedance">
+<meta name="theme-color" content="#0a0604">
+<meta name="author" content="KAEL Creative">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="KAEL Creative — Bir Ajans Değil. Bir Sistem.">
+<meta property="og:description" content="1 yönetmen. 9 AI agent. 0 koordinasyon toplantısı. 72 saatte AI video, 7 günde web sitesi.">
+<meta property="og:image" content="https://kaelcreative.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="KAEL Creative — Bir Ajans Değil. Bir Sistem.">
+<meta property="og:url" content="https://kaelcreative.com">
+<meta property="og:site_name" content="KAEL Creative">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KAEL Creative — Bir Ajans Değil. Bir Sistem.">
+<meta name="twitter:description" content="1 yönetmen. 9 AI agent. 0 koordinasyon toplantısı.">
+<meta name="twitter:image" content="https://kaelcreative.com/og-image.jpg">
+<meta name="twitter:image:alt" content="KAEL Creative — Bir Ajans Değil. Bir Sistem.">
+<link rel="canonical" href="https://kaelcreative.com/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://kaelcreative.com/#org",
+      "name": "KAEL Creative",
+      "alternateName": "KAEL",
+      "url": "https://kaelcreative.com",
+      "logo": "https://kaelcreative.com/og-image.jpg",
+      "image": "https://kaelcreative.com/og-image.jpg",
+      "description": "Ajansın 10 katı hızlı, 10 kat ucuz. 1 yönetmen, 9 AI agent. 72 saatte AI video, 7 günde web sitesi. AI-native yaratıcı stüdyo — Kıbrıs merkezli, global teslim.",
+      "foundingDate": "2026",
+      "founder": {"@type": "Person", "name": "Yiğit"},
+      "areaServed": ["TR", "CY", "GB", "Worldwide"],
+      "knowsAbout": ["Web Tasarım", "AI Video Reklam", "Sosyal Medya Yönetimi", "Marka Kimlik", "AI Sistem Kurulumu", "AEO ChatGPT Optimizasyonu", "Higgsfield", "Seedance"],
+      "slogan": "Bir ajans değil. Bir sistem.",
+      "email": "ai.bilgimedya@gmail.com",
+      "telephone": "+90-542-872-0206",
+      "contactPoint": {"@type": "ContactPoint", "telephone": "+90-542-872-0206", "email": "ai.bilgimedya@gmail.com", "contactType": "sales", "areaServed": ["CY", "TR", "Worldwide"], "availableLanguage": ["Turkish", "English"]},
+      "sameAs": []
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://kaelcreative.com/#service",
+      "name": "KAEL Creative — Yaratıcı Dijital Ajans",
+      "url": "https://kaelcreative.com",
+      "image": "https://kaelcreative.com/og-image.jpg",
+      "priceRange": "5000-250000 TL",
+      "address": {"@type": "PostalAddress", "addressCountry": "CY", "addressRegion": "Kıbrıs"},
+      "parentOrganization": {"@id": "https://kaelcreative.com/#org"},
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Hizmetler",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Web Tasarım & Geliştirme", "description": "Premium, sinematik web sitesi — 7 günde teslim. Çok dilli (TR/EN/RU/DE), mobil uyumlu, hızlı, SEO ve AEO optimizasyonlu. Canlı yayına alma dahil."}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Video Reklam", "description": "Sinematik AI video reklam ve tanıtım — 72 saatte teslim. 4K, sosyal medya formatları, ürün hero ve UGC tarzı. Higgsfield/Seedance pipeline."}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sosyal Medya Yönetimi", "description": "Aylık sosyal medya içerik üretimi ve yönetimi — Instagram ve Facebook için ayda 4-8 sinematik AI Reels, planlama, yayın ve performans raporu."}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Marka Kimlik", "description": "Marka kimliği ve görsel dil tasarımı — logo, renk paleti, tipografi ve marka rehberi. AI-destekli hızlı iterasyon."}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Sistem Kurulumu", "description": "İşletmeler için otonom AI altyapı kurulumu — otomasyon, API entegrasyonu, dashboard ve raporlama. 14 günde operasyonel sistem."}}
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://kaelcreative.com/#website",
+      "url": "https://kaelcreative.com",
+      "name": "KAEL Creative",
+      "publisher": {"@id": "https://kaelcreative.com/#org"},
+      "inLanguage": "tr-TR"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://kaelcreative.com/#webpage",
+      "url": "https://kaelcreative.com/",
+      "name": "KAEL Creative — Bir Ajans Değil. Bir Sistem.",
+      "isPartOf": {"@id": "https://kaelcreative.com/#website"},
+      "about": {"@id": "https://kaelcreative.com/#org"},
+      "inLanguage": "tr-TR",
+      "primaryImageOfPage": {"@type": "ImageObject", "url": "https://kaelcreative.com/og-image.jpg"}
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://kaelcreative.com/#faq",
+      "inLanguage": "tr-TR",
+      "mainEntity": [
+        {"@type": "Question", "name": "AI yaptığı için kalite düşmez mi?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Sinematik AI pipeline ve Hollywood standardında üretim araçları kullanılır. Her kare yönetmen onayından geçer — kalite kontrolü insandadır."}},
+        {"@type": "Question", "name": "Kaç revize hakkım var?", "acceptedAnswer": {"@type": "Answer", "text": "2 major revize her pakete dahildir. Minor revizeler (renk, kesim, ses) sınırsızdır. Major üzeri çalışmalar saatlik ücretlendirilir."}},
+        {"@type": "Question", "name": "Telif hakları kime ait?", "acceptedAnswer": {"@type": "Answer", "text": "%100 size. Teslim edilen tüm dosyalar (MP4, kaynak kod, Figma) müşterinindir ve bu sözleşmeyle sabitlenir."}},
+        {"@type": "Question", "name": "Ne kadar sürede teslim ediliyor?", "acceptedAnswer": {"@type": "Answer", "text": "AI Video 72 saat, web sitesi 7 gün, otonom sistem 14 gün içinde teslim edilir. Brief netse takvim aksamaz."}},
+        {"@type": "Question", "name": "Ödeme nasıl yapılır?", "acceptedAnswer": {"@type": "Answer", "text": "%50 başlangıçta, %50 teslimde alınır. Banka havalesi veya Wise ile TL, USD veya EUR olarak ödenebilir."}},
+        {"@type": "Question", "name": "Aylık paket bitince ne olur?", "acceptedAnswer": {"@type": "Answer", "text": "Aboneliği istediğin zaman iptal edebilirsin ve geçmiş içerikler senindir. İstersen tek seferlik proje olarak da çalışılır."}}
+      ]
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="dns-prefetch" href="https://unpkg.com">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="preload" as="video" href="videos/hero_loop.mp4" type="video/mp4">
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script defer src="_consent.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --bg:#0a0604;
+  --bg2:#120a06;
+  --cream:#FFEDC7;
+  --accent:#DC5000;
+  --muted:rgba(255,237,199,0.45);
+  --dim:rgba(255,237,199,0.15);
+  --border:rgba(255,237,199,0.1);
+  --section-pad-y:120px;
+  --section-pad-x:clamp(24px,6vw,80px);
+  --section-max:1200px;
+}
+@media (max-width:720px){
+  :root{--section-pad-y:80px;}
+}
+
+/* SECTION PATTERN (oryzo-style: eyebrow + tagline + lead paragraph) */
+.section-eye{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.32em;color:var(--accent);text-transform:uppercase;margin-bottom:18px;display:inline-block;}
+.section-lead{font-family:'DM Mono',monospace;font-size:14px;line-height:1.7;color:var(--muted);max-width:560px;margin:14px 0 36px;letter-spacing:0.02em;}
+.sec-footnote{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:0.18em;color:var(--dim);margin-top:48px;text-align:left;text-transform:uppercase;}
+.sec-footnote::before{content:"* ";color:var(--accent);}
+html{overflow-y:scroll;}
+body{background:var(--bg);color:var(--cream);font-family:'DM Mono',monospace;position:relative;}
+
+/* SAHTE TEKNOLOJİ ROZETİ */
+.tech-badge{display:inline-flex;align-items:center;gap:12px;border:1px solid rgba(220,80,0,0.5);background:rgba(220,80,0,0.08);padding:12px 22px;font-family:'DM Mono',monospace;font-size:11px;font-weight:500;letter-spacing:0.22em;color:var(--accent);margin-top:20px;border-radius:1px;text-transform:uppercase;box-shadow:0 0 0 0 rgba(220,80,0,0.4);animation:badgePulse 2.6s ease-in-out infinite;}
+.tech-badge::before{content:"●";font-size:10px;color:var(--accent);animation:badgeBlink 1.8s ease-in-out infinite;}
+.tech-badge .tm{font-size:9px;color:var(--cream);margin-left:6px;opacity:0.7;letter-spacing:0;}
+@keyframes badgePulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(220,80,0,0.45);}
+  50%{box-shadow:0 0 0 6px rgba(220,80,0,0);}
+}
+@keyframes badgeBlink{
+  0%,100%{opacity:1;}
+  50%{opacity:0.35;}
+}
+
+/* DEV METRİK EKRAN */
+.metric-section{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 48px;position:relative;overflow:hidden;}
+.metric-section .metric-vs{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.45em;color:var(--dim);margin-bottom:14px;opacity:0;transform:translateY(20px);transition:opacity 0.7s ease,transform 0.7s ease;text-transform:uppercase;}
+.metric-section .metric-vs.visible{opacity:1;transform:translateY(0);}
+.metric-section .metric-eyebrow{font-family:'Barlow Condensed',sans-serif;font-size:14px;letter-spacing:0.32em;color:var(--accent);margin-bottom:30px;opacity:0;transform:translateY(20px);transition:opacity 0.7s ease,transform 0.7s ease;font-weight:700;}
+.metric-section .metric-eyebrow.visible{opacity:1;transform:translateY(0);}
+.metric-section .metric-huge{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(140px,22vw,360px);line-height:.85;color:var(--cream);letter-spacing:-0.03em;opacity:0;transform:translateY(40px) scale(0.95);filter:blur(8px);transition:opacity 1.1s cubic-bezier(.16,.84,.3,1) 0.15s,transform 1.1s cubic-bezier(.16,.84,.3,1) 0.15s,filter 1.1s cubic-bezier(.16,.84,.3,1) 0.15s;will-change:transform,filter,opacity;}
+.metric-section .metric-huge.visible{opacity:1;transform:translateY(0) scale(1);filter:blur(0);}
+.metric-section .metric-huge .accent{color:var(--accent);}
+.ai-dotpattern,.metric-dotpattern{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1;opacity:0.7;}
+.metric-dotpattern{z-index:2;opacity:0.6;}
+#ai-video{position:relative;}
+#ai-video > *:not(.ai-dotpattern){position:relative;z-index:2;}
+.metric-section .metric-cap{font-family:'Barlow Condensed',sans-serif;font-size:clamp(15px,1.4vw,18px);letter-spacing:0.04em;color:var(--muted);margin-top:36px;max-width:680px;line-height:1.6;opacity:0;transition:opacity 0.7s ease 0.4s,color 0.4s ease;font-weight:500;}
+.metric-section .metric-cap.visible{opacity:1;}
+.metric-section .metric-grid-overlay{position:absolute;inset:0;background:radial-gradient(circle at 50% 50%, rgba(220,80,0,0.05) 0%, transparent 60%);pointer-events:none;}
+/* Cinematic entrance bloom — KAEL divider style */
+#metric-72::after{content:"";position:absolute;width:100vw;height:100vw;max-width:1200px;max-height:1200px;border-radius:50%;background:radial-gradient(circle,rgba(220,80,0,0.07) 0%,transparent 60%);opacity:0;transform:translate(-50%,-50%) scale(0.5);left:50%;top:50%;transition:opacity 1.6s ease,transform 2.4s cubic-bezier(.2,.8,.2,1);pointer-events:none;z-index:1;}
+#metric-72.entered::after{opacity:1;transform:translate(-50%,-50%) scale(1);}
+
+/* MEME / İRONİ EKRAN */
+.meme-section{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 48px;position:relative;}
+.meme-section .meme-tag{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.3em;color:var(--accent);margin-bottom:20px;opacity:0;transform:translateY(20px);transition:opacity 0.7s ease,transform 0.7s ease;}
+.meme-section .meme-tag.visible{opacity:1;transform:translateY(0);}
+.meme-section .meme-headline{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(60px,9vw,140px);line-height:.85;color:var(--cream);letter-spacing:-0.01em;max-width:1200px;opacity:0;transform:translateY(30px);transition:opacity 0.8s ease 0.2s,transform 0.8s ease 0.2s;}
+.meme-section .meme-headline.visible{opacity:1;transform:translateY(0);}
+.meme-section .meme-headline .strike{text-decoration:line-through;text-decoration-thickness:6px;text-decoration-color:var(--accent);opacity:0.6;}
+.meme-section .meme-sub{font-family:'DM Mono',monospace;font-size:13px;letter-spacing:0.1em;color:var(--muted);margin-top:36px;font-style:italic;max-width:540px;opacity:0;transition:opacity 0.7s ease 0.5s;}
+.meme-section .meme-sub.visible{opacity:1;}
+.meme-section .meme-fineprint{position:absolute;bottom:48px;left:48px;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.2em;color:var(--dim);}
+
+/* MEDIA — yeni sectionlar mobile */
+@media(max-width:767px){
+  .metric-section{padding:0 24px;}
+  .metric-section .metric-huge{font-size:clamp(80px,28vw,180px);}
+  .meme-section{padding:0 24px;}
+  .meme-section .meme-headline{font-size:clamp(40px,14vw,80px);}
+  .meme-section .meme-fineprint{left:24px;bottom:24px;}
+}
+
+/* CINEMATIC PAGE LOADER — 1 YÖNETMEN -> 9 AJAN -> 0 TOPLANTI */
+.page-loader{position:fixed;inset:0;background:var(--bg);z-index:9999;display:none;align-items:center;justify-content:center;overflow:hidden;}
+/* Sinematik katmanlar */
+.pl-scanlines{position:absolute;inset:0;pointer-events:none;z-index:4;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,0.18) 3px,rgba(0,0,0,0.18) 4px);opacity:0.35;mix-blend-mode:multiply;}
+.pl-vignette{position:absolute;inset:0;pointer-events:none;z-index:3;background:radial-gradient(ellipse 70% 70% at center,transparent 30%,rgba(0,0,0,0.92) 100%);}
+.pl-bloom{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:0;height:0;border-radius:50%;background:radial-gradient(circle,rgba(220,80,0,0.55) 0%,rgba(220,80,0,0.12) 40%,transparent 70%);pointer-events:none;z-index:2;opacity:0;}
+.pl-frame {position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; opacity:0; pointer-events:none;}
+.pl-num {font-size:clamp(10rem, 25vw, 20rem); font-weight:900; line-height:1; color:rgba(255,255,255,0.03); user-select:none;}
+.pl-label {position:absolute; font-size:clamp(1.2rem, 3vw, 2.5rem); font-weight:800; letter-spacing:0.4em; color:var(--accent); text-transform:uppercase; text-align:center;}
+.pl-label.white {color:var(--cream);}
+.pl-num-bg {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); font-size:clamp(15rem, 30vw, 28rem); font-weight:900; line-height:1; color:rgba(255,255,255,0.02); user-select:none;}
+.pl-flash-name {position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); font-family:'Barlow Condensed',sans-serif; font-size:clamp(2.8rem,9vw,7rem); font-weight:800; letter-spacing:0.15em; color:var(--cream); white-space:nowrap; pointer-events:none; text-shadow:0 0 40px rgba(220,80,0,0.4); will-change:transform,opacity;}
+/* Frame 3 eliminasyon satırları */
+.pl-f3-lines{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:clamp(10px,2vh,22px);text-align:center;padding:0 24px;}
+.pl-f3-line{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(1.8rem,5vw,4rem);letter-spacing:0.25em;color:rgba(255,237,199,0.5);opacity:0;text-decoration:line-through;text-decoration-color:var(--accent);text-decoration-thickness:4px;text-decoration-style:solid;will-change:opacity,transform;}
+.pl-f3-final{color:var(--accent);text-decoration:none;text-shadow:0 0 80px rgba(220,80,0,0.9),0 0 20px rgba(220,80,0,0.6);font-size:clamp(2rem,5.5vw,5rem);letter-spacing:0.3em;color:var(--cream);}
+
+/* SECTION COLOR ZONES (subtle scroll-based shift) */
+.zone-warm{background:linear-gradient(180deg,var(--bg) 0%,#0d0805 100%);}
+.zone-cool{background:linear-gradient(180deg,#080503 0%,var(--bg) 100%);}
+.zone-burn{background:linear-gradient(180deg,#0a0604 0%,#160a04 100%);}
+
+/* CURSOR FOLLOW PARALLAX targets */
+.parallax-target{transition:transform 0.18s cubic-bezier(0.16,1,0.3,1);will-change:transform;}
+
+/* SECTION COUNTER (Oryzo-style edge label) */
+.section-counter{position:fixed;left:14px;top:50%;transform:translateY(-50%) rotate(-90deg);transform-origin:left center;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.4em;color:var(--muted);z-index:50;pointer-events:none;display:flex;gap:14px;align-items:center;}
+.section-counter .num{color:var(--accent);font-weight:500;}
+.section-counter .total{color:var(--dim);}
+.section-counter .bar{width:50px;height:1px;background:var(--border);position:relative;overflow:hidden;}
+.section-counter .bar::after{content:"";position:absolute;left:0;top:0;height:100%;background:var(--accent);width:var(--scroll-progress,0%);transition:width 0.2s ease;}
+
+/* DOTTED GRID OVERLAY (Oryzo-inspired) */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:0.35;background-image:linear-gradient(to right,rgba(255,237,199,0.045) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,237,199,0.045) 1px,transparent 1px);background-size:80px 80px;}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;background-image:radial-gradient(circle,rgba(255,237,199,0.08) 1px,transparent 1px);background-size:40px 40px;background-position:20px 20px;opacity:0.4;}
+
+/* Lenis */
+html.lenis,html.lenis body{height:auto;}
+.lenis.lenis-smooth{scroll-behavior:auto !important;}
+.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain;}
+.lenis.lenis-stopped{overflow:hidden;}
+
+/* FLOATING CTA */
+.floating-cta{position:fixed;right:24px;bottom:24px;z-index:90;background:var(--accent);color:white;padding:14px 24px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.18em;text-decoration:none;border:1px solid var(--accent);box-shadow:0 8px 24px rgba(220,80,0,0.35);opacity:0;transform:translateY(60px);transition:opacity 0.5s cubic-bezier(0.16,1,0.3,1),transform 0.5s cubic-bezier(0.16,1,0.3,1),background 0.3s,color 0.3s;pointer-events:none;display:flex;align-items:center;gap:10px;}
+.floating-cta.visible{opacity:1;transform:translateY(0);pointer-events:auto;}
+.floating-cta:hover{background:var(--cream);color:var(--bg);border-color:var(--cream);}
+.floating-cta .pulse{width:7px;height:7px;border-radius:50%;background:var(--cream);box-shadow:0 0 0 0 rgba(255,237,199,0.6);animation:ctaPulse 1.6s infinite;}
+@keyframes ctaPulse{0%{box-shadow:0 0 0 0 rgba(255,237,199,0.6);}70%{box-shadow:0 0 0 8px rgba(255,237,199,0);}100%{box-shadow:0 0 0 0 rgba(255,237,199,0);}}
+
+/* CUSTOM CURSOR, TRAIL & INK SPLASH */
+.kael-cursor, .kael-cursor-ring, .kael-cursor-trail { display: none; }
+.ink-splash { position: fixed; width: 0px; height: 0px; background: var(--accent); border-radius: 50%; pointer-events: none; z-index: 9996; transform: translate(-50%, -50%); mix-blend-mode: screen; opacity: 0.8; }
+.ink-ripple { position: fixed; width: 0px; height: 0px; border: 2px solid var(--cream); border-radius: 50%; pointer-events: none; z-index: 9996; transform: translate(-50%, -50%); opacity: 0.6; }
+@media (hover: hover) and (pointer: fine) {
+  .kael-cursor { display: block; position: fixed; width: 16px; height: 16px; background: #fff; border-radius: 50%; pointer-events: none; z-index: 9999; transform: translate(-50%, -50%); mix-blend-mode: difference; }
+  .kael-cursor-trail { display: block; position: fixed; width: 8px; height: 8px; background: rgba(220, 80, 0, 0.8); border-radius: 50%; pointer-events: none; z-index: 9998; transform: translate(-50%, -50%); mix-blend-mode: screen; filter: blur(3px); }
+  .kael-cursor-ring { display: block; position: fixed; width: 32px; height: 32px; border: 1px solid rgba(255, 237, 199, 0.4); border-radius: 50%; pointer-events: none; z-index: 9997; transform: translate(-50%, -50%); transition: transform 0.25s cubic-bezier(0.16,1,0.3,1), width 0.3s, height 0.3s, border-color 0.3s; }
+  .kael-cursor-ring.hover { width: 56px; height: 56px; border-color: var(--accent); background: rgba(220, 80, 0, 0.05); }
+}
+section{min-height:100vh;position:relative;overflow:hidden;}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:28px 48px;background:linear-gradient(180deg,rgba(10,6,4,0.92) 0%,rgba(10,6,4,0.55) 55%,transparent 100%);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);}
+.nav-logo{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:22px;letter-spacing:0.08em;color:var(--cream);text-decoration:none;}
+.nav-links{display:flex;gap:40px;}
+.nav-links a{font-size:11px;letter-spacing:0.15em;color:var(--muted);text-decoration:none;transition:color 0.3s;}
+.nav-links a:hover{color:var(--cream);}
+
+/* SIDE LABEL */
+.side-label{position:absolute;right:-28px;top:50%;transform:translateY(-50%) rotate(90deg);font-size:9px;letter-spacing:0.2em;color:var(--dim);white-space:nowrap;}
+
+/* SCROLL INDICATOR */
+.scroll-indicator{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;}
+.scroll-indicator span{font-size:9px;letter-spacing:0.2em;color:var(--muted);}
+.scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,var(--accent),transparent);animation:pulse-line 2s ease-in-out infinite;}
+@keyframes pulse-line{0%,100%{opacity:0.4;transform:scaleY(1);}50%{opacity:1;transform:scaleY(1.1);}}
+
+/* ═══════════════════════════════════════════
+   SECTION 01 — HERO
+═══════════════════════════════════════════ */
+#hero{background:#000;height:520vh;min-height:520vh;overflow:visible;}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+.hero-sticky{position:sticky;top:0;height:100vh;width:100%;overflow:hidden;background:#000;display:flex;align-items:center;justify-content:center;}
+#hvs-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.hero-sticky::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:2;background:radial-gradient(ellipse at 50% 42%,transparent 32%,rgba(0,0,0,0.6) 100%);}
+.hbeat{position:absolute;left:0;right:0;text-align:center;opacity:0;padding:0 24px;z-index:5;transition:opacity .3s ease,transform .5s ease;transform:translateY(10px);}
+.hbeat.on{opacity:1;transform:translateY(0);}
+.hbeat .big{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(40px,8vw,120px);line-height:.88;letter-spacing:-0.01em;color:var(--cream);text-shadow:0 4px 50px rgba(0,0,0,0.7);}
+.hbeat .sub{font-size:clamp(13px,2vw,18px);color:var(--muted);margin-top:18px;letter-spacing:0.08em;font-family:'DM Mono',monospace;}
+#hb0{top:34%;} #hb1{top:42%;} #hb2{top:36%;} #hb3{top:36%;}
+.hero-cta-v{position:absolute;bottom:9vh;left:50%;transform:translateX(-50%);z-index:8;display:inline-flex;align-items:center;gap:12px;background:var(--accent);color:#fff;padding:16px 38px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.2em;text-decoration:none;border:1px solid var(--accent);opacity:0;transition:opacity .6s ease,background .3s,transform .3s;pointer-events:none;}
+.hero-cta-v.on{opacity:1;pointer-events:auto;}
+.hero-cta-v:hover{background:transparent;color:var(--accent);}
+#hflash{position:absolute;inset:0;z-index:6;pointer-events:none;opacity:0;background:radial-gradient(circle at 50% 52%,#fff,#ffd98a 30%,var(--accent) 62%,transparent);mix-blend-mode:screen;}
+.hero-scroll-cue{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.3em;color:var(--muted);z-index:8;animation:hsc 2s infinite;}
+@keyframes hsc{0%,100%{opacity:.25}50%{opacity:1}}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%, rgba(220,80,0,0.06) 0%, transparent 60%);}
+
+/* WEBGL CANVAS */
+.hero-webgl{position:absolute;inset:0;width:100%;height:100%;z-index:2;pointer-events:none;opacity:0;transition:opacity 2s ease;}
+.hero-webgl.visible{opacity:1;}
+
+/* SCROLL CANVAS — hero_loop frame-by-frame scroll efekti */
+#scroll-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;opacity:0;transition:opacity 0.4s ease;}
+@keyframes hero-grad-shift{0%,100%{background-position:0% 50%;}50%{background-position:100% 50%;}}
+.stat-num.s1{color:#FFEDC7;animation:stat-pulse-1 2.4s ease-in-out infinite;}
+.stat-num.s2{color:#ff8c42;animation:stat-pulse-2 2.4s ease-in-out infinite;animation-delay:.4s;}
+.stat-num.s3{background:linear-gradient(90deg,#dc5000,#FFEDC7,#ff8c42,#dc5000);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;animation:hero-grad-shift 3s ease-in-out infinite;}
+@keyframes stat-pulse-1{0%,100%{filter:brightness(1);text-shadow:0 0 0 transparent;}50%{filter:brightness(1.2);text-shadow:0 0 24px rgba(255,237,199,0.4);}}
+@keyframes stat-pulse-2{0%,100%{filter:brightness(1);text-shadow:0 0 0 transparent;}50%{filter:brightness(1.2);text-shadow:0 0 24px rgba(255,140,66,0.5);}}
+.hero-title{position:absolute;top:110px;left:44px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(80px,14vw,180px);line-height:.85;color:var(--cream);z-index:5;mix-blend-mode:difference;}
+.hero-title span{display:block;}
+/* V1 hero copy — V3 outcome H1 + V0 process subtitle hibridi (2026-05-10) */
+.hero-eyebrow{position:absolute;top:calc(110px + clamp(80px,14vw,180px)*1.7 - 24px);left:48px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.32em;color:var(--accent);text-transform:uppercase;z-index:5;}
+.hero-title-new{position:absolute;top:calc(110px + clamp(80px,14vw,180px)*1.7 + 8px);left:48px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(28px,4.2vw,52px);line-height:1;letter-spacing:-0.01em;color:var(--cream);z-index:5;margin:0;max-width:90vw;}
+.hero-subtitle{position:absolute;top:calc(110px + clamp(80px,14vw,180px)*1.7 + clamp(28px,4.2vw,52px) + 18px);left:48px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(15px,1.8vw,22px);color:var(--muted);letter-spacing:0.05em;z-index:5;margin:0;}
+.hero-desc{position:absolute;top:50%;right:80px;transform:translateY(-50%);max-width:360px;font-size:15px;line-height:1.7;color:var(--cream);font-family:'DM Mono',monospace;z-index:5;}
+.hero-infobox{position:absolute;bottom:80px;left:48px;border:1px dashed var(--border);padding:20px 24px;max-width:260px;}
+.hero-infobox .title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:16px;letter-spacing:0.1em;color:var(--cream);margin-bottom:4px;}
+.hero-infobox .sub{font-size:10px;letter-spacing:0.15em;color:var(--muted);margin-bottom:12px;}
+.hero-infobox hr{border:none;border-top:1px solid var(--border);margin-bottom:12px;}
+.hero-infobox .desc{font-size:10px;color:var(--muted);line-height:1.7;}
+.hero-cta{position:absolute;bottom:80px;right:48px;display:inline-flex;align-items:center;gap:12px;background:var(--accent);color:white;padding:16px 32px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.2em;text-decoration:none;transition:all 0.3s;border:1px solid var(--accent);}
+.hero-cta:hover{background:transparent;color:var(--accent);}
+.hero-cta .arrow{transition:transform 0.3s;}
+.hero-cta:hover .arrow{transform:translateX(4px);}
+
+/* ─── HERO 3-FRAME NARRATIVE ─── */
+.hero-final{opacity:0;will-change:opacity,transform;}
+.hero-narrative{position:absolute;inset:0;z-index:6;pointer-events:none;display:flex;align-items:center;justify-content:center;}
+
+/* dev rakam (1 / 9 / 0) — counters stack center */
+.frame-counters{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:100%;text-align:center;mix-blend-mode:difference;pointer-events:none;}
+.frame-counter{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(1);font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(180px,28vw,460px);line-height:.85;color:var(--cream);letter-spacing:-0.03em;opacity:0;filter:blur(20px);will-change:opacity,transform,filter;}
+.frame-counter.is-active{opacity:1;filter:blur(0);}
+.frame-counter.accent-zero{color:var(--accent);text-shadow:0 0 60px rgba(220,80,0,0.4);}
+
+/* alt etiket */
+.frame-label-wrap{position:absolute;top:calc(50% + clamp(120px,18vw,300px));left:50%;transform:translateX(-50%);text-align:center;width:100%;}
+.frame-label{position:absolute;left:50%;top:0;transform:translateX(-50%) translateY(20px);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(14px,1.6vw,22px);letter-spacing:0.35em;color:var(--muted);opacity:0;white-space:nowrap;will-change:opacity,transform;}
+.frame-label.is-active{opacity:1;transform:translateX(-50%) translateY(0);}
+
+/* progress dotları */
+.frame-progress{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:7;}
+.frame-progress .dot{width:6px;height:6px;border-radius:50%;background:var(--border);transition:background .3s ease,transform .3s ease;}
+.frame-progress .dot.is-active{background:var(--accent);transform:scale(1.4);}
+
+/* reduced motion: narrative kapanır, hero-final görünür */
+@media(prefers-reduced-motion:reduce){
+  .hero-narrative{display:none;}
+  .hero-final{opacity:1!important;}
+}
+
+/* mobil narrative düzeni */
+@media(max-width:767px){
+  .hero-narrative{padding:0 16px;}
+  .frame-counter{font-size:clamp(140px,42vw,260px);}
+  .frame-label{font-size:11px;letter-spacing:0.3em;}
+}
+
+/* ═══════════════════════════════════════════
+   SECTION 02 — MANİFESTO
+═══════════════════════════════════════════ */
+#manifesto{background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 48px;}
+.manifesto-text{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(50px,9vw,120px);line-height:.9;color:var(--cream);}
+
+/* ─── MANIFESTO VERSUS — scroll-driven dramatik dönüşüm ─── */
+.manifesto-versus{display:flex;flex-direction:column;align-items:center;gap:clamp(20px,3vw,40px);position:relative;}
+.versus-line{position:relative;display:flex;flex-direction:column;align-items:center;line-height:.85;will-change:opacity,transform,filter;}
+.versus-label{font-family:'DM Mono',ui-monospace,monospace;font-weight:500;font-size:clamp(10px,1.2vw,14px);letter-spacing:0.35em;text-transform:uppercase;margin-bottom:clamp(8px,1vw,14px);}
+.versus-value{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:900;font-size:clamp(64px,12vw,180px);line-height:.85;letter-spacing:-0.01em;}
+
+/* "AJANSTA 3 HAFTA" — eski/donuk başlar, sönükleşir */
+.versus-old .versus-label{color:var(--dim);}
+.versus-old .versus-value{color:var(--muted);opacity:.6;}
+.versus-old{filter:saturate(.4);}
+
+/* Çapraz çizgi — scroll progress ile çizilir */
+.versus-strike{position:absolute;top:50%;left:-4%;width:108%;height:6px;background:linear-gradient(90deg,transparent 0,#dc5000 12%,#ff6b1a 50%,#dc5000 88%,transparent 100%);transform:translateY(-50%) scaleX(0);transform-origin:left center;box-shadow:0 0 24px rgba(220,80,0,0.6);will-change:transform;border-radius:2px;}
+
+/* "KAEL'DE 72 SAAT" — sönük başlar, patlar */
+.versus-new{opacity:0;transform:translateY(40px) scale(.85);filter:blur(20px);}
+.versus-new .versus-label{color:var(--accent);}
+.versus-new .versus-value{color:var(--cream);background:linear-gradient(180deg,#FFEDC7 0%,#ff8c42 50%,#dc5000 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0 0 60px rgba(220,80,0,0.4);}
+
+/* "SÖZDÜR." — stamp gibi belirir */
+.versus-promise{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(28px,4vw,56px);letter-spacing:0.3em;color:var(--cream);opacity:0;transform:scale(2) rotate(-3deg);filter:blur(12px);margin-top:clamp(12px,2vw,24px);}
+
+@media(max-width:767px){
+  .versus-strike{height:4px;}
+  .versus-value{font-size:clamp(52px,16vw,90px);}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .versus-old{filter:none;}
+  .versus-old .versus-value{opacity:1;}
+  .versus-strike{transform:translateY(-50%) scaleX(1);}
+  .versus-new{opacity:1;transform:none;filter:none;}
+  .versus-promise{opacity:1;transform:none;filter:none;}
+}
+
+
+.manifesto-text .line{
+  display:block;
+  opacity:0;
+  transform:translateY(30px);
+  transition:opacity 0.7s ease,transform 0.7s ease;
+  background: linear-gradient(to right, var(--cream) 50%, rgba(255, 237, 199, 0.15) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.manifesto-text .line.visible{opacity:1;transform:translateY(0);}
+.manifesto-sub{margin-top:32px;font-size:12px;letter-spacing:0.15em;color:var(--muted);opacity:0;transform:translateY(20px);transition:opacity 0.7s ease 0.6s,transform 0.7s ease 0.6s;}
+.manifesto-sub.visible{opacity:1;transform:translateY(0);}
+.manifesto-stats{margin-top:40px;display:flex;gap:48px;opacity:0;transform:translateY(20px);transition:opacity 0.7s ease 0.9s,transform 0.7s ease 0.9s;}
+.manifesto-stats.visible{opacity:1;transform:translateY(0);}
+.stat{text-align:center;}
+.stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(36px,5vw,64px);color:var(--accent);}
+.stat-label{font-size:9px;letter-spacing:0.2em;color:var(--muted);}
+
+/* ═══════════════════════════════════════════
+   SECTION 03 — AI VİDEO
+═══════════════════════════════════════════ */
+#ai-video{display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:120px 80px 80px;}
+.section-label{font-size:11px;letter-spacing:0.2em;color:var(--accent);margin-bottom:16px;}
+.section-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(60px,9vw,110px);line-height:.85;color:var(--cream);margin-bottom:24px;}
+.section-desc{font-size:13px;line-height:1.8;color:var(--muted);max-width:380px;margin-bottom:20px;}
+.section-note{font-size:10px;letter-spacing:0.12em;color:var(--dim);}
+.pipeline{display:flex;flex-direction:column;gap:0;padding-left:40px;}
+.pipeline-step{display:flex;align-items:center;gap:16px;padding:18px 0;border-bottom:1px solid var(--border);opacity:0;transform:translateX(30px);transition:opacity 0.5s ease,transform 0.5s ease;}
+.pipeline-step.visible{opacity:1;transform:translateX(0);}
+.pipeline-step:nth-child(1){transition-delay:0.1s;}
+.pipeline-step:nth-child(2){transition-delay:0.2s;}
+.pipeline-step:nth-child(3){transition-delay:0.3s;}
+.pipeline-step:nth-child(4){transition-delay:0.4s;}
+.pipeline-step:nth-child(5){transition-delay:0.5s;}
+.step-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:28px;color:var(--accent);min-width:40px;}
+.step-info{}
+.step-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;letter-spacing:0.05em;color:var(--cream);}
+.step-tool{font-size:9px;letter-spacing:0.15em;color:var(--muted);}
+
+/* ═══════════════════════════════════════════
+   SECTION 04 — WEB TASARIM
+═══════════════════════════════════════════ */
+#web-design,#social-media{display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:120px 80px 80px;}
+.web-features{display:flex;flex-direction:column;gap:0;padding-left:40px;}
+.web-feature{padding:24px 0;border-bottom:1px solid var(--border);opacity:0;transform:translateX(30px);transition:opacity 0.5s ease,transform 0.5s ease;}
+.web-feature.visible{opacity:1;transform:translateX(0);}
+.web-feature:nth-child(1){transition-delay:0.1s;}
+.web-feature:nth-child(2){transition-delay:0.25s;}
+.web-feature:nth-child(3){transition-delay:0.4s;}
+.web-feature-num{font-size:9px;letter-spacing:0.2em;color:var(--accent);margin-bottom:6px;}
+.web-feature-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;letter-spacing:0.05em;color:var(--cream);margin-bottom:4px;}
+.web-feature-desc{font-size:11px;color:var(--muted);line-height:1.6;}
+.meta-ref{font-size:13px;color:var(--muted);margin-top:16px;font-style:italic;border-left:2px solid var(--accent);padding-left:16px;}
+
+/* ═══════════════════════════════════════════
+   SECTION 05 — OTONOM SİSTEMLER
+═══════════════════════════════════════════ */
+#systems{display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:120px 80px 80px;}
+.case-study{border:1px solid var(--border);padding:32px;position:relative;opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease;}
+.case-study.visible{opacity:1;transform:translateY(0);}
+.case-label{font-size:9px;letter-spacing:0.2em;color:var(--accent);margin-bottom:12px;}
+.case-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:36px;color:var(--cream);margin-bottom:8px;}
+.case-sub{font-size:11px;color:var(--muted);margin-bottom:20px;}
+.case-hr{border:none;border-top:1px solid var(--border);margin-bottom:20px;}
+.case-facts{display:flex;flex-direction:column;gap:8px;margin-bottom:24px;}
+.case-fact{font-size:11px;color:var(--muted);display:flex;gap:8px;align-items:flex-start;}
+.case-fact::before{content:"—";color:var(--accent);}
+.case-link{display:inline-block;font-size:10px;letter-spacing:0.15em;color:var(--accent);text-decoration:none;border:1px solid var(--accent);padding:8px 16px;transition:all 0.3s;}
+.case-link:hover{background:var(--accent);color:var(--bg);}
+.systems-note{font-size:12px;color:var(--dim);margin-top:24px;line-height:1.8;}
+
+/* ═══════════════════════════════════════════
+   SECTION 06 — NEDEN KAEL
+═══════════════════════════════════════════ */
+#why-kael{padding:120px 80px 80px;}
+.why-header{margin-bottom:60px;}
+.why-header .section-label{font-size:11px;letter-spacing:0.2em;color:var(--muted);}
+.why-header h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(48px,7vw,90px);line-height:.85;color:var(--cream);}
+.features-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;}
+/* FLASHLIGHT HOVER (Bento/Card) */
+.feature-card{padding:40px;border:1px solid var(--border);position:relative;overflow:hidden;cursor:default;transition:border-color 0.3s;background:rgba(10,6,4,0.4);backdrop-filter:blur(10px);}
+.feature-card::before{content:'';position:absolute;inset:0;background:radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(220,80,0,0.15), transparent 40%);opacity:0;transition:opacity 0.5s;pointer-events:none;z-index:0;}
+.feature-card:hover::before{opacity:1;}
+.feature-card::after{content:'';position:absolute;inset:0;border:1px solid transparent;background:radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(220,80,0,0.4), transparent 40%) border-box;mask:linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);mask-composite:exclude;-webkit-mask:linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);-webkit-mask-composite:destination-out;opacity:0;transition:opacity 0.5s;pointer-events:none;}
+.feature-card:hover::after{opacity:1;}
+.feature-card > * {position:relative;z-index:1;}
+.feat-num{font-size:9px;letter-spacing:0.2em;color:var(--accent);margin-bottom:12px;}
+.feat-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(24px,3vw,36px);color:var(--cream);margin-bottom:12px;}
+.feat-desc{font-size:12px;color:var(--muted);line-height:1.7;}
+.feature-card.animate{opacity:0;transform:translateY(20px);transition:opacity 0.5s ease,transform 0.5s ease;}
+.feature-card.animate.visible{opacity:1;transform:translateY(0);}
+.feature-card:nth-child(1){transition-delay:0.05s;}
+.feature-card:nth-child(2){transition-delay:0.15s;}
+.feature-card:nth-child(3){transition-delay:0.25s;}
+.feature-card:nth-child(4){transition-delay:0.35s;}
+
+/* ═══════════════════════════════════════════
+   SECTION 07 — MİSYONLAR
+═══════════════════════════════════════════ */
+#missions{padding:120px 80px 80px;display:flex;flex-direction:column;}
+.missions-header{margin-bottom:8px;}
+.missions-sub{font-size:11px;letter-spacing:0.15em;color:var(--muted);margin-bottom:48px;}
+.missions-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;flex:1;}
+.mission-card{padding:40px;border:1px solid var(--border);position:relative;display:flex;flex-direction:column;opacity:0;transform:translateY(30px);transition:opacity 0.6s ease,transform 0.6s ease,box-shadow 0.5s ease;background:rgba(0,0,0,0.4);overflow:hidden;}
+.mission-card::before{content:"";position:absolute;inset:-2px;border-radius:inherit;background:conic-gradient(from var(--mc-angle,0deg),transparent 0deg,rgba(220,80,0,0.0) 60deg,rgba(220,80,0,0.55) 120deg,rgba(255,140,66,0.85) 160deg,rgba(255,237,199,0.9) 180deg,rgba(255,140,66,0.85) 200deg,rgba(220,80,0,0.55) 240deg,transparent 300deg,transparent 360deg);opacity:0;filter:blur(14px);z-index:-1;transition:opacity 0.5s ease;animation:mc-rotate 6s linear infinite;}
+.mission-card::after{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(60% 80% at 50% 0%,rgba(220,80,0,0.12) 0%,transparent 70%);opacity:0;transition:opacity 0.5s ease;pointer-events:none;}
+.mission-card:hover{transform:translateY(-4px);border-color:rgba(220,80,0,0.5);box-shadow:0 20px 60px -20px rgba(220,80,0,0.4),0 0 0 1px rgba(220,80,0,0.3);}
+.mission-card:hover::before{opacity:1;}
+.mission-card:hover::after{opacity:1;}
+@property --mc-angle{syntax:"<angle>";inherits:false;initial-value:0deg;}
+@keyframes mc-rotate{to{--mc-angle:360deg;}}
+@supports not (background: conic-gradient(from var(--mc-angle))){
+  .mission-card::before{animation:mc-fallback 4s linear infinite;}
+  @keyframes mc-fallback{0%{transform:rotate(0);}100%{transform:rotate(360deg);}}
+}
+.mission-card.visible{opacity:1;transform:translateY(0);}
+.mission-card:nth-child(1){transition-delay:0.05s;}
+.mission-card:nth-child(2){transition-delay:0.2s;border-color:var(--accent);background:rgba(220,80,0,0.04);}
+.mission-card:nth-child(3){transition-delay:0.35s;}
+.mission-badge{font-size:9px;letter-spacing:0.2em;color:var(--muted);margin-bottom:8px;}
+.mission-card:nth-child(2) .mission-badge{color:var(--accent);}
+.mission-name{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(28px,3vw,40px);color:var(--cream);margin-bottom:4px;}
+.mission-price{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(36px,4vw,52px);color:var(--cream);margin-bottom:4px;}
+.mission-price span{font-size:14px;color:var(--muted);font-family:'DM Mono',monospace;}
+.mission-period{font-size:10px;color:var(--muted);margin-bottom:14px;}
+.mission-tagline{font-family:'DM Mono',monospace;font-size:11px;line-height:1.6;color:var(--cream);margin-bottom:24px;padding-bottom:18px;border-bottom:1px dashed var(--border);}
+.mission-card:nth-child(2) .mission-tagline{color:var(--accent);}
+.mission-features{flex:1;display:flex;flex-direction:column;gap:10px;margin-bottom:28px;}
+.mission-feat{font-size:11px;color:var(--muted);display:flex;gap:8px;align-items:flex-start;}
+.mission-feat::before{content:"—";color:var(--accent);flex-shrink:0;}
+.mission-btn{display:block;text-align:center;padding:14px;border:1px solid var(--cream);font-size:10px;letter-spacing:0.2em;color:var(--cream);text-decoration:none;transition:all 0.3s;cursor:pointer;font-family:'DM Mono',monospace;}
+.mission-card:nth-child(2) .mission-btn{background:var(--accent);border-color:var(--accent);color:white;}
+.mission-btn:hover{background:var(--cream);color:var(--bg);}
+
+/* ── PREMIUM PAKET KARTLARI (pk-*) — display tipografi + derinlik ── */
+.pk-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:48px;}
+.pk-card{position:relative;background:linear-gradient(180deg,rgba(255,237,199,.035),rgba(10,6,4,.55));border:1px solid var(--border);border-radius:16px;padding:clamp(30px,3.5vw,46px);display:flex;flex-direction:column;overflow:hidden;transition:transform .45s cubic-bezier(.2,.7,.2,1),border-color .45s ease,box-shadow .45s ease;}
+.pk-card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(220,80,0,.6),transparent);opacity:.5;transition:opacity .4s;}
+.pk-card:hover{transform:translateY(-8px);border-color:rgba(220,80,0,.5);box-shadow:0 30px 70px -30px rgba(220,80,0,.45),0 0 0 1px rgba(220,80,0,.2);}
+.pk-card:hover::before{opacity:1;}
+.pk-featured{border-color:rgba(220,80,0,.55);background:linear-gradient(180deg,rgba(220,80,0,.09),rgba(10,6,4,.6));box-shadow:0 24px 64px -32px rgba(220,80,0,.5);}
+.pk-featured::after{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(70% 60% at 50% 0%,rgba(220,80,0,.14),transparent 70%);pointer-events:none;}
+.pk-featured > *{position:relative;z-index:1;}
+.pk-eyebrow{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.22em;color:var(--accent);}
+.pk-name{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(30px,3.2vw,44px);line-height:.92;color:var(--cream);margin:14px 0 8px;letter-spacing:.01em;text-transform:uppercase;}
+.pk-desc{font-family:'DM Mono',monospace;font-size:12.5px;line-height:1.6;color:var(--muted);margin-bottom:24px;}
+.pk-feats{list-style:none;display:flex;flex-direction:column;gap:13px;margin:0 0 30px;flex:1;padding:22px 0 0;border-top:1px solid var(--border);}
+.pk-feats li{display:flex;gap:11px;font-size:13.5px;color:var(--cream);align-items:flex-start;line-height:1.35;}
+.pk-feats li::before{content:"✓";color:var(--accent);font-weight:900;flex:none;font-size:13px;line-height:1.35;}
+.pk-price-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);}
+.pk-price{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(40px,4.6vw,58px);color:var(--cream);line-height:1;margin:6px 0 2px;letter-spacing:.005em;}
+.pk-price .cur{color:var(--accent);}
+.pk-price .per{font-size:.34em;color:var(--muted);font-weight:700;font-family:'DM Mono',monospace;letter-spacing:0;}
+.pk-featured .pk-price .amt{color:var(--accent);}
+.pk-sub{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);margin-top:4px;}
+.pk-badge{position:absolute;top:18px;right:18px;background:var(--accent);color:#fff;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.12em;padding:6px 12px;border-radius:20px;box-shadow:0 8px 24px -6px rgba(220,80,0,.7);z-index:3;}
+.pk-featured{padding-top:calc(clamp(30px,3.5vw,46px) + 14px);}
+.pk-btn{display:block;text-align:center;padding:15px;border-radius:9px;border:1px solid var(--cream);color:var(--cream);font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.2em;text-decoration:none;transition:.3s;margin-top:22px;}
+.pk-btn:hover{background:var(--cream);color:var(--bg);}
+.pk-featured .pk-btn{background:var(--accent);border-color:var(--accent);color:#fff;}
+.pk-featured .pk-btn:hover{background:#ff7a2f;border-color:#ff7a2f;}
+.pk-head{font-family:'Barlow Condensed',sans-serif!important;font-weight:900!important;text-transform:uppercase;letter-spacing:.005em!important;}
+
+/* ═══════════════════════════════════════════
+   SECTION 08 — CTA
+═══════════════════════════════════════════ */
+#cta{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;}
+.cta-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 60%, rgba(220,80,0,0.08) 0%, transparent 65%);}
+.cta-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(48px,8vw,110px);line-height:.85;color:var(--cream);position:relative;z-index:1;opacity:0;transform:translateY(30px);transition:opacity 0.8s ease,transform 0.8s ease;}
+.cta-title.visible{opacity:1;transform:translateY(0);}
+.cta-sub{font-size:12px;letter-spacing:0.15em;color:var(--muted);margin:24px 0;position:relative;z-index:1;opacity:0;transition:opacity 0.6s ease 0.4s;}
+.cta-sub.visible{opacity:1;}
+.cta-btn{display:inline-block;background:var(--accent);color:white;padding:16px 48px;font-size:11px;letter-spacing:0.2em;text-decoration:none;position:relative;z-index:1;transition:all 0.3s;opacity:0;transform:translateY(10px);transition:opacity 0.6s ease 0.6s,transform 0.6s ease 0.6s,background 0.3s;}
+.cta-btn.visible{opacity:1;transform:translateY(0);}
+.cta-btn:hover{background:var(--cream);color:var(--bg);}
+.cta-contact{margin-top:40px;display:flex;gap:48px;position:relative;z-index:1;opacity:0;transition:opacity 0.6s ease 0.8s;}
+.cta-contact.visible{opacity:1;}
+.cta-contact a{font-size:10px;letter-spacing:0.15em;color:var(--muted);text-decoration:none;transition:color 0.3s;}
+.cta-contact a:hover{color:var(--cream);}
+.cta-infobox{position:absolute;bottom:80px;left:48px;border:1px dashed var(--border);padding:16px 20px;text-align:left;z-index:1;}
+.cta-infobox .bi{font-size:10px;letter-spacing:0.15em;color:var(--accent);}
+.cta-infobox .bp{font-size:9px;color:var(--muted);margin-top:4px;}
+footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:9px;letter-spacing:0.2em;color:var(--dim);z-index:1;}
+.blueprint-footer{position:absolute;bottom:24px;left:48px;right:48px;display:flex;flex-direction:column;gap:6px;z-index:5;text-align:left;}
+.blueprint-footer .bp-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;}
+.blueprint-footer .bp-label{color:var(--accent);font-weight:500;}
+.blueprint-footer .bp-val{color:var(--cream);}
+.blueprint-footer .bp-sep{color:var(--dim);}
+.blueprint-footer .bp-row-min{margin-top:6px;padding-top:8px;border-top:1px dashed var(--border);font-size:9px;}
+.blueprint-footer .bp-row-min .bp-label{color:var(--dim);font-style:italic;}
+.blueprint-footer .bp-legal{color:var(--muted);text-decoration:none;border-bottom:1px solid transparent;transition:color .3s,border-color .3s;}
+.blueprint-footer .bp-legal:hover{color:var(--accent);border-bottom-color:var(--accent);}
+
+/* ANIMATIONS */
+.fade-up{opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease;}
+.fade-up.visible{opacity:1;transform:translateY(0);}
+
+/* ── KELİME-KELİME MASKELİ BAŞLIK REVEAL (izole test kanıtlı) ── */
+.kael-word{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:0.08em;margin-bottom:-0.08em;}
+.kael-word > span{display:inline-block;transform:translateY(115%) rotate(4deg);opacity:0;transition:transform 0.9s cubic-bezier(.16,1,.3,1),opacity 0.9s cubic-bezier(.16,1,.3,1);will-change:transform;}
+.kael-reveal.visible .kael-word > span{transform:translateY(0) rotate(0);opacity:1;}
+@media (prefers-reduced-motion: reduce){.kael-word > span{transform:none;opacity:1;transition:none;}}
+
+/* ── PREMIUM REVEAL'LAR (ink / spotlight / chromatic) — Codrops 2026 uyarlaması ── */
+/* FAILSAFE: reveal-done sınıfı tüm efektleri sıfırlar → başlık ASLA görünmez kalmaz. */
+.rv{will-change:transform,opacity,filter;}
+.rv.reveal-done{-webkit-mask:none!important;mask:none!important;opacity:1!important;transform:none!important;filter:none!important;text-shadow:none!important;}
+/* Ink Bleed — mürekkep merkezden yayılır */
+@property --rvr{syntax:'<percentage>';inherits:true;initial-value:0%;}
+.rv-ink{-webkit-mask:radial-gradient(circle at 50% 55%,#000 0,#000 var(--rvr,0%),transparent calc(var(--rvr,0%) + 10%));mask:radial-gradient(circle at 50% 55%,#000 0,#000 var(--rvr,0%),transparent calc(var(--rvr,0%) + 10%));}
+.rv-ink.visible{animation:rvInk 1.1s cubic-bezier(.4,0,.2,1) both;}
+@keyframes rvInk{from{--rvr:0%}to{--rvr:150%}}
+/* Spotlight Sweep — ışık huzmesi geçerek açar */
+.rv-spot{-webkit-mask:linear-gradient(100deg,transparent 0,#000 22%,#000 78%,transparent 100%);mask:linear-gradient(100deg,transparent 0,#000 22%,#000 78%,transparent 100%);-webkit-mask-size:260% 100%;mask-size:260% 100%;-webkit-mask-position:130% 0;mask-position:130% 0;}
+.rv-spot.visible{animation:rvSweep 1.1s cubic-bezier(.5,0,.2,1) both;}
+@keyframes rvSweep{from{-webkit-mask-position:130% 0;mask-position:130% 0}to{-webkit-mask-position:-30% 0;mask-position:-30% 0}}
+/* Chromatic Split — RGB kayıp keskin oturur */
+.rv-chroma{opacity:0;}
+.rv-chroma.visible{animation:rvChroma .85s steps(1) both;}
+@keyframes rvChroma{0%{opacity:0}12%{opacity:1;text-shadow:-8px 0 var(--accent),8px 0 #2299dd;transform:translateX(-5px)}30%{text-shadow:6px 0 var(--accent),-6px 0 #2299dd;transform:translateX(5px)}50%{text-shadow:-4px 0 var(--accent),4px 0 #2299dd;transform:translateX(-3px)}72%{text-shadow:3px 0 var(--accent),-3px 0 #2299dd}100%{opacity:1;text-shadow:none;transform:none}}
+@media (prefers-reduced-motion: reduce){.rv,.rv-ink,.rv-spot,.rv-chroma{-webkit-mask:none!important;mask:none!important;opacity:1!important;animation:none!important;}}
+
+/* ═══════════════════════════════════════════
+   SECTION — İŞLERİMİZDEN
+═══════════════════════════════════════════ */
+#works{padding:120px 80px 80px;display:flex;flex-direction:column;justify-content:center;}
+.works-header{margin-bottom:48px;}
+.works-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);flex:1;max-height:calc(100vh - 280px);}
+.work-card{background:var(--bg);position:relative;overflow:hidden;cursor:pointer;opacity:0;transform:translateY(30px);transition:opacity 0.6s ease,transform 0.6s ease;text-decoration:none;display:block;color:inherit;}
+.work-card.visible{opacity:1;transform:translateY(0);}
+.work-card:nth-child(1){transition-delay:0.05s;}
+.work-card:nth-child(2){transition-delay:0.15s;}
+.work-card:nth-child(3){transition-delay:0.25s;}
+.work-card:nth-child(4){transition-delay:0.35s;}
+.work-thumb{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 0.6s ease,filter 0.4s ease;filter:grayscale(40%) brightness(0.55);}
+.work-card{will-change:transform;transition:opacity 0.6s ease,transform 0.45s cubic-bezier(.2,.7,.2,1),box-shadow 0.45s ease;}
+.work-card:hover .work-thumb{transform:scale(1.05);filter:grayscale(0%) brightness(0.8);}
+.work-card.visible:hover{transform:translateY(-6px);box-shadow:0 24px 60px -24px rgba(220,80,0,0.45),0 0 0 1px rgba(220,80,0,0.25);}
+.work-card:hover .work-title{color:#fff;}
+.work-card:hover .work-tag{letter-spacing:0.28em;}
+.work-tag{transition:letter-spacing 0.4s ease;}
+.work-title{transition:color 0.35s ease;}
+.work-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,6,4,0.95) 0%,rgba(10,6,4,0.3) 60%,rgba(10,6,4,0.1) 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:32px;}
+.work-tag{font-size:9px;letter-spacing:0.2em;color:var(--accent);margin-bottom:8px;}
+.work-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(28px,3.5vw,44px);color:var(--cream);letter-spacing:0.03em;margin-bottom:6px;line-height:1;}
+.work-meta{font-size:10px;letter-spacing:0.15em;color:var(--muted);}
+.work-card.placeholder .work-thumb{background:linear-gradient(135deg,#1a0d06 0%,#2a1810 100%);}
+.work-card.placeholder::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,rgba(220,80,0,0.18) 0%,transparent 60%);pointer-events:none;}
+/* SHOWREEL — dövüş klipleri grid */
+.showreel{margin:0 0 40px;opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease;}
+.showreel.visible{opacity:1;transform:translateY(0);}
+.showreel-label{font-size:10px;letter-spacing:0.25em;color:var(--accent);margin-bottom:12px;text-transform:uppercase;}
+.showreel-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;}
+.showreel-grid .reel{width:100%;aspect-ratio:16/9;object-fit:cover;background:#0a0604;cursor:pointer;filter:grayscale(45%) brightness(.7);transition:filter .35s ease,transform .35s ease;display:block;}
+.showreel-grid .reel:first-child{grid-column:1/-1;aspect-ratio:21/9;}
+.showreel-grid .reel:hover{filter:grayscale(0%) brightness(.95);transform:scale(1.02);}
+@media (max-width:720px){.showreel-grid{grid-template-columns:repeat(2,1fr);gap:4px;}.showreel-grid .reel:first-child{grid-column:1/-1;aspect-ratio:16/9;}}
+
+/* KAEL BRAND DIVIDER — Cinematic letter assembly */
+#kael-divider{height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;padding:80px;gap:36px;background:radial-gradient(ellipse at center,rgba(220,80,0,0.04) 0%,transparent 65%);overflow:hidden;}
+#kael-divider::before{content:"";position:absolute;width:100vw;height:100vw;max-width:1200px;max-height:1200px;border-radius:50%;background:radial-gradient(circle,rgba(220,80,0,0.08) 0%,transparent 60%);opacity:0;transform:scale(0.5);transition:opacity 1.6s ease,transform 2.4s cubic-bezier(.2,.8,.2,1);pointer-events:none;}
+#kael-divider.visible::before{opacity:1;transform:scale(1);}
+
+.kd-label{font-size:10px;letter-spacing:0.4em;color:var(--accent);opacity:0;transform:translateY(-12px);transition:opacity .6s ease,transform .6s ease;text-transform:uppercase;position:relative;z-index:2;}
+#kael-divider.visible .kd-label{opacity:1;transform:translateY(0);}
+
+.kd-mark{display:flex;align-items:center;justify-content:center;position:relative;z-index:2;width:100%;max-width:min(980px,90vw);}
+.kd-svg{width:100%;height:auto;overflow:visible;}
+.kd-path{fill:none;stroke:var(--accent);stroke-width:20;stroke-linecap:round;stroke-linejoin:round;}
+#kael-divider.visible .kd-path-k{animation:kd-draw 1.0s cubic-bezier(.4,0,.2,1) .2s forwards,kd-color .8s ease 3.4s forwards;}
+#kael-divider.visible .kd-path-a{animation:kd-draw .9s cubic-bezier(.4,0,.2,1) 1.0s forwards,kd-color .8s ease 3.5s forwards;}
+#kael-divider.visible .kd-path-e{animation:kd-draw 1.1s cubic-bezier(.4,0,.2,1) 1.7s forwards,kd-color .8s ease 3.65s forwards;}
+#kael-divider.visible .kd-path-l{animation:kd-draw .8s cubic-bezier(.4,0,.2,1) 2.6s forwards,kd-color .8s ease 3.8s forwards;}
+@keyframes kd-draw{to{stroke-dashoffset:0;}}
+@keyframes kd-color{to{stroke:var(--cream);}}
+
+.kd-tagline{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(22px,2.8vw,38px);color:var(--cream);letter-spacing:0.02em;text-align:center;max-width:1100px;line-height:1.25;position:relative;z-index:2;opacity:0;transition:opacity .4s ease 3.6s;}
+#kael-divider.visible .kd-tagline{opacity:1;}
+.kd-tagline-mark{color:var(--accent);}
+.kd-line{display:block;}
+.kd-word{display:inline-block;overflow:hidden;vertical-align:bottom;line-height:1.25;margin-right:0.22em;padding-bottom:0.06em;}
+.kd-word > span{display:inline-block;transform:translateY(110%);transition:transform 1s cubic-bezier(.16,.84,.3,1);}
+#kael-divider.visible .kd-word > span{transform:translateY(0);}
+/* Stagger — start after KAEL stroke draw + color fade (~3.8s) */
+#kael-divider.visible .kd-line:nth-child(1) .kd-word:nth-child(1) > span{transition-delay:3.80s;}
+#kael-divider.visible .kd-line:nth-child(1) .kd-word:nth-child(2) > span{transition-delay:3.92s;}
+#kael-divider.visible .kd-line:nth-child(1) .kd-word:nth-child(3) > span{transition-delay:4.04s;}
+#kael-divider.visible .kd-line:nth-child(2) .kd-word:nth-child(1) > span{transition-delay:4.25s;}
+#kael-divider.visible .kd-line:nth-child(2) .kd-word:nth-child(2) > span{transition-delay:4.37s;}
+#kael-divider.visible .kd-line:nth-child(2) .kd-word:nth-child(3) > span{transition-delay:4.49s;}
+#kael-divider.visible .kd-line:nth-child(2) .kd-word:nth-child(4) > span{transition-delay:4.61s;}
+
+/* ── KAEL İMZA PREMIUM KATMAN (glow + sheen + ember) ── */
+.kd-mark{position:relative;}
+/* Sheen: KAEL dolduktan sonra üstünden ışık huzmesi geçer */
+.kd-mark::after{content:"";position:absolute;inset:-6% -3%;z-index:3;pointer-events:none;
+  background:linear-gradient(100deg,transparent 42%,rgba(255,237,199,.6) 50%,transparent 58%);
+  background-size:250% 100%;background-position:135% 0;mix-blend-mode:screen;opacity:0;}
+#kael-divider.visible .kd-mark::after{animation:kdSheen 2.6s cubic-bezier(.4,0,.2,1) 4.2s forwards;}
+@keyframes kdSheen{0%{opacity:0;background-position:135% 0}18%{opacity:1}82%{opacity:1}100%{opacity:0;background-position:-35% 0}}
+/* Glow: KAEL arkasında nefes alan turuncu ışık */
+.kd-glow{position:absolute;left:50%;top:50%;width:72vw;max-width:920px;height:360px;transform:translate(-50%,-50%);
+  background:radial-gradient(ellipse at center,rgba(220,80,0,.20),transparent 70%);filter:blur(34px);opacity:0;z-index:1;pointer-events:none;}
+#kael-divider.visible .kd-glow{animation:kdGlow 5.5s ease-in-out 3.8s infinite;}
+@keyframes kdGlow{0%,100%{opacity:.32;transform:translate(-50%,-50%) scale(1)}50%{opacity:.62;transform:translate(-50%,-50%) scale(1.07)}}
+/* Ember: havada süzülen közler */
+.kd-embers{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden;}
+.kd-ember{position:absolute;bottom:-12px;width:3px;height:3px;border-radius:50%;background:var(--accent);opacity:0;
+  box-shadow:0 0 6px 1px rgba(220,80,0,.55);will-change:transform,opacity;}
+@keyframes kdRise{0%{opacity:0;transform:translateY(0) translateX(0) scale(.5)}
+  12%{opacity:.9}88%{opacity:.45}100%{opacity:0;transform:translateY(-340px) translateX(var(--drift,20px)) scale(1.15)}}
+@media (prefers-reduced-motion: reduce){.kd-mark::after,.kd-glow,.kd-embers{display:none!important;}}
+
+@media(max-width:720px){#kael-divider{padding:60px 24px;gap:24px;}}
+
+/* ═══════════════════════════════════════════
+   SECTION — SSS / FAQ
+═══════════════════════════════════════════ */
+#faq{padding:120px 80px 80px;display:grid;grid-template-columns:1fr 1.2fr;align-items:center;gap:80px;}
+.faq-header h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(56px,8vw,108px);line-height:.85;color:var(--cream);}
+.faq-header h2 .accent{color:var(--accent);}
+.faq-header .section-label{margin-bottom:16px;}
+.faq-header .faq-note{font-size:12px;color:var(--muted);margin-top:32px;line-height:1.8;max-width:340px;}
+/* SSS — kendi sorunu yaz butonu */
+.faq-ask-btn{display:inline-flex;align-items:center;gap:14px;margin-top:24px;padding:16px 24px;background:rgba(220,80,0,0.06);border:1px solid rgba(220,80,0,0.35);color:var(--cream);font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.22em;text-decoration:none;text-transform:uppercase;font-weight:500;cursor:pointer;position:relative;overflow:hidden;transition:border-color .35s ease,background .35s ease,transform .35s ease,color .35s ease;}
+.faq-ask-btn::before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 0%,rgba(220,80,0,0.18) 30%,rgba(255,237,199,0.12) 50%,rgba(220,80,0,0.18) 70%,transparent 100%);transform:translateX(-110%);transition:transform .9s cubic-bezier(.16,.84,.3,1);pointer-events:none;}
+.faq-ask-btn:hover::before{transform:translateX(110%);}
+.faq-ask-btn:hover{border-color:var(--accent);background:rgba(220,80,0,0.14);transform:translateY(-2px);}
+.faq-ask-btn .ask-text{position:relative;z-index:1;background:linear-gradient(90deg,var(--cream) 0%,var(--accent) 50%,var(--cream) 100%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:gradientShift 4s ease infinite;}
+.faq-ask-btn .ask-arrow{position:relative;z-index:1;color:var(--accent);transition:transform .35s ease;font-weight:700;}
+.faq-ask-btn:hover .ask-arrow{transform:translateX(6px);}
+@keyframes gradientShift{0%,100%{background-position:0% 50%;}50%{background-position:100% 50%;}}
+.faq-list{display:flex;flex-direction:column;}
+.faq-item{border-bottom:1px solid var(--border);padding:0;opacity:0;transform:translateY(20px);transition:opacity 0.5s ease,transform 0.5s ease;position:relative;}
+.faq-item.visible{opacity:1;transform:translateY(0);}
+.faq-item:nth-child(1){transition-delay:0.05s;}
+.faq-item:nth-child(2){transition-delay:0.12s;}
+.faq-item:nth-child(3){transition-delay:0.19s;}
+.faq-item:nth-child(4){transition-delay:0.26s;}
+.faq-item:nth-child(5){transition-delay:0.33s;}
+.faq-item:nth-child(6){transition-delay:0.40s;}
+.faq-item.open::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--accent);}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:22px 24px 22px 16px;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;letter-spacing:0.03em;color:var(--cream);transition:padding-left 0.3s;}
+.faq-item.open .faq-q{padding-left:24px;}
+.faq-q:hover{color:var(--accent);}
+.faq-icon{font-family:'DM Mono',monospace;font-size:18px;color:var(--accent);transition:transform 0.3s ease;flex-shrink:0;margin-left:16px;}
+.faq-item.open .faq-icon{transform:rotate(45deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height 0.5s ease,padding 0.5s ease;padding:0 24px 0 16px;}
+.faq-item.open .faq-a{max-height:300px;padding:0 24px 22px 24px;}
+.faq-a-text{font-size:13px;color:var(--muted);line-height:1.85;}
+
+/* ═══════════════════════════════════════════
+   SECTION — NASIL ÇALIŞIYORUZ
+═══════════════════════════════════════════ */
+#process{padding:120px 80px 80px;display:flex;flex-direction:column;justify-content:center;position:relative;}
+.process-header{margin-bottom:80px;}
+.process-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;flex:1;position:relative;}
+.process-grid::before{content:"";position:absolute;top:140px;left:8%;right:8%;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(220,80,0,0.5) 15%,rgba(220,80,0,0.5) 85%,transparent 100%);z-index:0;opacity:0;transition:opacity 1.2s ease 0.5s;}
+.process-grid.in-view::before{opacity:1;}
+.process-grid .travel-dot{position:absolute;top:135px;left:8%;width:13px;height:13px;background:var(--accent);border-radius:50%;box-shadow:0 0 24px rgba(220,80,0,1),0 0 6px rgba(255,140,66,1);z-index:5;opacity:0;transition:opacity 0.4s ease;will-change:left,transform;}
+.process-grid.in-view .travel-dot{opacity:1;}
+.process-grid .travel-dot::after{content:"";position:absolute;top:50%;left:50%;width:32px;height:32px;border-radius:50%;background:radial-gradient(circle,rgba(220,80,0,0.4) 0%,transparent 70%);transform:translate(-50%,-50%);}
+
+.process-step{padding:44px 36px 32px;border:1px solid var(--border);position:relative;opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .4s ease,border-color .4s ease,background .4s ease,box-shadow .4s ease;background:rgba(10,6,4,0.5);z-index:1;cursor:default;overflow:visible;}
+.process-step.visible{opacity:1;transform:translateY(0);}
+.process-step:hover{border-color:rgba(220,80,0,0.55);background:rgba(220,80,0,0.04);transform:translateY(-4px);}
+.process-step:nth-child(1){transition-delay:0.05s;}
+.process-step:nth-child(2){transition-delay:0.2s;}
+.process-step:nth-child(3){transition-delay:0.35s;}
+
+.process-step .step-status{position:absolute;top:20px;right:20px;display:flex;align-items:center;gap:8px;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.22em;color:var(--accent);}
+.process-step .step-status::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px rgba(220,80,0,0.7);animation:pulseBlink 1.8s infinite;}
+@keyframes pulseBlink{0%,100%{opacity:0.35;}50%{opacity:1;}}
+
+.process-step .step-icon{width:46px;height:46px;margin-bottom:20px;border:1px solid rgba(220,80,0,0.4);border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(220,80,0,0.05);transition:transform .4s ease,border-color .4s ease;}
+.process-step:hover .step-icon{transform:rotate(6deg) scale(1.06);border-color:rgba(220,80,0,0.7);}
+.process-step .step-icon svg{width:20px;height:20px;color:var(--accent);}
+
+.process-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(64px,8vw,112px);color:var(--accent);line-height:1;margin-bottom:14px;letter-spacing:-0.04em;text-shadow:0 0 28px rgba(220,80,0,0.25);}
+.process-name{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(26px,3.2vw,40px);color:var(--cream);margin-bottom:12px;letter-spacing:0.05em;}
+.process-desc{font-size:12px;color:var(--muted);line-height:1.8;margin-bottom:28px;min-height:44px;}
+.process-meta{display:flex;justify-content:space-between;align-items:center;padding-top:18px;border-top:1px solid rgba(255,237,199,0.08);font-family:'DM Mono',monospace;}
+.process-meta .meta-label{font-size:9px;letter-spacing:0.28em;color:var(--dim);}
+.process-meta .meta-value{font-size:11px;color:var(--accent);letter-spacing:0.12em;font-weight:500;}
+
+/* 5-FRAME DRAMATIC FLOW STATES */
+.process-step.is-active{border-color:rgba(220,80,0,0.75);background:rgba(220,80,0,0.06);box-shadow:0 0 50px rgba(220,80,0,0.22),inset 0 0 40px rgba(220,80,0,0.05);}
+.process-step.is-active .step-icon{border-color:rgba(220,80,0,0.9);background:rgba(220,80,0,0.12);animation:iconPulse 1.6s ease-in-out infinite;}
+.process-step.is-active .step-status{color:#ff8c42;}
+.process-step.is-active .step-status::before{box-shadow:0 0 14px rgba(255,140,66,1);}
+.process-step.is-completed{border-color:rgba(255,237,199,0.16);}
+.process-step.is-completed .process-num,.process-step.is-completed .process-name{opacity:0.45;}
+.process-step.is-completed .step-icon{border-color:rgba(255,237,199,0.22);background:transparent;opacity:0.5;}
+.process-step.is-completed .step-status{color:rgba(255,237,199,0.4);}
+.process-step.is-completed .step-status::before{animation:none;opacity:0.4;}
+
+@keyframes iconPulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(220,80,0,0.5);}50%{transform:scale(1.08);box-shadow:0 0 0 14px rgba(220,80,0,0);}}
+
+/* COMPLETION CHECKMARK STAMP */
+.step-checkmark{position:absolute;top:14px;left:14px;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:17px;opacity:0;transform:scale(0.3) rotate(-45deg);box-shadow:0 0 20px rgba(220,80,0,0.7);pointer-events:none;z-index:3;}
+.process-step.is-completed .step-checkmark{opacity:1;transform:scale(1) rotate(0deg);transition:opacity .35s ease,transform .5s cubic-bezier(.34,1.56,.64,1);}
+
+/* AI AGENT ORBIT (STEP 02) */
+.ai-orbit{position:absolute;top:55%;left:50%;width:1px;height:1px;pointer-events:none;opacity:0;transition:opacity .5s ease;}
+.process-step.is-active .ai-orbit{opacity:1;animation:agentOrbit 9s linear infinite;}
+.ai-orbit-dot{position:absolute;top:0;left:0;width:5px;height:5px;background:var(--accent);border-radius:50%;box-shadow:0 0 8px rgba(220,80,0,0.85);}
+.ai-orbit-dot::before{content:"";position:absolute;top:50%;left:50%;width:14px;height:14px;border-radius:50%;border:1px solid rgba(220,80,0,0.3);transform:translate(-50%,-50%);animation:dotRing 2s ease-out infinite;}
+@keyframes agentOrbit{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+@keyframes dotRing{0%{transform:translate(-50%,-50%) scale(0.4);opacity:1;}100%{transform:translate(-50%,-50%) scale(2.2);opacity:0;}}
+
+/* EXPLOSION BURST (STEP 03) */
+.step-explosion{position:absolute;top:50%;left:50%;width:8px;height:8px;border-radius:50%;background:var(--accent);transform:translate(-50%,-50%) scale(0);pointer-events:none;opacity:0;z-index:0;}
+.process-step.is-delivered .step-explosion{animation:explosionBurst 1.4s cubic-bezier(.22,.61,.36,1) forwards;}
+@keyframes explosionBurst{
+  0%{transform:translate(-50%,-50%) scale(0);box-shadow:0 0 0 0 rgba(220,80,0,0.95),0 0 0 0 rgba(255,140,66,0.6);opacity:1;}
+  50%{box-shadow:0 0 0 80px rgba(220,80,0,0.05),0 0 0 140px rgba(255,140,66,0);opacity:0.8;}
+  100%{transform:translate(-50%,-50%) scale(0.4);box-shadow:0 0 0 220px rgba(220,80,0,0),0 0 0 280px rgba(255,140,66,0);opacity:0;}
+}
+
+/* DELIVERED 96% STAT POP */
+.process-step.is-delivered{border-color:rgba(220,80,0,0.85);background:rgba(220,80,0,0.08);box-shadow:0 0 60px rgba(220,80,0,0.28),inset 0 0 50px rgba(220,80,0,0.07);}
+.process-step.is-delivered .step-icon{border-color:rgba(220,80,0,1);background:rgba(220,80,0,0.18);transform:scale(1.08);}
+.process-step.is-delivered .process-meta .meta-value{font-size:14px;text-shadow:0 0 20px rgba(220,80,0,0.6);}
+
+/* ═══════════════════════════════════════════
+   SECTION — BİZ KİMİZ
+═══════════════════════════════════════════ */
+#about{padding:120px 80px 80px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;}
+.about-header{text-align:center;margin-bottom:52px;}
+.about-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(52px,9vw,120px);line-height:.85;color:var(--cream);}
+.about-subtitle{font-size:11px;letter-spacing:0.2em;color:var(--muted);margin-top:20px;}
+.about-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;margin-bottom:52px;}
+.about-stat{padding:36px;border:1px solid var(--border);text-align:center;opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease;}
+.about-stat.visible{opacity:1;transform:translateY(0);}
+.about-stat:nth-child(1){transition-delay:0.05s;}
+.about-stat:nth-child(2){transition-delay:0.2s;}
+.about-stat:nth-child(3){transition-delay:0.35s;}
+.about-stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(48px,7vw,88px);color:var(--cream);line-height:1;}
+.about-stat-label{font-size:10px;letter-spacing:0.2em;color:var(--accent);margin-top:8px;}
+.about-stat-desc{font-size:10px;color:var(--dim);margin-top:5px;}
+.about-body{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--border);}
+.about-col{padding:36px 0;opacity:0;transform:translateY(20px);transition:opacity 0.7s ease 0.4s,transform 0.7s ease 0.4s;}
+.about-col.visible{opacity:1;transform:translateY(0);}
+.about-col:first-child{padding-right:60px;border-right:1px solid var(--border);}
+.about-col:last-child{padding-left:60px;}
+.about-col-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(18px,2.2vw,28px);color:var(--cream);margin-bottom:14px;}
+.about-col-text{font-size:12px;color:var(--muted);line-height:1.85;}
+
+/* ═══════════════════════════════════════════
+   CTA FORM
+═══════════════════════════════════════════ */
+.cta-form{display:flex;flex-direction:column;gap:10px;width:100%;max-width:460px;position:relative;z-index:1;opacity:0;transform:translateY(20px);transition:opacity 0.6s ease 1s,transform 0.6s ease 1s;margin-top:28px;}
+.cta-form.visible{opacity:1;transform:translateY(0);}
+.cta-form input,.cta-form textarea{background:transparent;border:1px solid var(--border);padding:13px 18px;color:var(--cream);font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.08em;outline:none;transition:border-color 0.3s;resize:none;}
+.cta-form input::placeholder,.cta-form textarea::placeholder{color:var(--dim);}
+.cta-form input:focus,.cta-form textarea:focus{border-color:var(--accent);}
+.cta-form button{background:transparent;border:1px solid var(--cream);color:var(--cream);padding:13px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.25em;cursor:pointer;transition:all 0.3s;}
+.cta-form button:hover{background:var(--accent);border-color:var(--accent);}
+.cta-form input.invalid,.cta-form textarea.invalid{border-color:#ff4040;}
+.cta-form .form-consent{display:flex;gap:10px;align-items:flex-start;font-family:'DM Mono',monospace;font-size:10px;line-height:1.6;color:var(--muted);letter-spacing:0.04em;padding:6px 0;cursor:pointer;}
+.cta-form .form-consent input[type="checkbox"]{appearance:none;-webkit-appearance:none;width:14px;height:14px;min-width:14px;border:1px solid var(--border);background:transparent;margin-top:2px;cursor:pointer;position:relative;transition:.2s;}
+.cta-form .form-consent input[type="checkbox"]:checked{background:var(--accent);border-color:var(--accent);}
+.cta-form .form-consent input[type="checkbox"]:checked::after{content:"✓";position:absolute;top:-3px;left:1px;color:#fff;font-size:12px;font-weight:bold;}
+.cta-form .form-consent input[type="checkbox"].invalid{border-color:#ff4040;}
+.cta-form .form-consent a{color:var(--cream);text-decoration:underline;text-underline-offset:2px;}
+.cta-form .form-consent a:hover{color:var(--accent);}
+.cta-form button .btn-loading{display:none;}
+.cta-form button[disabled]{opacity:.6;cursor:wait;}
+.cta-form button[disabled] .btn-label{display:none;}
+.cta-form button[disabled] .btn-loading{display:inline;}
+.form-error{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.15em;color:#ff5050;min-height:14px;text-transform:uppercase;}
+.form-error:empty{display:none;}
+.form-success{display:none;flex-direction:column;align-items:center;gap:14px;text-align:center;padding:36px 24px;border:1px dashed var(--accent);background:rgba(220,80,0,0.04);max-width:460px;width:100%;margin-top:28px;position:relative;z-index:1;}
+.form-success.show{display:flex;}
+.form-success .fs-icon{width:46px;height:46px;border-radius:50%;background:var(--accent);color:white;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:900;}
+.form-success .fs-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:24px;letter-spacing:0.05em;color:var(--cream);}
+.form-success .fs-sub{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.05em;color:var(--muted);line-height:1.7;}
+.form-success .fs-sub a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);}
+
+/* ═══════════════════════════════════════════
+   INK-DROP FERROFLUID
+═══════════════════════════════════════════ */
+.ink-drop-bg{position:absolute;pointer-events:none;user-select:none;opacity:0;}
+.ink-drop-bg:not(.ink-hero){mix-blend-mode:screen;}
+.ink-drop-bg.ink-hero{width:55%;max-width:760px;right:0;top:0;bottom:0;height:100%;transform:none;animation:inkBreath 14s ease-in-out infinite;opacity:0.85;will-change:transform,opacity;object-fit:cover;}
+.ink-drop-bg.ink-bloom{transition:opacity 0.1s;}
+.ink-drop-bg.ink-bloom.ink-visible{animation:inkBloom 1.6s ease-out forwards;will-change:transform,opacity;}
+.ink-drop-bg.ink-manifesto{width:90%;max-width:1100px;left:50%;top:50%;transform:translate(-50%,-50%);opacity:0;}
+.ink-drop-bg.ink-manifesto.ink-visible{animation:inkBloomCenter 1.8s ease-out forwards;}
+.ink-drop-bg.ink-about{width:45%;max-width:480px;right:-3%;top:50%;transform:translateY(-50%);}
+.ink-drop-bg.ink-pricing{width:100%;max-width:1600px;left:50%;top:50%;transform:translate(-50%,-50%);opacity:0;}
+.ink-drop-bg.ink-pricing.ink-visible{animation:inkBloomPricing 2s ease-out forwards;}
+.ink-drop-bg.ink-cta{width:75%;max-width:720px;left:50%;top:50%;transform:translate(-50%,-50%);}
+.ink-drop-bg.ink-cta.ink-visible{animation:inkBloomCta 1.8s ease-out forwards;}
+@keyframes inkBreath{
+  0%,100%{transform:translateY(-50%) scale(1) rotate(0deg);opacity:0.7;}
+  50%{transform:translateY(-50%) scale(1.05) rotate(2deg);opacity:0.85;}
+}
+@keyframes inkBloom{
+  0%{transform:scale(0.7);opacity:0;}
+  55%{transform:scale(1.08);opacity:0.55;}
+  100%{transform:scale(1);opacity:0.42;}
+}
+@keyframes inkBloomCenter{
+  0%{transform:translate(-50%,-50%) scale(0.75);opacity:0;}
+  55%{transform:translate(-50%,-50%) scale(1.05);opacity:0.32;}
+  100%{transform:translate(-50%,-50%) scale(1);opacity:0.22;}
+}
+@keyframes inkBloomCta{
+  0%{transform:translate(-50%,-50%) scale(0.65);opacity:0;}
+  55%{transform:translate(-50%,-50%) scale(1.08);opacity:0.55;}
+  100%{transform:translate(-50%,-50%) scale(1);opacity:0.45;}
+}
+@keyframes inkBloomPricing{
+  0%{transform:translate(-50%,-50%) scale(0.85);opacity:0;}
+  100%{transform:translate(-50%,-50%) scale(1);opacity:0.13;}
+}
+@media(prefers-reduced-motion:reduce){
+  .ink-drop-bg.ink-hero{animation:none;opacity:0.5;}
+  .ink-drop-bg.ink-bloom.ink-visible,.ink-drop-bg.ink-cta.ink-visible,.ink-drop-bg.ink-manifesto.ink-visible,.ink-drop-bg.ink-pricing.ink-visible{animation:none;opacity:0.3;}
+}
+
+@media(max-width:767px){
+  nav{padding:20px 24px;}
+  .nav-links{display:none;}
+  .hero-title{font-size:clamp(60px,18vw,120px);left:24px;top:90px;}
+  .hero-eyebrow{left:24px;font-size:9px;letter-spacing:0.28em;}
+  .hero-title-new{left:24px;font-size:clamp(22px,6vw,34px);}
+  .hero-subtitle{left:24px;font-size:13px;}
+  .hero-desc{right:24px;left:24px;top:auto;bottom:180px;transform:none;max-width:100%;font-size:12px;}
+  .hero-infobox{left:24px;bottom:70px;}
+  #ai-video,#web-design,#social-media,#systems{grid-template-columns:1fr;padding:100px 24px 60px;}
+  .pipeline{padding-left:0;margin-top:32px;}
+  .web-features{padding-left:0;margin-top:32px;}
+  #why-kael{padding:100px 24px 60px;}
+  .features-grid{grid-template-columns:1fr;}
+  #missions{padding:100px 24px 60px;}
+  .missions-grid{grid-template-columns:1fr;}
+  .hero-desc{display:none;}
+  #process{padding:100px 24px 60px;}
+  .process-grid{grid-template-columns:1fr;}
+  .process-grid::before, .process-grid .travel-dot{display:none;}
+  .process-step{padding:32px 24px 24px;}
+  .ai-orbit{display:none;}
+  .step-explosion{display:none;}
+  #about{padding:100px 24px 60px;}
+  .about-stats{grid-template-columns:1fr;}
+  .about-body{grid-template-columns:1fr;}
+  .about-col:first-child{padding-right:0;border-right:none;border-bottom:1px solid var(--border);padding-bottom:32px;}
+  .about-col:last-child{padding-left:0;padding-top:32px;}
+  .cta-form{max-width:100%;}
+  .ink-drop-bg.ink-hero{width:100%;right:-20%;opacity:0.10;}
+  .hero-cta{bottom:160px;right:24px;left:24px;justify-content:center;padding:14px;}
+  .hero-infobox{bottom:24px;}
+  .blueprint-footer{left:24px;right:24px;bottom:16px;}
+  .blueprint-footer .bp-row{font-size:9px;gap:6px;}
+  body::before{background-size:40px 40px;}
+  body::after{background-size:24px 24px;}
+  #works{padding:100px 24px 60px;}
+  .works-grid{grid-template-columns:1fr;max-height:none;}
+  .work-card{min-height:200px;}
+  #faq{grid-template-columns:1fr;padding:100px 24px 60px;gap:32px;}
+}
+
+
+/* EDGE GLOW (Yanıp Sönen Turuncu Işık) */
+.edge-glow-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9995;
+  box-shadow: inset 0 0 120px rgba(220, 80, 0, 0.15);
+  animation: edgePulseAnim 3.5s infinite alternate ease-in-out;
+}
+@keyframes edgePulseAnim {
+  0% { box-shadow: inset 0 0 60px rgba(220, 80, 0, 0.05); }
+  100% { box-shadow: inset 0 0 180px rgba(220, 80, 0, 0.28); }
+}
+</style>
+</head>
+<body>
+
+<div class="edge-glow-overlay"></div>
+<!-- CINEMATIC PRELOADER — 1 Yönetmen -> 9 Ajan -> 0 Toplantı -->
+<div class="page-loader" id="pageLoader">
+  <div class="pl-scanlines"></div>
+  <div class="pl-vignette"></div>
+  <div class="pl-bloom" id="plBloom"></div>
+  <!-- FRAME 1: 1 YÖNETMEN -->
+  <div class="pl-frame" id="plFrame1">
+    <div class="pl-num-bg" id="plNum1">1</div>
+    <div class="pl-flash-name" id="plDirectorLabel">YÖNETMEN</div>
+  </div>
+
+  <!-- FRAME 2: 9 AI AGENT -->
+  <div class="pl-frame" id="plFrame2">
+    <div class="pl-num-bg" id="plNum2">9</div>
+    <div id="plFlashName" class="pl-flash-name"></div>
+    <div class="pl-label" style="background:#0a0604; padding:8px 24px; opacity:0;">AI AGENT</div>
+  </div>
+
+  <!-- FRAME 3: 0 — eliminasyon manifestosu -->
+  <div class="pl-frame" id="plFrame3">
+    <div class="pl-num-bg" id="plNum3" style="color:var(--accent);text-shadow:0 0 120px rgba(220,80,0,0.5);">0</div>
+    <div class="pl-f3-lines">
+      <div class="pl-f3-line" id="pf3l1">TOPLANTI.</div>
+      <div class="pl-f3-line" id="pf3l2">GECİKME.</div>
+      <div class="pl-f3-line" id="pf3l3">SÜPRIZ FATURA.</div>
+      <div class="pl-f3-line pl-f3-final" id="pf3lFinal">KAEL HAZIR.</div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION COUNTER (Oryzo-style edge label) -->
+<div class="section-counter" id="secCounter">
+  <span><span class="num" id="secNum">01</span> <span class="total">/ 15</span></span>
+  <span class="bar"></span>
+  <span id="secName">HERO</span>
+</div>
+
+<nav>
+  <a href="#hero" class="nav-logo">KAEL</a>
+  <div class="nav-links">
+    <a href="#ai-video">HİZMETLER</a>
+    <a href="#works">İŞLER</a>
+    <a href="#process">SÜREÇ</a>
+    <a href="#about">BİZ</a>
+    <a href="#faq">SSS</a>
+    <a href="#missions">PAKETLER</a>
+    <a href="#cta">İLETİŞİM</a>
+  </div>
+</nav>
+
+<!-- SECTION 01 — HERO (3-frame scroll narrative: 1 yönetmen → 9 ajan → 0 toplantı) -->
+<section id="hero">
+  <div class="hero-sticky">
+    <h1 class="sr-only">KAEL Creative — AI-native yaratıcı ajans. 72 saatte sinematik AI video, 7 günde web sitesi, 14 günde otomasyon sistemi. 1 yönetmen, 9 AI agent. Kıbrıs (KKTC) merkezli, global teslim.</h1>
+    <video id="hvs-video" muted playsinline preload="auto" poster="poster_hero.jpg" data-src="HERO_ELI_scroll.mp4"></video>
+    <div class="hbeat" id="hb0"><div class="big">KAEL</div><div class="sub">Yaratım, bir dokunuşla başlar.</div></div>
+    <div class="hbeat" id="hb1"><div class="sub" style="font-size:clamp(15px,2.4vw,22px);color:var(--cream)">Gökten bir el iniyor…</div></div>
+    <div class="hbeat" id="hb2"><div class="big" style="font-size:clamp(28px,5vw,68px)">1 yönetmen.<br>9 AI. Sınırsız güç.</div></div>
+    <div class="hbeat" id="hb3"><div class="big" style="font-size:clamp(28px,5vw,68px)">Sıradan ajans değil.<br>Bir kuvvet.</div></div>
+    <a href="#cta" class="hero-cta-v" id="heroCtaV">ÜCRETSİZ BRİFİNG AL <span>→</span></a>
+    <div id="hflash"></div>
+    <div class="hero-scroll-cue">SCROLL ↓ · GERİ ↑</div>
+  </div>
+</section>
+
+<!-- SECTION 02 — MANİFESTO -->
+<section id="manifesto">
+  <div class="manifesto-text">
+    <span class="line">72 SAATTE AI VİDEO.</span>
+    <span class="line">7 GÜNDE WEB SİTESİ.</span>
+    <span class="line">SÖZDÜR.</span>
+  </div>
+  <div class="manifesto-sub">20 KİŞİLİK EKİBİN ÇIKTISI. 1 EKRANDAN.</div>
+  <div class="sec-footnote">toplantı yok — gerçekten yok</div>
+  <div class="manifesto-stats">
+    <div class="stat">
+      <div class="stat-num s1">9</div>
+      <div class="stat-label">AI AGENT</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num s2">5</div>
+      <div class="stat-label">HİZMET</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num s3">∞</div>
+      <div class="stat-label">ÜRETİM</div>
+    </div>
+  </div>
+  <div class="side-label">KAEL CREATIVE — v1.0</div>
+</section>
+
+<!-- SECTION — 72 SAAT METRİK -->
+<section id="metric-72" class="metric-section" style="min-height: 100vh;">
+  <div class="metric-grid-overlay"></div>
+  <svg class="metric-dotpattern" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="metric-dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+        <circle cx="1" cy="1" r="1" fill="rgba(255,237,199,0.08)"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#metric-dots)"/>
+  </svg>
+  <div class="metric-content" style="position: relative; z-index: 10; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;">
+    <div class="metric-vs">BRİEF'TEN TESLİM'E</div>
+    <div class="metric-eyebrow" id="metric-story" style="transition: all 0.4s ease; font-size: 13px; font-weight: 700; letter-spacing: 0.35em; text-shadow: 0 0 15px rgba(220,80,0,0.4); margin-bottom: 30px;">GELENEKSEL AJANSLAR</div>
+    <div class="metric-huge" id="vaporize-wrapper" style="position: relative; width: 100%;">
+      <div id="metric-text-measurer" style="user-select: none; text-align: center; transition: opacity 0.5s ease, transform 0.5s ease; font-variant-numeric: tabular-nums; will-change: transform, opacity, filter;"><span class="accent">3</span> HAFTA.</div>
+      <div id="metric-embers" aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;z-index:7;overflow:visible;"></div>
+    </div>
+    <div class="metric-cap" id="metric-cap">Brief'ten teslim klasörüne kadar — büyük ajansların ortalaması.</div>
+  </div>
+  <div class="sec-footnote">ortalamadır. bazen daha hızlı. hiç daha geç değil.</div>
+  <div class="side-label">KAEL CREATIVE — v1.0</div>
+</section>
+
+<!-- SECTION 03 — AI VİDEO -->
+<section id="ai-video">
+  <svg class="ai-dotpattern" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="ai-dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+        <circle cx="1" cy="1" r="1" fill="rgba(255,237,199,0.09)"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#ai-dots)"/>
+  </svg>
+  <div>
+    <div class="section-label">01 / AI VİDEO</div>
+    <div class="section-title">AI<br>VİDEO</div>
+    <div class="section-desc">Brief Pazartesi.<br>Teslim Perşembe.</div>
+    <div class="section-note">SOSYAL MEDYA REELS — REKLAM FİLMİ — ÜRÜN TANITIMI — MOCKUMENTARY</div>
+    <div class="section-stat-row" style="display:flex;gap:32px;margin-top:24px;flex-wrap:wrap;">
+      <div><span style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.5rem;color:var(--accent);">72h</span><span style="display:block;font-size:10px;letter-spacing:.15em;color:var(--muted);margin-top:2px;">TESLİM</span></div>
+      <div><span style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.5rem;color:var(--cream);">4K</span><span style="display:block;font-size:10px;letter-spacing:.15em;color:var(--muted);margin-top:2px;">ÇÖZÜNÜRLÜK</span></div>
+      <div><span style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.5rem;color:var(--cream);">5+</span><span style="display:block;font-size:10px;letter-spacing:.15em;color:var(--muted);margin-top:2px;">FORMAT</span></div>
+    </div>
+    <div class="tech-badge" style="margin-top:20px;">PARALEL AJAN ÇEKİRDEĞİ<span class="tm">™</span></div>
+  </div>
+  <div class="pipeline">
+    <div class="pipeline-step">
+      <div class="step-num">01</div>
+      <div class="step-info">
+        <div class="step-name">BRİFİNG</div>
+        <div class="step-tool">Fikir. Kitle. Platform. 15 dakika.</div>
+      </div>
+    </div>
+    <div class="pipeline-step">
+      <div class="step-num">02</div>
+      <div class="step-info">
+        <div class="step-name">SENARYO</div>
+        <div class="step-tool">Script. Shot list. Ses brief.</div>
+      </div>
+    </div>
+    <div class="pipeline-step">
+      <div class="step-num">03</div>
+      <div class="step-info">
+        <div class="step-name">ÜRETİM</div>
+        <div class="step-tool">AI pipeline. Görsel. Video. Ses.</div>
+      </div>
+    </div>
+    <div class="pipeline-step">
+      <div class="step-num">04</div>
+      <div class="step-info">
+        <div class="step-name">KURGU</div>
+        <div class="step-tool">Profesyonel kurgu. Renk. Ses mix.</div>
+      </div>
+    </div>
+    <div class="pipeline-step">
+      <div class="step-num">05</div>
+      <div class="step-info">
+        <div class="step-name">TESLİM</div>
+        <div class="step-tool">MP4. Reels. Stories. Tüm formatlar.</div>
+      </div>
+    </div>
+  </div>
+  <div class="sec-footnote">pipeline'da gerçek 9 ajan: patron, vizyoner, usta, eleştirmen, keşifçi, dağıtımcı + 3 destek</div>
+  <div class="side-label">KAEL CREATIVE — v1.0</div>
+</section>
+
+<!-- SECTION — İŞLERİMİZDEN -->
+<section id="works">
+  <div class="works-header fade-up">
+    <div class="section-label">02 / İŞLER</div>
+    <h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(52px,8vw,100px);line-height:.85;color:var(--cream);">GÖSTER,<br>ANLATMA.</h2>
+  </div>
+  <div class="showreel fade-up">
+    <div class="showreel-label" style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+      <span>▶ ÖRNEK KARELER · ÜZERİNE GEL, OYNAT</span>
+      <button id="reelSoundToggle" onclick="(function(){const on=this.dataset.on==='1';document.querySelectorAll('.reel').forEach(v=>{v.muted=on;if(!v.paused)v.volume=on?0:1;});this.dataset.on=on?'0':'1';this.textContent=on?'🔇 SES KAPALI':'🔊 SES AÇIK';}).call(this)" data-on="0" style="background:rgba(220,80,0,0.12);border:1px solid rgba(220,80,0,0.4);color:var(--accent);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.15em;padding:6px 14px;cursor:pointer;transition:background 0.2s;">🔇 SES KAPALI</button>
+    </div>
+    <div class="showreel-grid">
+      <video class="reel" muted loop playsinline preload="none" width="720" height="406" poster="videos/reel_1_poster.jpg"><source src="videos/reel_1.mp4" type="video/mp4"></video>
+      <video class="reel" muted loop playsinline preload="none" width="720" height="406" poster="videos/reel_2_poster.jpg"><source src="videos/reel_2.mp4" type="video/mp4"></video>
+      <video class="reel" muted loop playsinline preload="none" width="720" height="406" poster="videos/reel_3_poster.jpg"><source src="videos/reel_3.mp4" type="video/mp4"></video>
+      <video class="reel" muted loop playsinline preload="none" width="720" height="406" poster="videos/reel_4.webp"><source src="videos/reel_4.mp4" type="video/mp4"></video>
+      <video class="reel" muted loop playsinline preload="none" width="720" height="406" poster="videos/reel_5.webp"><source src="videos/reel_5.mp4" type="video/mp4"></video>
+    </div>
+  </div>
+  <div class="works-grid">
+    <a class="work-card" href="https://www.youtube.com/@kozmikrafet" target="_blank" rel="noopener">
+      <div class="work-thumb" style="background-image:url('thumbs/kozmikrafet.jpg');"></div>
+      <div class="work-overlay">
+        <div class="work-tag">AI VİDEO · MOCKUMENTARY</div>
+        <div class="work-title">KOZMİK RAFET</div>
+        <div class="work-meta">10 BÖLÜM · HIGGSFIELD · SEEDANCE</div>
+      </div>
+    </a>
+    <a class="work-card" href="https://www.youtube.com/@vahsisohbet" target="_blank" rel="noopener">
+      <div class="work-thumb" style="background-image:url('thumbs/vahsisohbet.jpg');"></div>
+      <div class="work-overlay">
+        <div class="work-tag">AI VİDEO · BELGESEL</div>
+        <div class="work-title">VAHŞİ SOHBET</div>
+        <div class="work-meta">10 BÖLÜM · KARAKTER TUTARLILIĞI</div>
+      </div>
+    </a>
+    <a class="work-card" href="https://papirus.app" target="_blank" rel="noopener">
+      <div class="work-thumb" style="background-image:url('thumbs/papirus.jpg');"></div>
+      <div class="work-overlay">
+        <div class="work-tag">WEB TASARIM · SAAS</div>
+        <div class="work-title">PAPİRUS</div>
+        <div class="work-meta">FATURA AI · 21 GÜNDE CANLI →</div>
+      </div>
+    </a>
+    <a class="work-card" href="https://www.youtube.com/@yigitkaya" target="_blank" rel="noopener">
+      <div class="work-thumb" style="background-image:url('thumbs/kael_lab.jpg');"></div>
+      <div class="work-overlay">
+        <div class="work-tag">İÇERİK SİSTEMİ · YOUTUBE</div>
+        <div class="work-title">KAEL LAB</div>
+        <div class="work-meta">HAFTALIK YAYIN · YOUTUBE →</div>
+      </div>
+    </a>
+  </div>
+  <div class="sec-footnote">hepsi tek yönetmenin kalitedir</div>
+  <div class="side-label">KAEL CREATIVE — v1.0</div>
+</section>
+
+<!-- SECTION — NASIL ÇALIŞIYORUZ -->
+<section id="process">
+  <div class="process-header fade-up">
+    <div class="section-label">03 / SÜREÇ</div>
+    <h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(52px,8vw,100px);line-height:.85;color:var(--cream);">3 ADIMDA<br>İŞ BİTİRİYORUZ.</h2>
+    <div class="tech-badge">BRIEF-OTOMATIK PROTOKOL<span class="tm">™</span></div>
+  </div>
+  <div class="process-grid">
+    <div class="travel-dot"></div>
+    <div class="process-step">
+      <div class="step-checkmark" aria-hidden="true">✓</div>
+      <div class="step-status">ONLINE</div>
+      <div class="step-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v1a7 7 0 0 1-14 0v-1M12 18v4M8 22h8"/></svg>
+      </div>
+      <div class="process-num">01</div>
+      <div class="process-name">BRİFİNG</div>
+      <div class="process-desc">15 dakikalık Zoom.<br>Sonrası bizim derdimiz.</div>
+      <div class="process-meta">
+        <span class="meta-label">SÜRE</span>
+        <span class="meta-value">15 DK</span>
+      </div>
+    </div>
+    <div class="process-step">
+      <div class="step-checkmark" aria-hidden="true">✓</div>
+      <div class="step-status">RUNNING</div>
+      <div class="step-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="18" r="2.5"/><circle cx="12" cy="12" r="2.5"/><path d="M8 7l3 3m5-3l-3 3m-5 7l3-3m5 3l-3-3"/></svg>
+      </div>
+      <div class="process-num">02</div>
+      <div class="process-name">ÜRETİM</div>
+      <div class="process-desc">9 AI agent paralel.<br>Yönetmen kalite kontrolü.</div>
+      <div class="process-meta">
+        <span class="meta-label">AJAN</span>
+        <span class="meta-value">9 PARALEL</span>
+      </div>
+    </div>
+    <div class="process-step">
+      <div class="step-explosion" aria-hidden="true"></div>
+      <div class="step-checkmark" aria-hidden="true">✓</div>
+      <div class="step-status">DELIVERED</div>
+      <div class="step-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/></svg>
+      </div>
+      <div class="process-num">03</div>
+      <div class="process-name">TESLİM</div>
+      <div class="process-desc">Söz verdiğimiz tarih.<br>Söz verdiğimiz dosya.</div>
+      <div class="process-meta">
+        <span class="meta-label">ON-TIME</span>
+        <span class="meta-value">96%</span>
+      </div>
+    </div>
+  </div>
+  <div class="sec-footnote">adım 4'te kahve molası vardır. opsiyonel.</div>
+  <div class="side-label">KAEL CREATIVE — v1.0</div>
+</section>
+
+<!-- SECTION — KOORDİNASYON ÖLDÜ (meme) -->
+<section id="meme-coord" class="meme-section">
+  <div class="meme-tag">DUYURU · 14 NİSAN 2026</div>
+  <div class="meme-headline"><span class="strike">KOORDİNASYON TOPLANTISI</span><br>ARTIK YOK.</div>
+  <div class="meme-sub">…çünkü hiç yapmıyoruz. Aynı bilgiyi 6 toplantıda<br>tekrar etmenin AI çağında bir karşılığı yok.</div>
+  <div class="meme-fineprint">*BU TOPLANTI DA TEORİKTİR.</div>
+  <div class="side-label">KAEL CREATIVE — v1.0</div>
+</section>
+
+<!-- SECTION 04 — WEB TASARIM -->
+<section id="web-design">
+  <div>
+    <div class="section-label">04 / WEB</div>
+    <div class="section-title">WEB<br>TASARIM</div>
+    <div class="section-desc">Scroll'da takılır.<br>Mobilde uçar. 7 günde canlı.</div>
+    <div class="meta-ref">Bu siteyi biz yaptık.<br>Sizinkini de yaparız.</div>
+    <div class="section-stat-row" style="display:flex;gap:32px;margin-top:24px;flex-wrap:wrap;">
+      <div><span style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.5rem;color:var(--accent);">7</span><span style="display:block;font-size:10px;letter-spacing:.15em;color:var(--muted);margin-top:2px;">GÜN TESLİM</span></div>
+      <div><span style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.5rem;color:var(--cream);">95+</span><span style="display:block;font-size:10px;letter-spacing:.15em;color:var(--muted);margin-top:2px;">LİGHTHOUSE</span></div>
+      <div><span style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.5rem;color:var(--cream);">₺0</span><span style="display:block;font-size:10px;letter-spacing:.15em;color:var(--muted);margin-top:2px;">HOSTİNG</span></div>
+    </div>
+    <div class="tech-badge" style="margin-top:20px;">SES-RENK DİSİPLİNİ<span class="tm">™</span></div>
+  </div>
+  <div class="web-features">
+    <div class="web-feature">
+      <div class="web-feature-num">01</div>
+      <div class="web-feature-title">SCROLL ANİMASYONLAR</div>
+      <div class="web-feature-desc">Oryzo, Linear, Vercel seviyesi sinematik scroll. Bounce rate %40 düşer.</div>
+    </div>
+    <div class="web-feature">
+      <div class="web-feature-num">02</div>
+      <div class="web-feature-title">MOBILE-FIRST</div>
+      <div class="web-feature-desc">Lighthouse 95+. Her cihazda 1 saniye altı yüklenme.</div>
+    </div>
+    <div class="web-feature">
+      <div class="web-feature-num">03</div>
+      <div class="web-feature-title">7 GÜNDE TESLİM</div>
+      <div class="web-feature-desc">Standart ajanslar 6 hafta alır. Biz 7 günde canlıya alıyoruz. Söz.</div>
+    </div>
+  </div>
+  <div class="side-label">KAEL CREATIVE — v1.0</div>
+</section>
+
+<!-- SECTION — SOSYAL MEDYA -->
+<section id="social-media">
+  <div>
+    <div class="section-label">05 / SOSYAL</div>
+    <div class="section-title">SOSYAL<br>MEDYA</div>
+    <div class="section-desc">Haftada 4 reels.<br>Hesabınız her gün canlı.</div>
+    <div class="section-note">INSTAGRAM — TIKTOK — YOUTUBE SHORTS — LINKEDIN — X</div>
+    <div class="section-stat-row" style="display:flex;gap:32px;margin-top:24px;flex-wrap:wrap;">
+      <div><span style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.5rem;color:var(--accent);">4</span><span style="display:block;font-size:10px;letter-spacing:.15em;color:var(--muted);margin-top:2px;">REELS/HAFTA</span></div>
+      <div><span style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.5rem;color:var(--cream);">5</span><span style="display:block;font-size:10px;letter-spacing:.15em;color:var(--muted);margin-top:2px;">PLATFORM</span></div>
+      <div><span style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.5rem;color:var(--cream);">48h</span><span style="display:block;font-size:10px;letter-spacing:.15em;color:var(--muted);margin-top:2px;">ONAY DÖNGÜSÜ</span></div>
+    </div>
+    <div class="tech-badge" style="margin-top:20px;">ÇOKLU PLATFORM ÇEKİRDEĞİ<span class="tm">™</span></div>
+  </div>
+  <div class="web-features">
+    <div class="web-feature">
+      <div class="web-feature-num">01</div>
+      <div class="web-feature-title">HAFTALIK 4 REELS</div>
+      <div class="web-feature-desc">Pazartesi brief, Cuma 4 reels canlı. Editöryel takvim sizin onayınızda.</div>
+    </div>
+    <div class="web-feature">
+      <div class="web-feature-num">02</div>
+      <div class="web-feature-title">PLATFORM-SPESİFİK</div>
+      <div class="web-feature-desc">Her platforma kendi formatı. 9:16 / 1:1 / 16:9. Caption + hook + hashtag ayrı yazılır.</div>
+    </div>
+    <div class="web-feature">
+      <div class="web-feature-num">03</div>
+      <div class="web-feature-title">BRAND TUTARLILIĞI</div>
+      <div class="web-feature-desc">DNA kilitli. Yüz, ışık, ton 100 reels boyunca aynı. Karakter kayması yok.</div>
+    </div>
+  </div>
+  <div class="side-label">KAEL CREATIVE — v1.0</div>
+</section>
+
+<!-- SECTION — OTONOM SİSTEMLER -->
+<section id="systems">
+  <div>
+    <div class="section-label">06 / SİSTEM</div>
+    <div class="section-title">SİSTEM<br>KUR</div>
+    <div class="section-desc">İçerik bitince iş başlar.<br>Sistem 7/24 çalışır.</div>
+    <div class="section-note systems-note">Randevu · Sipariş · AI Asistan · Fatura.<br>Hangisini kurduysak, hâlâ çalışıyor.</div>
+    <div class="tech-badge">SİSTEM-7/24 ÇEKİRDEK<span class="tm">™</span></div>
+  </div>
+  <div>
+    <div class="case-study">
+      <div class="case-label">CASE STUDY</div>
+      <div class="case-title">PAPİRUS</div>
+      <div class="case-sub">Fatura AI SaaS</div>
+      <div class="case-hr"></div>
+      <div class="case-facts">
+        <div class="case-fact">3 haftada sıfırdan canlıya alındı</div>
+        <div class="case-fact">KDV otomatik hesaplama</div>
+        <div class="case-fact">B2B fatura network</div>
+        <div class="case-fact">Excel import + AI eşleştirme</div>
+      </div>
+      <a class="case-link" href="https://papirus.app" target="_blank">papirus.app →</a>
+    </div>
+  </div>
+  <div class="side-label">KAEL CREATIVE — v1.0</div>
+</section>
+
+<!-- SECTION — KAEL BRAND DIVIDER -->
+<section id="kael-divider">
+  <div class="kd-embers" aria-hidden="true"></div>
+  <div class="kd-glow" aria-hidden="true"></div>
+  <div class="kd-label">BU BİR İMZA</div>
+  <div class="kd-mark">
+    <svg class="kd-svg" viewBox="0 0 990 280" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="KAEL">
+      <path class="kd-path kd-path-k" d="M20,14 L20,266 M20,140 L198,14 M20,140 L198,266"/>
+      <path class="kd-path kd-path-a" d="M242,266 L342,14 L442,266 M275,196 L409,196"/>
+      <path class="kd-path kd-path-e" d="M484,14 L484,266 M484,14 L660,14 M484,140 L638,140 M484,266 L660,266"/>
+      <path class="kd-path kd-path-l" d="M724,14 L724,266 L960,266"/>
+    </svg>
+  </div>
+  <div class="kd-tagline">
+    <span class="kd-line"><span class="kd-word"><span>Hayal</span></span><span class="kd-word"><span>et.</span></span><span class="kd-word"><span>Söyle.</span></span></span>
+    <span class="kd-line"><span class="kd-word"><span>Gerisini</span></span><span class="kd-word"><span>biz</span></span><span class="kd-word"><span class="kd-tagline-mark">kuralım.</span></span></span>
+  </div>
+  <div class="side-label">KAEL CREATIVE — v1.0</div>
+</section>
+
+<!-- SECTION — BİZ KİMİZ -->
+<section id="about">
+  <div class="about-header">
+    <div class="section-label fade-up">07 / BİZ</div>
+    <div class="about-title fade-up">1 BRIEF GİRER.<br>PROJE <span style="color:var(--accent);">ÇIKAR.</span></div>
+    <div class="about-subtitle fade-up">AI-NATIVE STUDIO</div>
+    <div class="tech-badge fade-up" style="margin-top:18px;">KOORDİNASYON-SIFIR MİMARİ<span class="tm">™</span></div>
+  </div>
+  <div class="about-stats">
+    <div class="about-stat">
+      <div class="about-stat-num">96%</div>
+      <div class="about-stat-label">TESLİM</div>
+      <div class="about-stat-desc">Söz verilen tarihte</div>
+    </div>
+    <div class="about-stat">
+      <div class="about-stat-num">10×</div>
+      <div class="about-stat-label">HIZ</div>
+      <div class="about-stat-desc">Geleneksel ajansa karşı</div>
+    </div>
+    <div class="about-stat">
+      <div class="about-stat-num">1/5</div>
+      <div class="about-stat-label">BÜTÇE</div>
+      <div class="about-stat-desc">Aynı çıktı, beşte bir</div>
+    </div>
+  </div>
+  <div class="about-body">
+    <div class="about-col">
+      <div class="about-col-title">BÜYÜK AJANS KAPASİTESİ.</div>
+      <div class="about-col-text">Büyük ajansta 6 toplantı.<br>Bizde 1 brief.<br><br>Aynı çıktı. Beşte bir bütçe.</div>
+    </div>
+    <div class="about-col">
+      <div class="about-col-title">FARK NEREDE?</div>
+      <div class="about-col-text">Mockumentary'den fatura SaaS'ına kadar — aynı pipeline.<br><br>Tek WhatsApp. Tek fatura.</div>
+    </div>
+  </div>
+  <div class="side-label">KAEL CREATIVE — v1.0</div>
+</section>
+
+<!-- SECTION 06 — NEDEN KAEL -->
+<section id="why-kael">
+  <div class="why-header fade-up">
+    <div class="section-label">NEDEN KAEL?</div>
+    <h2>FARKIN<br>FARKI.</h2>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card animate">
+      <div class="feat-num">01</div>
+      <div class="feat-title">HIZ</div>
+      <div class="feat-desc">Onlar 3 hafta. Biz 72 saat.<br>Hesap basit.<br><br><span style="color:var(--accent);font-size:9px;letter-spacing:0.15em;">TESLİM ORANI: 96%</span></div>
+    </div>
+    <div class="feature-card animate">
+      <div class="feat-num">02</div>
+      <div class="feat-title">KALİTE</div>
+      <div class="feat-desc">Sinematik AI pipeline.<br>Hollywood standartı, ajans fiyatının beşte biri.<br><br><span style="color:var(--accent);font-size:9px;letter-spacing:0.15em;">LIGHTHOUSE AVG: 95+</span></div>
+    </div>
+    <div class="feature-card animate">
+      <div class="feat-num">03</div>
+      <div class="feat-title">TAM PAKET</div>
+      <div class="feat-desc">Video. Web. Sistem.<br>Tek WhatsApp. Tek fatura.<br><br><span style="color:var(--accent);font-size:9px;letter-spacing:0.15em;">KOORDİNASYON TOPLANTISI: 0</span></div>
+    </div>
+    <div class="feature-card animate">
+      <div class="feat-num">04</div>
+      <div class="feat-title">ŞEFFAFLIK</div>
+      <div class="feat-desc">Sabit fiyat. Sabit takvim.<br>Sürpriz yok.<br><br><span style="color:var(--accent);font-size:9px;letter-spacing:0.15em;">SÜRPRİZ FATURA SAYISI: 0</span></div>
+    </div>
+  </div>
+  <div class="side-label">KAEL CREATIVE — v1.0</div>
+</section>
+
+<!-- SECTION — SSS / FAQ -->
+<section id="faq">
+  <div class="faq-header">
+    <div class="section-label fade-up">KAFANDAKİ</div>
+    <h2 class="fade-up">MERAK<br>ETTİKLERİN<span class="accent">.</span></h2>
+    <div class="faq-note fade-up">Burada cevabını bulamadıysan,<br>doğru soruyu sen yaz — biz yanıtlayalım.</div>
+    <a href="mailto:ai.bilgimedya@gmail.com?subject=KAEL%20%E2%80%94%20Listede%20olmayan%20sorum%20var&body=Selam%20%C4%B0%C4%9Fit%2C%0A%0AKAEL%20sitesindeki%20SSS%20listesinde%20cevab%C4%B1n%C4%B1%20bulamad%C4%B1%C4%9F%C4%B1m%20bir%20sorum%20var%3A%0A%0A" class="faq-ask-btn fade-up">
+      <span class="ask-text">BENİM SORUM BURADA YOK</span>
+      <span class="ask-arrow">→</span>
+    </a>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q">AI yaptığı için kalite düşmez mi?<span class="faq-icon">+</span></div>
+      <div class="faq-a"><div class="faq-a-text">Sinematik AI pipeline. Hollywood standardında üretim araçları. Her kare yönetmen onayından geçer.</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Kaç revize hakkım var?<span class="faq-icon">+</span></div>
+      <div class="faq-a"><div class="faq-a-text">2 major revize pakete dahil. Minor revize (renk, kesim, ses) sınırsız. Major üzeri saatlik ücretlendirilir.</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Telif hakları kime ait?<span class="faq-icon">+</span></div>
+      <div class="faq-a"><div class="faq-a-text">%100 size. Teslim edilen tüm dosyalar (MP4, kaynak kod, Figma) müşterinin. Sözleşmeyle sabit.</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Ne kadar sürede teslim?<span class="faq-icon">+</span></div>
+      <div class="faq-a"><div class="faq-a-text">AI Video: 72 saat. Web sitesi: 7 gün. Otonom sistem: 14 gün. Brief netse takvim aksamıyor.</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Ödeme nasıl yapılır?<span class="faq-icon">+</span></div>
+      <div class="faq-a"><div class="faq-a-text">%50 başlangıç + %50 teslimde. Banka havale veya Wise. TL, USD veya EUR.</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Aylık paket bitince ne olur?<span class="faq-icon">+</span></div>
+      <div class="faq-a"><div class="faq-a-text">Aboneliği iptal edebilirsin, geçmiş içerikler senin. İstersen tek seferlik proje olarak da çalışırız.</div></div>
+    </div>
+  </div>
+  <div class="sec-footnote">soru sormak ücretsizdir. dünya genelinde.</div>
+  <div class="side-label">KAEL CREATIVE — v1.0</div>
+</section>
+
+<!-- SECTION 07 — MİSYONLAR -->
+<section id="missions">
+  <div style="max-width:var(--section-max);margin:0 auto;padding:var(--section-pad-y) var(--section-pad-x);">
+    <span class="section-eye">PAKETLER</span>
+    <h2 class="pk-head" style="font-size:clamp(40px,6vw,80px);color:var(--cream);margin:10px 0 0;line-height:.9;">ÜÇ PAKET. NET FİYAT.</h2>
+    <p class="section-lead">Gizli ücret yok, sürpriz yok. Bir paket seç, gerisini sistem halleder. İşin büyüdükçe üst pakete geç.</p>
+    <div class="pk-grid">
+
+      <!-- BAŞLANGIÇ -->
+      <div class="pk-card">
+        <div class="pk-eyebrow">01 / BAŞLANGIÇ</div>
+        <div class="pk-name">Dijital<br>Temel</div>
+        <div class="pk-desc">Düzgün bir site + Google'da bulunmak isteyenler için.</div>
+        <ul class="pk-feats">
+          <li>4 dilli site (TR/EN/RU/DE)</li>
+          <li>HTTPS güvenlik + mobil</li>
+          <li>Google Maps kaydı</li>
+          <li>Temel SEO</li>
+        </ul>
+        <div style="margin-top:auto;">
+          <div class="pk-price-label">KURULUM</div>
+          <div class="pk-price"><span class="cur">₺</span><span class="amt">17.900</span></div>
+          <div class="pk-sub">opsiyonel bakım ₺3.500/ay</div>
+          <a href="#cta" class="pk-btn">BAŞLA</a>
+        </div>
+      </div>
+
+      <!-- BÜYÜME (vurgulu) -->
+      <div class="pk-card pk-featured">
+        <div class="pk-badge">EN ÇOK SEÇİLEN</div>
+        <div class="pk-eyebrow">02 / BÜYÜME</div>
+        <div class="pk-name">Müşteri Çeken<br>Sistem</div>
+        <div class="pk-desc">Gerçekten büyümek isteyen işletmeler için.</div>
+        <ul class="pk-feats">
+          <li>Başlangıç'taki her şey</li>
+          <li>Sosyal medya yönetimi (IG + FB)</li>
+          <li>Ayda 4 sinematik AI Reels</li>
+          <li>Lokasyon SEO sayfaları</li>
+        </ul>
+        <div style="margin-top:auto;">
+          <div class="pk-price-label">KURULUM + AYLIK</div>
+          <div class="pk-price"><span class="cur">₺</span><span class="amt">24.900</span> <span class="per">+ ₺11.900/ay</span></div>
+          <a href="#cta" class="pk-btn">SEÇ</a>
+        </div>
+      </div>
+
+      <!-- TAM -->
+      <div class="pk-card">
+        <div class="pk-eyebrow">03 / TAM</div>
+        <div class="pk-name">Pazar<br>Lideri</div>
+        <div class="pk-desc">Sektöründe birinci olmak isteyenler için.</div>
+        <ul class="pk-feats">
+          <li>Büyüme'deki her şey</li>
+          <li>Google + Meta reklam yönetimi</li>
+          <li>Ayda 8 Reels</li>
+          <li>AI arama optimizasyonu (ChatGPT)</li>
+          <li>Aylık performans raporu</li>
+        </ul>
+        <div style="margin-top:auto;">
+          <div class="pk-price-label">KURULUM + AYLIK</div>
+          <div class="pk-price"><span class="cur">₺</span><span class="amt">34.900</span> <span class="per">+ ₺21.900/ay</span></div>
+          <div class="pk-sub">reklam bütçesi ayrı</div>
+          <a href="#cta" class="pk-btn">KONUŞALIM</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="sec-footnote">fiyatlar projeye göre uyarlanır · yıllık ödemede %20 indirim</div>
+  </div>
+</section>
+
+<!-- SECTION — KAHVE BİZDEN (final ironi) -->
+<section id="meme-coffee" class="meme-section">
+  <div class="meme-tag">SON KOŞUL</div>
+  <div class="meme-headline">KAHVE<br><span class="accent" style="color:var(--accent);">BİZDEN.</span></div>
+  <div class="meme-sub">Brief 15 dakika. Kahveyi getiriyorsan<br>ofise davet ediyoruz. Lefkoşa'da.</div>
+  <div class="meme-fineprint">*FİLTRE / ESPRESSO / TÜRK KAHVESİ FARK ETMEZ.</div>
+  <div class="side-label">KAEL CREATIVE — v1.0</div>
+</section>
+
+<!-- SECTION 08 — CTA -->
+<section id="cta">
+  <div class="cta-bg"></div>
+  <picture>
+    <source srcset="sigils/cta.webp" type="image/webp">
+    <img class="ink-drop-bg ink-bloom ink-cta" src="sigils/cta.png" alt="KAEL Creative iletişim sigil — proje başlat" width="1024" height="1024" loading="lazy" decoding="async">
+  </picture>
+  <div class="cta-title">BRİFİNİ<br>YAZ.<br>YARIN BAŞLARIZ.</div>
+  <div class="cta-sub">BU AY <span style="color:var(--accent);font-weight:900;">1 KOLTUK</span> AÇIK. KAPATILINCA LİSTEYE ALINIYORSUNUZ.</div>
+  <form class="cta-form" id="kaelForm" novalidate>
+    <!-- Web3Forms hidden fields — access_key README'ye göre değiştir -->
+    <input type="hidden" name="access_key" value="b092944e-81f1-484a-8e9c-b330104c27a9">
+    <input type="hidden" name="subject" value="KAEL Landing — Yeni Brief">
+    <input type="hidden" name="from_name" value="KAEL Creative Landing">
+    <input type="hidden" name="redirect" value="false">
+    <!-- Honeypot — bot doldururken görmez -->
+    <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" aria-label="honeypot">
+
+    <input type="text" placeholder="AD SOYAD" name="isim" required minlength="2" autocomplete="name">
+    <input type="email" placeholder="E-POSTA" name="eposta" required autocomplete="email">
+    <textarea placeholder="PROJE BRIEF: NE YAPIYORSUN, NE İSTİYORSUN, BÜTÇE?" name="mesaj" rows="3" required minlength="10"></textarea>
+
+    <label class="form-consent">
+      <input type="checkbox" name="kvkk" required aria-label="KVKK aydınlatma metni onayı">
+      <span><a href="kvkk.html" target="_blank" rel="noopener">KVKK Aydınlatma Metni</a>'ni okudum, kişisel verilerimin işlenmesini onaylıyorum.</span>
+    </label>
+
+    <div class="form-error" id="formError"></div>
+    <button type="submit" id="formSubmit">
+      <span class="btn-label">BRİFİ GÖNDER →</span>
+      <span class="btn-loading">GÖNDERİLİYOR...</span>
+    </button>
+  </form>
+  <div class="form-success" id="formSuccess">
+    <div class="fs-icon">✓</div>
+    <div class="fs-title">BRİFİ ALDIK.</div>
+    <div class="fs-sub">15 dakika içinde dönüş yapacağız.<br>Acil durumda <a href="mailto:ai.bilgimedya@gmail.com">ai.bilgimedya@gmail.com</a>'a direkt yazabilirsiniz.</div>
+    <a id="fsWaLink" href="#" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;margin-top:8px;padding:10px 22px;background:rgba(37,211,102,0.12);border:1px solid rgba(37,211,102,0.4);color:#25D366;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.12em;text-decoration:none;transition:background 0.2s;">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.849L0 24l6.355-1.506A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.007-1.373l-.36-.214-3.724.882.938-3.618-.234-.372A9.818 9.818 0 012.182 12C2.182 6.565 6.565 2.182 12 2.182S21.818 6.565 21.818 12 17.435 21.818 12 21.818z"/></svg>
+      WHATSAPP'TAN DA GÖNDER →
+    </a>
+  </div>
+  <div class="cta-contact">
+    <a href="mailto:ai.bilgimedya@gmail.com">ai.bilgimedya@gmail.com</a>
+    <span style="color:var(--border);margin:0 12px;">·</span>
+    <a href="https://wa.me/905428720206?text=Merhaba%2C%20KAEL%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" style="color:var(--accent);font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.15em;">WHATSAPP →</a>
+  </div>
+  <div class="cta-infobox">
+    <div class="bi">BUILT BY KAEL</div>
+    <div class="bp">POWERED BY AI</div>
+  </div>
+  <div class="side-label">KAEL CREATIVE — v1.0</div>
+  <footer class="blueprint-footer">
+    <div class="bp-row">
+      <span class="bp-label">SYS</span>
+      <span class="bp-val">KAEL.creative</span>
+      <span class="bp-sep">/</span>
+      <span class="bp-label">VER</span>
+      <span class="bp-val">v1.0.0</span>
+      <span class="bp-sep">/</span>
+      <span class="bp-label">BUILD</span>
+      <span class="bp-val">240504</span>
+      <span class="bp-sep">/</span>
+      <span class="bp-label">SECTIONS</span>
+      <span class="bp-val">15</span>
+      <span class="bp-sep">/</span>
+      <span class="bp-label">SIGILS</span>
+      <span class="bp-val">5</span>
+    </div>
+    <div class="bp-row">
+      <span class="bp-label">LOC</span>
+      <span class="bp-val">35.1856° N · 33.3823° E</span>
+      <span class="bp-sep">/</span>
+      <span class="bp-label">TZ</span>
+      <span class="bp-val">UTC+3</span>
+      <span class="bp-sep">/</span>
+      <span class="bp-label">CONTACT</span>
+      <span class="bp-val">ai.bilgimedya@gmail.com</span>
+    </div>
+    <div class="bp-row bp-row-min">
+      <span class="bp-label">© 2026 KAEL CREATIVE — Sistem her zaman çalışıyor.</span>
+    </div>
+    <div class="bp-row bp-row-min legal-row">
+      <a href="kvkk.html" class="bp-legal">KVKK</a>
+      <span class="bp-sep">·</span>
+      <a href="privacy.html" class="bp-legal">Privacy</a>
+      <span class="bp-sep">·</span>
+      <a href="cerez-politikasi.html" class="bp-legal">Çerezler</a>
+      <span class="bp-sep">·</span>
+      <a href="kullanim-kosullari.html" class="bp-legal">Kullanım Koşulları</a>
+    </div>
+  </footer>
+</section>
+
+<a href="#cta" class="floating-cta" id="floatCta"><span class="pulse"></span>PROJE BAŞLAT →</a>
+<div class="kael-cursor-trail" id="kc-trail"></div>
+<div class="kael-cursor" id="kc-dot"></div>
+<div class="kael-cursor-ring" id="kc-ring"></div>
+
+<script>
+
+// PRELOADER KALDIRILDI (Yiğit 2026-07-01): "1 Yönetmen→9 Ajan→0" intro atlandı,
+// sayfa direkt hero (bulut/gök sahnesi) ile açılır. Kritik yan etkiler korundu:
+// scroll aç + .hero-final göster + ScrollTrigger.refresh. (Loader HTML CSS'te display:none.)
+const playCinematicIntro = () => {
+  const loader = document.getElementById('pageLoader');
+  if (loader) { loader.classList.add('done'); loader.style.display = 'none'; }
+  document.body.style.overflow = '';                 // scroll açık
+  gsap.set('.hero-final', { opacity: 1, y: 0 });      // hero metinleri görünür
+  if (typeof ScrollTrigger !== 'undefined') ScrollTrigger.refresh();
+};
+
+window.addEventListener('load', playCinematicIntro);
+// Fallback: start intro automatically after a small delay just in case load is stuck
+setTimeout(playCinematicIntro, 500);
+
+// Section counter — track active section
+const sectionsList = [
+  { id: 'hero', name: 'HERO' },
+  { id: 'manifesto', name: 'MANİFESTO' },
+  { id: 'metric-72', name: '72 SAAT' },
+  { id: 'ai-video', name: 'AI VİDEO' },
+  { id: 'works', name: 'İŞLER' },
+  { id: 'process', name: 'SÜREÇ' },
+  { id: 'meme-coord', name: 'KOORDİNASYON' },
+  { id: 'web-design', name: 'WEB' },
+  { id: 'social-media', name: 'SOSYAL MEDYA' },
+  { id: 'systems', name: 'SİSTEMLER' },
+  { id: 'kael-divider', name: 'İMZA' },
+  { id: 'about', name: 'BİZ KİMİZ' },
+  { id: 'why-kael', name: 'NEDEN KAEL' },
+  { id: 'faq', name: 'SSS' },
+  { id: 'missions', name: 'PAKETLER' },
+  { id: 'meme-coffee', name: 'KAHVE' },
+  { id: 'cta', name: 'İLETİŞİM' },
+];
+const secNum = document.getElementById('secNum');
+const secName = document.getElementById('secName');
+const secCounter = document.getElementById('secCounter');
+const secObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+      const idx = sectionsList.findIndex(s => s.id === entry.target.id);
+      if (idx !== -1) {
+        secNum.textContent = String(idx + 1).padStart(2, '0');
+        secName.textContent = sectionsList[idx].name;
+      }
+    }
+  });
+}, { threshold: 0.5 });
+
+// Zero-pad ile total kısmını ayarla
+const totalSpan = document.querySelector('.section-counter .total');
+if (totalSpan) {
+  totalSpan.textContent = `/ ${String(sectionsList.length).padStart(2, '0')}`;
+}
+
+sectionsList.forEach(s => {
+  const el = document.getElementById(s.id);
+  if (el) secObserver.observe(el);
+});
+
+// Scroll progress bar inside counter
+window.addEventListener('scroll', () => {
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = (window.scrollY / docHeight) * 100;
+  secCounter.style.setProperty('--scroll-progress', progress + '%');
+}, { passive: true });
+
+// Cursor parallax — sigiller hafifçe takip eder
+// Touch cihazlarda ve reduced-motion'da çalıştırma (boşa CPU)
+const _parallaxOk = window.matchMedia('(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)').matches;
+const parallaxItems = document.querySelectorAll('.ink-drop-bg.ink-bloom, .morph-svg');
+parallaxItems.forEach(el => el.classList.add('parallax-target'));
+if (_parallaxOk) {
+  let mouseX = 0, mouseY = 0;
+  document.addEventListener('mousemove', (e) => {
+    mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
+    mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
+  });
+  function parallaxLoop() {
+    parallaxItems.forEach((el, i) => {
+      const depth = (i % 3 + 1) * 6;
+      el.style.transform = (el.style.transform || '').replace(/translate3d\([^)]+\)\s?/g, '').trim();
+      el.style.setProperty('--px', `${mouseX * depth}px`);
+      el.style.setProperty('--py', `${mouseY * depth}px`);
+    });
+    requestAnimationFrame(parallaxLoop);
+  }
+  parallaxLoop();
+}
+
+// Lenis smooth scroll — reduced-motion'da smooth kapanır (instant scroll)
+const _lenisReduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const lenis = new Lenis({
+  duration: _lenisReduce ? 0 : 1.8,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -12 * t)),
+  smoothWheel: !_lenisReduce,
+  smoothTouch: false,
+});
+// TEK RAF kaynağı — gsap.ticker. Ayrıca manuel requestAnimationFrame(raf) loop'u
+// KALDIRILDI (eskiden vardı): iki ayrı döngü lenis.raf'ı frame başına 2× çağırıyordu
+// → çift RAF jank. Artık lenis'i sadece gsap.ticker sürüyor (web_klonlama_animasyon_2026.md).
+gsap.registerPlugin(ScrollTrigger);
+lenis.on('scroll', ScrollTrigger.update);
+gsap.ticker.add((time)=>{ lenis.raf(time * 1000); });
+gsap.ticker.lagSmoothing(0);
+
+// ─── MOBİL SCROLL OPTİMİZASYONU (iOS Safari pin akıcılığı) ───
+// 1. ignoreMobileResize: iOS Safari address bar gizlenip görününce viewport resize tetiklenir
+//    → ScrollTrigger position'ları yeniden hesaplar → jitter. Bunu yok say.
+// 2. normalizeScroll: touch scroll'u native momentum yerine ScrollTrigger'ın kendi
+//    interpolation'ına bağlar → pin/scrub timeline'ları daha tutarlı çalışır.
+ScrollTrigger.config({
+  ignoreMobileResize: true,
+  syncInterval: 16,
+});
+const _isTouch = window.matchMedia('(pointer: coarse)').matches;
+if (_isTouch) {
+  ScrollTrigger.normalizeScroll(true);
+}
+
+// ─── HERO NARRATIVE REMOVED (Replaced by Cinematic Preloader) ───
+
+// ─── MANIFESTO VERSUS — scroll-driven dramatik dönüşüm ───
+// "AJANSTA 3 HAFTA" → çapraz çizgi → sönüş → "KAEL'DE 72 SAAT" patlar → "SÖZDÜR" stamp
+(function manifestoVersus(){
+  const sec = document.querySelector('#manifesto');
+  if (!sec) return;
+  const oldLine = sec.querySelector('.versus-old');
+  const strike = sec.querySelector('.versus-strike');
+  const newLine = sec.querySelector('.versus-new');
+  const promise = sec.querySelector('.versus-promise');
+  if (!oldLine || !strike || !newLine || !promise) return;
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduceMotion) {
+    gsap.set([strike], { scaleX: 1 });
+    gsap.set([newLine, promise], { opacity: 1, y: 0, scale: 1, filter: 'blur(0)' });
+    return;
+  }
+
+  const mm = gsap.matchMedia();
+
+  // Desktop: pin + scrub timeline (dramatik)
+  mm.add('(min-width: 768px)', () => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '#manifesto',
+        start: 'top top',
+        end: '+=180%',
+        pin: true,
+        scrub: 1.2,
+        anticipatePin: 1,
+      }
+    });
+
+    // Frame 1 (0 → 0.3): "AJANSTA 3 HAFTA" görünür, sönükleşir
+    tl.to(oldLine, { opacity: 1, duration: 0.1 }, 0);
+
+    // Frame 2 (0.3 → 0.55): Çapraz çizgi çekilir
+    tl.to(strike, { scaleX: 1, duration: 0.25, ease: 'power2.inOut' }, 0.30);
+
+    // Frame 3 (0.50 → 0.70): "3 HAFTA" sönmeye başlar
+    tl.to(oldLine, { opacity: 0.18, scale: 0.85, filter: 'saturate(0.1) blur(2px)', duration: 0.2, ease: 'power2.in' }, 0.50);
+
+    // Frame 4 (0.55 → 0.85): "72 SAAT" patlar
+    tl.fromTo(newLine,
+      { opacity: 0, y: 40, scale: 0.85, filter: 'blur(20px)' },
+      { opacity: 1, y: 0, scale: 1, filter: 'blur(0)', duration: 0.30, ease: 'power3.out' },
+      0.55
+    );
+
+    // Glow pulse (0.70 → 0.78) "72 SAAT" şarjlanır
+    tl.to(newLine.querySelector('.versus-value'), {
+      textShadow: '0 0 80px rgba(220,80,0,0.8), 0 0 120px rgba(220,80,0,0.4)',
+      duration: 0.08, yoyo: true, repeat: 1, ease: 'power1.inOut'
+    }, 0.70);
+
+    // Frame 5 (0.80 → 0.95): "SÖZDÜR" stamp
+    tl.fromTo(promise,
+      { opacity: 0, scale: 2, rotate: -3, filter: 'blur(12px)' },
+      { opacity: 1, scale: 1, rotate: 0, filter: 'blur(0)', duration: 0.15, ease: 'back.out(1.8)' },
+      0.80
+    );
+
+    return () => { tl.kill(); };
+  });
+
+  // Mobile: pin yok, IntersectionObserver bazlı stagger
+  mm.add('(max-width: 767px)', () => {
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        gsap.set(oldLine, { opacity: 1 });
+        gsap.to(strike, { scaleX: 1, duration: 0.5, ease: 'power2.inOut', delay: 0.3 });
+        gsap.to(oldLine, { opacity: 0.25, scale: 0.9, filter: 'saturate(0.2)', duration: 0.4, delay: 0.7 });
+        gsap.fromTo(newLine,
+          { opacity: 0, y: 30, scale: 0.9, filter: 'blur(12px)' },
+          { opacity: 1, y: 0, scale: 1, filter: 'blur(0)', duration: 0.6, ease: 'power3.out', delay: 0.9 }
+        );
+        gsap.fromTo(promise,
+          { opacity: 0, scale: 1.6, filter: 'blur(8px)' },
+          { opacity: 1, scale: 1, filter: 'blur(0)', duration: 0.4, ease: 'back.out(1.6)', delay: 1.4 }
+        );
+        obs.unobserve(e.target);
+      });
+    }, { threshold: 0.3 });
+    obs.observe(sec);
+    return () => obs.disconnect();
+  });
+})();
+
+// Process section — 5-frame dramatic scroll storytelling
+const processSteps = gsap.utils.toArray('.process-step');
+const processGridEl_anim = document.querySelector('#process .process-grid');
+const travelDotEl = document.querySelector('#process .travel-dot');
+
+if (processSteps.length) {
+  // Build AI agent orbit inside step 02 (9 dots in circular formation)
+  const step02 = processSteps[1];
+  if (step02 && !step02.querySelector('.ai-orbit')) {
+    const orbit = document.createElement('div');
+    orbit.className = 'ai-orbit';
+    orbit.setAttribute('aria-hidden', 'true');
+    const radius = 90;
+    for (let i = 0; i < 9; i++) {
+      const angle = (i / 9) * Math.PI * 2;
+      const x = Math.cos(angle) * radius;
+      const y = Math.sin(angle) * radius;
+      const dot = document.createElement('div');
+      dot.className = 'ai-orbit-dot';
+      dot.style.transform = `translate(${x}px, ${y}px)`;
+      orbit.appendChild(dot);
+    }
+    step02.appendChild(orbit);
+  }
+
+  // Helper: apply frame state to all 3 steps + travel dot
+  const applyFrame = (frame, travelLeftPct) => {
+    // Frame mapping:
+    //   0 = step 01 active
+    //   1 = step 01 completed, travel dot moving toward 02
+    //   2 = step 02 active (9 ajan orbit)
+    //   3 = step 02 completed, travel dot moving toward 03
+    //   4 = step 03 active + delivered (explosion)
+    processSteps.forEach((s, i) => {
+      const isActive = (i === 0 && frame === 0) || (i === 1 && frame === 2) || (i === 2 && frame === 4);
+      const isCompleted = (i === 0 && frame >= 1) || (i === 1 && frame >= 3);
+      const isDelivered = (i === 2 && frame === 4);
+      s.classList.toggle('is-active', isActive);
+      s.classList.toggle('is-completed', isCompleted && !isActive);
+      s.classList.toggle('is-delivered', isDelivered);
+    });
+    if (travelDotEl) {
+      gsap.to(travelDotEl, { left: travelLeftPct + '%', duration: 0.25, ease: 'power2.out', overwrite: 'auto' });
+    }
+  };
+
+  // Compute travel-dot left% based on overall progress (8% → 84% across the timeline)
+  const computeTravelLeft = (progress) => {
+    if (progress < 0.18) return 8;
+    if (progress < 0.40) return 8 + ((progress - 0.18) / 0.22) * 42;  // 8 → 50
+    if (progress < 0.65) return 50;
+    if (progress < 0.85) return 50 + ((progress - 0.65) / 0.20) * 34; // 50 → 84
+    return 84;
+  };
+
+  const progressToFrame = (p) => {
+    if (p < 0.18) return 0;
+    if (p < 0.40) return 1;
+    if (p < 0.65) return 2;
+    if (p < 0.85) return 3;
+    return 4;
+  };
+
+  let mm = gsap.matchMedia();
+
+  // Reduced motion -> tüm step'ler görünür, animasyon yok
+  mm.add("(prefers-reduced-motion: reduce)", () => {
+    gsap.set(processSteps, { opacity: 1, scale: 1 });
+    processSteps.forEach(s => s.classList.add('is-active'));
+  });
+
+  // Desktop -> pinned 5-frame timeline (250% scroll for daha dramatik tempo)
+  mm.add("(min-width: 768px) and (prefers-reduced-motion: no-preference)", () => {
+    gsap.set(processSteps, { opacity: 0.18, scale: 0.94 });
+    gsap.set(processSteps[0], { opacity: 1, scale: 1 });
+    if (travelDotEl) gsap.set(travelDotEl, { left: '8%' });
+
+    let lastFrame = -1;
+    ScrollTrigger.create({
+      trigger: '#process',
+      start: 'top top',
+      end: '+=250%',
+      pin: true,
+      scrub: 1,
+      onUpdate: (self) => {
+        const p = self.progress;
+        const frame = progressToFrame(p);
+        const travelLeft = computeTravelLeft(p);
+        if (frame !== lastFrame) {
+          applyFrame(frame, travelLeft);
+          lastFrame = frame;
+        } else if (travelDotEl) {
+          gsap.set(travelDotEl, { left: travelLeft + '%' });
+        }
+        // Opacity / scale per state
+        processSteps.forEach((s) => {
+          const active = s.classList.contains('is-active');
+          const delivered = s.classList.contains('is-delivered');
+          const completed = s.classList.contains('is-completed');
+          const opacity = (active || delivered) ? 1 : (completed ? 0.72 : 0.18);
+          const scale = (active || delivered) ? 1 : (completed ? 0.97 : 0.94);
+          gsap.to(s, { opacity, scale, duration: 0.35, overwrite: 'auto' });
+        });
+      }
+    });
+  });
+
+  // Mobile -> trigger-per-step (no pin, no scrub)
+  mm.add("(max-width: 767px) and (prefers-reduced-motion: no-preference)", () => {
+    gsap.set(processSteps, { opacity: 0.25, scale: 0.96 });
+    processSteps.forEach((step, i) => {
+      ScrollTrigger.create({
+        trigger: step,
+        start: 'top 78%',
+        onEnter: () => {
+          // Mark previous as completed
+          if (i > 0) {
+            processSteps[i - 1].classList.remove('is-active');
+            processSteps[i - 1].classList.add('is-completed');
+          }
+          // Activate current
+          step.classList.add('is-active');
+          if (i === 2) step.classList.add('is-delivered');
+          gsap.to(step, { opacity: 1, scale: 1, duration: 0.5, overwrite: 'auto' });
+          // Dim others
+          processSteps.forEach((other, j) => {
+            if (j !== i && !other.classList.contains('is-completed')) {
+              gsap.to(other, { opacity: 0.28, scale: 0.96, duration: 0.3 });
+            } else if (other.classList.contains('is-completed')) {
+              gsap.to(other, { opacity: 0.72, scale: 0.97, duration: 0.3 });
+            }
+          });
+        }
+      });
+    });
+  });
+}
+</script>
+
+<script>
+// Floating CTA — show after hero, hide on CTA section
+const floatCta = document.getElementById('floatCta');
+const ctaShowObserver = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.target.id === 'hero'){ floatCta.classList.toggle('visible', !e.isIntersecting); }
+    if(e.target.id === 'cta' && e.isIntersecting){ floatCta.classList.remove('visible'); }
+  });
+}, { threshold: 0.4 });
+const heroEl = document.getElementById('hero');
+const ctaEl = document.getElementById('cta');
+if(heroEl) ctaShowObserver.observe(heroEl);
+if(ctaEl) ctaShowObserver.observe(ctaEl);
+
+// Custom cursor, Trail & Magnetic CTA
+const dot = document.getElementById('kc-dot');
+const ring = document.getElementById('kc-ring');
+const trail = document.getElementById('kc-trail');
+
+if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+  // Cursor follow via GSAP quickTo
+  const dotX = gsap.quickTo(dot, "left", { duration: 0.05, ease: "none" });
+  const dotY = gsap.quickTo(dot, "top", { duration: 0.05, ease: "none" });
+  const trailX = gsap.quickTo(trail, "left", { duration: 0.15, ease: "power2.out" });
+  const trailY = gsap.quickTo(trail, "top", { duration: 0.15, ease: "power2.out" });
+  const ringX = gsap.quickTo(ring, "left", { duration: 0.35, ease: "power2.out" });
+  const ringY = gsap.quickTo(ring, "top", { duration: 0.35, ease: "power2.out" });
+
+  document.addEventListener('mousemove', e => {
+    dotX(e.clientX);
+    dotY(e.clientY);
+    trailX(e.clientX);
+    trailY(e.clientY);
+    ringX(e.clientX);
+    ringY(e.clientY);
+  });
+
+  // Shockwave click effect
+  document.addEventListener('mousedown', e => {
+    const splash = document.createElement('div');
+    splash.classList.add('ink-splash');
+    splash.style.left = e.clientX + 'px';
+    splash.style.top = e.clientY + 'px';
+    
+    const ripple = document.createElement('div');
+    ripple.classList.add('ink-ripple');
+    ripple.style.left = e.clientX + 'px';
+    ripple.style.top = e.clientY + 'px';
+
+    document.body.appendChild(splash);
+    document.body.appendChild(ripple);
+    
+    gsap.to(splash, { width: 50, height: 50, opacity: 0, duration: 0.4, ease: "power2.out", onComplete: () => splash.remove() });
+    gsap.to(ripple, { width: 100, height: 100, opacity: 0, borderWidth: 0, duration: 0.7, ease: "power2.out", onComplete: () => ripple.remove() });
+    
+    // Quick scale bounce on dot and ring
+    gsap.fromTo(dot, { scale: 0.6 }, { scale: 1, duration: 0.3, ease: "back.out(2)" });
+    gsap.fromTo(ring, { scale: 0.8 }, { scale: 1, duration: 0.4, ease: "power2.out" });
+  });
+
+  document.querySelectorAll('a, button, .faq-q, .work-card, .mission-btn').forEach(el => {
+    el.addEventListener('mouseenter', () => ring?.classList.add('hover'));
+    el.addEventListener('mouseleave', () => ring?.classList.remove('hover'));
+  });
+
+  // Magnetic CTA (Premium Elastic)
+  const magneticBtns = document.querySelectorAll('.hero-cta, .mission-btn, .cta-btn, .floating-cta');
+  magneticBtns.forEach(btn => {
+    const xTo = gsap.quickTo(btn, "x", { duration: 0.6, ease: "elastic.out(1, 0.3)" });
+    const yTo = gsap.quickTo(btn, "y", { duration: 0.6, ease: "elastic.out(1, 0.3)" });
+    
+    btn.addEventListener("mousemove", (e) => {
+      const rect = btn.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+      const distanceX = e.clientX - centerX;
+      const distanceY = e.clientY - centerY;
+      
+      // Elastic pull and scale
+      xTo(distanceX * 0.3);
+      yTo(distanceY * 0.3);
+      gsap.to(btn, { scale: 1.05, duration: 0.2 });
+    });
+    
+    btn.addEventListener("mouseleave", () => {
+      gsap.to(btn, { x: 0, y: 0, scale: 1, duration: 0.8, ease: "elastic.out(1, 0.3)", overwrite: "auto" });
+    });
+  });
+}
+
+// Animated stat counters
+function animateCounter(el, target, duration=1600){
+  const start = performance.now();
+  const isInfinity = target === '∞';
+  if(isInfinity){ el.textContent = '∞'; return; }
+  const t = parseInt(target);
+  function tick(now){
+    const elapsed = now - start;
+    const progress = Math.min(elapsed/duration, 1);
+    const eased = 1 - Math.pow(1-progress, 3);
+    el.textContent = Math.floor(t * eased);
+    if(progress < 1) requestAnimationFrame(tick);
+    else el.textContent = target;
+  }
+  requestAnimationFrame(tick);
+}
+const counterObserver = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      const el = entry.target;
+      const target = el.dataset.count || el.textContent.trim();
+      el.dataset.count = target;
+      el.textContent = target === '∞' ? '∞' : '0';
+      setTimeout(()=>animateCounter(el, target), 200);
+      counterObserver.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.stat-num, .about-stat-num').forEach(el=>counterObserver.observe(el));
+
+// Console easter egg
+console.log('%c\n  ██╗  ██╗ █████╗ ███████╗██╗     \n  ██║ ██╔╝██╔══██╗██╔════╝██║     \n  █████╔╝ ███████║█████╗  ██║     \n  ██╔═██╗ ██╔══██║██╔══╝  ██║     \n  ██║  ██╗██║  ██║███████╗███████╗\n  ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝\n', 'color:#DC5000;font-family:monospace;font-size:11px;');
+console.log('%cBU SAYFAYI 3 SANİYEDE OKUDUN. KAEL 72 SAATTE TESLİM EDİYOR.', 'color:#FFEDC7;font-size:14px;letter-spacing:0.2em;');
+console.log('%cYazılım dünyasında dolaşıyorsan, seni KAEL\'e çekmiş demektir. ai.bilgimedya@gmail.com','color:rgba(255,237,199,0.6);font-size:11px;font-style:italic;');
+
+// Scramble / Hacker Text Effect Function
+function decodeHackerText(el) {
+  const text = el.dataset.text;
+  if (!text) return;
+  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$*+>_';
+  let iterations = 0;
+  const interval = setInterval(() => {
+    el.textContent = text.split('').map((letter, index) => {
+      if(letter === ' ') return ' ';
+      if(index < iterations) return text[index];
+      return chars[Math.floor(Math.random() * chars.length)];
+    }).join('');
+    
+    if(iterations >= text.length) clearInterval(interval);
+    iterations += 1 / 2; // Hız ayarı (büyüdükçe yavaşlar)
+  }, 30);
+}
+
+// Intersection Observer — tüm animasyonlar
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      if (!entry.target.classList.contains('visible')) {
+        entry.target.classList.add('visible');
+      }
+    }
+  });
+}, { threshold: 0.15 });
+
+// Manifesto lines
+document.querySelectorAll('.manifesto-text .line').forEach((el, i) => {
+  el.dataset.text = el.textContent; // Orijinal metni sakla
+  el.style.transitionDelay = (i * 0.2) + 's';
+  observer.observe(el);
+});
+document.querySelectorAll('.manifesto-sub, .manifesto-stats').forEach(el => observer.observe(el));
+
+// Pipeline steps
+document.querySelectorAll('.pipeline-step').forEach(el => observer.observe(el));
+
+// Web features
+document.querySelectorAll('.web-feature').forEach(el => observer.observe(el));
+
+// Case study
+document.querySelectorAll('.case-study').forEach(el => observer.observe(el));
+
+// Feature cards
+document.querySelectorAll('.feature-card.animate').forEach(el => observer.observe(el));
+
+// Mission cards
+document.querySelectorAll('.mission-card').forEach(el => observer.observe(el));
+
+// CTA
+document.querySelectorAll('.cta-title, .cta-sub, .cta-btn, .cta-contact, .cta-form').forEach(el => observer.observe(el));
+
+// CTA Form handler — validation + mailto + success state
+(function initForm(){
+  const form = document.getElementById('kaelForm');
+  if(!form) return;
+  const errBox = document.getElementById('formError');
+  const success = document.getElementById('formSuccess');
+  const submitBtn = document.getElementById('formSubmit');
+  const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+  // Web3Forms endpoint — access_key form içinde hidden field olarak
+  const ENDPOINT = 'https://api.web3forms.com/submit';
+
+  function mailtoFallback(isim, eposta, mesaj) {
+    const subj = encodeURIComponent('KAEL Brief: ' + isim);
+    const body = encodeURIComponent(
+      'AD SOYAD: ' + isim + '\n' +
+      'E-POSTA: ' + eposta + '\n\n' +
+      'BRIEF:\n' + mesaj
+    );
+    window.location.href = 'mailto:ai.bilgimedya@gmail.com?subject=' + subj + '&body=' + body;
+  }
+
+  function showSuccess() {
+    form.style.display = 'none';
+    const waEl = success.querySelector('#fsWaLink');
+    if (waEl) {
+      const isimVal = (form.isim ? form.isim.value.trim() : '') || 'Müşteri';
+      const mesajVal = form.mesaj ? form.mesaj.value.trim() : '';
+      const waMsg = '📋 YENİ KAEL BRİEF\nAD: ' + isimVal + '\n\nBRİEF:\n' + mesajVal;
+      waEl.href = 'https://wa.me/905428720206?text=' + encodeURIComponent(waMsg);
+    }
+    success.classList.add('show');
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const isim = form.isim;
+    const eposta = form.eposta;
+    const mesaj = form.mesaj;
+    const kvkk = form.kvkk;
+    [isim, eposta, mesaj, kvkk].forEach(el => el.classList.remove('invalid'));
+    errBox.textContent = '';
+
+    // Validation
+    let err = '';
+    if (isim.value.trim().length < 2) { isim.classList.add('invalid'); err = 'Ad-soyad gerekli.'; }
+    else if (!emailRe.test(eposta.value.trim())) { eposta.classList.add('invalid'); err = 'Geçerli e-posta gerekli.'; }
+    else if (mesaj.value.trim().length < 10) { mesaj.classList.add('invalid'); err = 'Brief en az 10 karakter olsun.'; }
+    else if (!kvkk.checked) { kvkk.classList.add('invalid'); err = 'KVKK onayı gerekli.'; }
+    if (err) { errBox.textContent = err; return; }
+
+    // Loading state
+    submitBtn.disabled = true;
+
+    // Web3Forms key kontrol — placeholder ise direkt mailto fallback
+    const keyField = form.querySelector('input[name="access_key"]');
+    const keyVal = keyField ? keyField.value : '';
+    if (!keyVal || keyVal.startsWith('REPLACE_WITH')) {
+      console.warn('[KAEL] Web3Forms access_key tanımlı değil — mailto fallback');
+      mailtoFallback(isim.value.trim(), eposta.value.trim(), mesaj.value.trim());
+      setTimeout(() => { submitBtn.disabled = false; showSuccess(); }, 600);
+      return;
+    }
+
+    // Sessiz POST — Web3Forms
+    try {
+      const formData = new FormData(form);
+      const res = await fetch(ENDPOINT, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+      const data = await res.json();
+      if (res.ok && data.success) {
+        showSuccess();
+      } else {
+        throw new Error(data.message || 'Gönderim başarısız');
+      }
+    } catch (ex) {
+      console.error('[KAEL] Form gönderim hatası, mailto fallback:', ex);
+      errBox.textContent = 'Bağlantı hatası — e-posta uygulaması açılıyor.';
+      mailtoFallback(isim.value.trim(), eposta.value.trim(), mesaj.value.trim());
+      setTimeout(showSuccess, 800);
+    } finally {
+      submitBtn.disabled = false;
+    }
+  });
+})();
+
+// Metric + Meme sections (yeni Sprint 1 ekranları)
+document.querySelectorAll('.metric-vs, .metric-eyebrow, .metric-huge, .metric-cap, .meme-tag, .meme-headline, .meme-sub').forEach(el => observer.observe(el));
+
+// 72 SAAT section entrance bloom
+const metric72El = document.getElementById('metric-72');
+if (metric72El) {
+  const m72Obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('entered');
+        m72Obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  m72Obs.observe(metric72El);
+}
+
+// Fade-up generics
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Nasıl Çalışıyoruz — process steps
+document.querySelectorAll('.process-step').forEach(el => observer.observe(el));
+
+// Process grid — connector line + travel dot animation trigger
+const processGridEl = document.querySelector('#process .process-grid');
+if (processGridEl) {
+  const pgObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in-view');
+        pgObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  pgObs.observe(processGridEl);
+}
+
+// Biz Kimiz — stats + cols
+document.querySelectorAll('.about-stat, .about-col').forEach(el => observer.observe(el));
+
+// Works grid
+document.querySelectorAll('.work-card').forEach(el => observer.observe(el));
+
+// Showreel — fade-in + hover-to-play
+document.querySelectorAll('.showreel').forEach(el => observer.observe(el));
+
+// KAEL SVG — stroke draw init (getTotalLength per path)
+document.querySelectorAll('.kd-path').forEach(function(p){
+  var len=Math.ceil(p.getTotalLength());
+  p.style.strokeDasharray=len;
+  p.style.strokeDashoffset=len;
+});
+
+// KAEL Brand Divider — stroke draw reveal
+const kdEl = document.getElementById('kael-divider');
+if (kdEl) {
+  const kdObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && entry.intersectionRatio >= 0.35) {
+        entry.target.classList.add('visible');
+        kdObs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.35 });
+  kdObs.observe(kdEl);
+}
+document.querySelectorAll('.showreel-grid .reel').forEach(v => {
+  v.addEventListener('mouseenter', () => { v.play().catch(()=>{}); });
+  v.addEventListener('mouseleave', () => { v.pause(); v.currentTime = 0; });
+  v.addEventListener('click', () => { v.paused ? v.play().catch(()=>{}) : v.pause(); });
+});
+
+// FAQ items + accordion
+document.querySelectorAll('.faq-item').forEach(el => {
+  observer.observe(el);
+  const q = el.querySelector('.faq-q');
+  q.addEventListener('click', () => el.classList.toggle('open'));
+});
+
+// Ink-drop bloom — manifesto, about, cta
+const inkObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('ink-visible');
+      inkObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.ink-bloom').forEach(el => inkObserver.observe(el));
+
+// ─── KELİME-KELİME MASKELİ BAŞLIK REVEAL (izole test kanıtlı) ───
+// Büyük başlıkları kelimelere böler (renkli iç span + <br> korunur), her kelime
+// maskeden sıralı süzülür. FAILSAFE: 3sn sonra tüm başlıklar zorla görünür yapılır
+// (observer misfire etse bile başlık ASLA görünmez kalmaz — canon güvenliği).
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  // Kelime maske: sadece bu 4 başlık. Diğerleri ink/spotlight/chroma alır (aşağıdaki blok).
+  const TARGETS = ['.works-header h2','.process-header h2','.faq-header h2','.cta-title'];
+  const els = [];
+  function wrapWord(node, frag, d){
+    const w = document.createElement('span'); w.className='kael-word';
+    const inner = document.createElement('span');
+    inner.style.transitionDelay = (d.v += 0.06).toFixed(3) + 's';
+    inner.appendChild(node); w.appendChild(inner); frag.appendChild(w);
+  }
+  function split(el){
+    const d = {v:0}; const frag = document.createDocumentFragment();
+    Array.from(el.childNodes).forEach(c => {
+      if (c.nodeType === 3){
+        c.textContent.split(/(\s+)/).forEach(p => {
+          if (p.trim()===''){ if (p.length) frag.appendChild(document.createTextNode(p)); return; }
+          wrapWord(document.createTextNode(p), frag, d);
+        });
+      } else if (c.nodeName === 'BR'){ frag.appendChild(document.createElement('br')); }
+      else { wrapWord(c.cloneNode(true), frag, d); }
+    });
+    el.innerHTML=''; el.appendChild(frag);
+    el.classList.remove('fade-up'); el.classList.add('kael-reveal');
+  }
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if (e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.25 });
+  const seen = new Set();
+  TARGETS.forEach(sel => document.querySelectorAll(sel).forEach(el => {
+    if (seen.has(el)) return; seen.add(el);
+    try { split(el); io.observe(el); els.push(el); } catch(err){ el.classList.add('visible'); }
+  }));
+  // FAILSAFE: 3sn sonra görünür olmayanları zorla aç (asla görünmez başlık kalmaz)
+  setTimeout(()=>els.forEach(el=>el.classList.add('visible')), 3000);
+})();
+
+// ─── KAEL İMZA — közleri yarat (ember) ───
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const box = document.querySelector('.kd-embers');
+  if (!box) return;
+  const N = 20;
+  for (let i = 0; i < N; i++){
+    const e = document.createElement('span');
+    e.className = 'kd-ember';
+    const left = 8 + (i * 84 / N) + ((i * 37) % 9);   // deterministik dağılım (Math.random yok)
+    const dur = 6 + ((i * 13) % 7);                    // 6-12s
+    const delay = (i * 11) % 9;                        // 0-9s stagger
+    const drift = ((i % 2 ? 1 : -1) * (18 + (i * 7) % 40));
+    e.style.left = left + '%';
+    e.style.setProperty('--drift', drift + 'px');
+    e.style.animation = `kdRise ${dur}s linear ${delay}s infinite`;
+    box.appendChild(e);
+  }
+})();
+
+// ─── PREMIUM REVEAL DAĞITIMI (ink / spotlight / chromatic) ───
+// Codrops 2026 uyarlaması. Her başlık scroll'da viewport'a girince efekt çalışır.
+// FAILSAFE: 3.5sn sonra reveal-done → efekt sıfırlanır, başlık kesin görünür.
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const MAP = [
+    ['#ai-video .section-title','rv-spot'],
+    ['#web-design .section-title','rv-spot'],
+    ['#social-media .section-title','rv-spot'],
+    ['#why-kael .why-header h2','rv-chroma'],
+    ['.about-title','rv-ink'],
+  ];
+  const els = [];
+  MAP.forEach(([sel,cls]) => document.querySelectorAll(sel).forEach(el => {
+    el.classList.add('rv', cls); el.classList.remove('fade-up'); els.push(el);
+  }));
+  const io = new IntersectionObserver((ents)=>ents.forEach(e=>{
+    if (e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }
+  }), { threshold: 0.25 });
+  els.forEach(el => io.observe(el));
+  // FAILSAFE: efekt tamamlanınca (veya browser desteklemezse) başlık kesin görünür
+  setTimeout(()=>els.forEach(el=>el.classList.add('reveal-done')), 3500);
+})();
+
+// Flashlight Hover Effect
+document.querySelectorAll('.feature-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    card.style.setProperty('--mouse-x', `${x}px`);
+    card.style.setProperty('--mouse-y', `${y}px`);
+  });
+});
+
+// WebGL Smoke/Fluid Effect (Refero Premium Feel)
+const canvas = document.getElementById('hero-webgl');
+if (canvas && typeof THREE !== 'undefined') {
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
+  camera.position.z = 400;
+  const renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
+  renderer.setSize(window.innerWidth, window.innerHeight);
+
+  const uniforms = {
+    uTime: { value: 0 },
+    uMouse: { value: new THREE.Vector2(0.5, 0.5) },
+    uResolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) }
+  };
+
+  const material = new THREE.ShaderMaterial({
+    uniforms: uniforms,
+    vertexShader: `
+      varying vec2 vUv;
+      void main() {
+        vUv = uv;
+        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+      }
+    `,
+    fragmentShader: `
+      uniform float uTime;
+      uniform vec2 uMouse;
+      uniform vec2 uResolution;
+      varying vec2 vUv;
+      
+      vec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
+      vec2 mod289(vec2 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
+      vec3 permute(vec3 x) { return mod289(((x*34.0)+1.0)*x); }
+      float snoise(vec2 v) {
+        const vec4 C = vec4(0.211324865405187, 0.366025403784439, -0.577350269189626, 0.024390243902439);
+        vec2 i  = floor(v + dot(v, C.yy) );
+        vec2 x0 = v -   i + dot(i, C.xx);
+        vec2 i1 = (x0.x > x0.y) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);
+        vec4 x12 = x0.xyxy + C.xxzz;
+        x12.xy -= i1;
+        i = mod289(i);
+        vec3 p = permute( permute( i.y + vec3(0.0, i1.y, 1.0 )) + i.x + vec3(0.0, i1.x, 1.0 ));
+        vec3 m = max(0.5 - vec3(dot(x0,x0), dot(x12.xy,x12.xy), dot(x12.zw,x12.zw)), 0.0);
+        m = m*m;
+        m = m*m;
+        vec3 x = 2.0 * fract(p * C.www) - 1.0;
+        vec3 h = abs(x) - 0.5;
+        vec3 ox = floor(x + 0.5);
+        vec3 a0 = x - ox;
+        m *= 1.79284291400159 - 0.85373472095314 * ( a0*a0 + h*h );
+        vec3 g;
+        g.x  = a0.x  * x0.x  + h.x  * x0.y;
+        g.yz = a0.yz * x12.xz + h.yz * x12.yw;
+        return 130.0 * dot(m, g);
+      }
+
+      void main() {
+        vec2 uv = gl_FragCoord.xy / uResolution.xy;
+        float noise = snoise(uv * 2.0 + uTime * 0.1);
+        noise += 0.5 * snoise(uv * 4.0 - uTime * 0.15);
+        
+        float dist = distance(uv, uMouse);
+        float mouseGlow = smoothstep(0.6, 0.0, dist);
+        
+        vec3 colorDark = vec3(0.04, 0.02, 0.01);
+        vec3 colorAccent = vec3(0.86, 0.31, 0.0);
+        vec3 colorGreen = vec3(0.03, 0.08, 0.03); 
+        
+        vec3 finalColor = mix(colorDark, colorGreen, smoothstep(-1.0, 1.0, noise));
+        finalColor = mix(finalColor, colorAccent, smoothstep(0.4, 1.0, noise + mouseGlow * 0.8));
+        
+        float alpha = smoothstep(-0.2, 0.8, noise + mouseGlow * 0.8);
+        
+        float edge = smoothstep(0.0, 0.3, uv.x) * smoothstep(1.0, 0.7, uv.x) * smoothstep(0.0, 0.3, uv.y) * smoothstep(1.0, 0.7, uv.y);
+        
+        gl_FragColor = vec4(finalColor, alpha * edge * 0.5);
+      }
+    `,
+    transparent: true,
+  });
+
+  const plane = new THREE.Mesh(new THREE.PlaneGeometry(window.innerWidth * 2, window.innerHeight * 2), material);
+  scene.add(plane);
+
+  let mouseX = 0.5;
+  let mouseY = 0.5;
+  
+  document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX / window.innerWidth;
+    mouseY = 1.0 - (e.clientY / window.innerHeight);
+    gsap.to(uniforms.uMouse.value, { x: mouseX, y: mouseY, duration: 1.5, ease: 'power2.out' });
+  });
+
+  window.addEventListener('resize', () => {
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    uniforms.uResolution.value.set(window.innerWidth, window.innerHeight);
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    plane.geometry = new THREE.PlaneGeometry(window.innerWidth * 2, window.innerHeight * 2);
+  });
+
+  const clock = new THREE.Clock();
+  function animate() {
+    requestAnimationFrame(animate);
+    uniforms.uTime.value = clock.getElapsedTime();
+    renderer.render(scene, camera);
+  }
+  animate();
+  
+  setTimeout(() => canvas.classList.add('visible'), 800);
+}
+
+// Clean DOM-based Metric Text Rotation (vaporize particles removed for readability)
+const metricMeasurer = document.getElementById('metric-text-measurer');
+
+if (metricMeasurer) {
+  const texts = ["3 HAFTA.", "72 SAAT."];
+  const stories = [
+    { eyebrow: "GELENEKSEL AJANSLAR", cap: "Brief'ten teslim klasörüne kadar — büyük ajansların ortalaması.", isKael: false },
+    { eyebrow: "KAEL CREATIVE", cap: "Brief alındıktan teslim klasörüne kadar.<br>Ortalama, abartı değil.", isKael: true },
+  ];
+  let currentTextIndex = -1;
+
+  function renderText(text){
+    const m = text.match(/^(\d+)?(.*)$/);
+    const num = m && m[1] ? m[1] : "";
+    const rest = m && m[2] ? m[2] : text;
+    metricMeasurer.innerHTML = (num ? `<span class="accent">${num}</span>` : "") + rest;
+  }
+
+  function setIndex(i){
+    if (i === currentTextIndex) return;
+    currentTextIndex = i;
+    const isKael = i === 1;
+    const story = stories[i] || stories[stories.length - 1];
+    const storyText = document.getElementById('metric-story');
+    const capText = document.getElementById('metric-cap');
+
+    if (isKael) {
+      // ═══ KONSEY A+ : ODOMETER 504 → 72 + EMBER ═══
+      // Sahne 1: "3 HAFTA." yumuşak fade (üstünü çizmek YOK — yazı kendi içinden değişiyor)
+      gsap.to(metricMeasurer, {
+        opacity: 0.25, scale: 0.96, filter: 'blur(2px)', duration: 0.22, ease: 'power2.in',
+        onComplete: () => {
+          // Sahne 2: Aynı element içinde odometer'a geç — "504 SAAT." başlangıç
+          metricMeasurer.innerHTML = '<span class="accent" id="odo-num">504</span> SAAT.';
+          gsap.set(metricMeasurer, { opacity: 1, scale: 1, filter: 'blur(0)' });
+          const odoNum = document.getElementById('odo-num');
+
+          // Sahne 3: 504 → 72 hızlı geri sayım (~0.85s, expo easing)
+          const counter = { v: 504 };
+          gsap.to(counter, {
+            v: 72, duration: 0.85, ease: 'expo.out',
+            onUpdate: () => { if (odoNum) odoNum.textContent = Math.round(counter.v); },
+            onComplete: () => {
+              // 72'de durunca: tam değer garantile
+              if (odoNum) odoNum.textContent = '72';
+
+              // Sahne 4a: Turuncu shockwave flash
+              const flash = document.createElement('div');
+              flash.style.cssText = 'position:fixed;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 50%,rgba(220,80,0,0.55),transparent 70%);z-index:9990;pointer-events:none;';
+              document.body.appendChild(flash);
+              gsap.fromTo(flash, { opacity: 0 }, { opacity: 1, duration: 0.1, ease: 'power3.out',
+                onComplete: () => gsap.to(flash, { opacity: 0, duration: 0.55, ease: 'power2.out', onComplete: () => flash.remove() })
+              });
+
+              // Sahne 4b: Scale pulse on number (climax)
+              gsap.fromTo(metricMeasurer,
+                { scale: 1 },
+                { scale: 1.16, duration: 0.18, ease: 'power3.out', yoyo: true, repeat: 1 }
+              );
+
+              // Sahne 4c: 6 ember zerresi yukarı uçar
+              const emberContainer = document.getElementById('metric-embers');
+              if (emberContainer) {
+                emberContainer.innerHTML = '';
+                for (let k = 0; k < 6; k++) {
+                  const ember = document.createElement('div');
+                  const startX = (Math.random() - 0.5) * 240;
+                  const targetX = startX + (Math.random() - 0.5) * 160;
+                  const targetY = -(220 + Math.random() * 200);
+                  const size = 4 + Math.random() * 3;
+                  ember.style.cssText = `position:absolute;left:50%;top:50%;width:${size}px;height:${size}px;border-radius:50%;background:#ff8c42;box-shadow:0 0 12px rgba(220,80,0,0.95),0 0 4px rgba(255,200,140,1);pointer-events:none;transform:translate(${startX}px,0px);will-change:transform,opacity;`;
+                  emberContainer.appendChild(ember);
+                  gsap.to(ember, {
+                    x: targetX - startX, y: targetY, opacity: 0, scale: 0.3,
+                    duration: 1.4 + Math.random() * 0.7,
+                    ease: 'power2.out',
+                    delay: k * 0.04,
+                    onComplete: () => ember.remove()
+                  });
+                }
+              }
+
+              // Sahne 5: "72 SAAT." final hero text (renderText ile temizle, subtle morph)
+              renderText(texts[i]); // "<span class='accent'>72</span> SAAT."
+              gsap.fromTo(metricMeasurer,
+                { opacity: 0.85 },
+                { opacity: 1, duration: 0.35, ease: 'power2.out' }
+              );
+
+              // Sahne 6: Eyebrow + cap güncelle
+              if (capText && story.cap) capText.innerHTML = story.cap;
+              if (storyText) {
+                storyText.innerText = story.eyebrow;
+                gsap.fromTo(storyText,
+                  { opacity: 0, scale: 0.8, color: 'var(--cream)' },
+                  { opacity: 1, scale: 1.18, color: 'var(--accent)',
+                    textShadow: '0 0 30px rgba(220,80,0,0.9)', duration: 0.5, ease: 'back.out(1.5)' }
+                );
+                if (capText) gsap.to(capText, { color: 'var(--cream)', duration: 0.4, delay: 0.3 });
+              }
+
+              // Sahne 7: Arka plan bloom
+              const grid = document.querySelector('.metric-grid-overlay');
+              if (grid) {
+                grid.style.transition = 'background 0.15s ease';
+                grid.style.background = 'radial-gradient(circle at 50% 50%, rgba(220,80,0,0.3) 0%, transparent 80%)';
+                setTimeout(() => {
+                  grid.style.transition = 'background 1.2s ease';
+                  grid.style.background = 'radial-gradient(circle at 50% 50%, rgba(220,80,0,0.05) 0%, transparent 60%)';
+                }, 200);
+              }
+            }
+          });
+        }
+      });
+
+    } else {
+      // ═══ Geri dönüş: temiz fade ═══
+      // Embers temizle (eğer kaldıysa)
+      const emberContainer = document.getElementById('metric-embers');
+      if (emberContainer) emberContainer.innerHTML = '';
+
+      gsap.to(metricMeasurer, { opacity: 0, scale: 0.92, filter: 'blur(8px)', duration: 0.35, ease: 'power2.in',
+        onComplete: () => {
+          renderText(texts[i]);
+          gsap.fromTo(metricMeasurer,
+            { opacity: 0, scale: 1.06, filter: 'blur(8px)' },
+            { opacity: 1, scale: 1,    filter: 'blur(0)',  duration: 0.5, ease: 'power3.out' }
+          );
+          if (capText && story.cap) capText.innerHTML = story.cap;
+          if (storyText) {
+            storyText.innerText = story.eyebrow;
+            storyText.style.color = 'var(--accent)';
+            storyText.style.textShadow = '0 0 15px rgba(220,80,0,0.4)';
+            gsap.to(storyText, { scale: 1, duration: 0.4, ease: 'power2.out' });
+            if (capText) capText.style.color = 'var(--muted)';
+          }
+        }
+      });
+    }
+  }
+
+  // initial render
+  renderText(texts[0]);
+  currentTextIndex = 0;
+
+  const proxyObj = { globalProgress: 0 };
+  // Mobile + reduced-motion aware
+  const _metric72mm = gsap.matchMedia();
+  _metric72mm.add({
+    isDesktop: '(min-width: 768px) and (prefers-reduced-motion: no-preference)',
+    isMobile: '(max-width: 767px) and (prefers-reduced-motion: no-preference)',
+    reduceMotion: '(prefers-reduced-motion: reduce)',
+  }, (ctx) => {
+    const { isDesktop, reduceMotion } = ctx.conditions;
+    if (reduceMotion) {
+      // Animasyon yok — son state'i göster, scroll'a bağlama
+      setIndex(texts.length - 1);
+      return;
+    }
+    gsap.to(proxyObj, {
+      globalProgress: 1,
+      scrollTrigger: {
+        trigger: "#metric-72",
+        start: isDesktop ? "center center" : "top 80%",
+        end: isDesktop ? "+=180%" : "bottom top",
+        pin: !!isDesktop,
+        scrub: isDesktop ? 1.5 : 0.6,
+        onUpdate: (self) => {
+          const p = self.progress;
+          const idx = Math.min(texts.length - 1, Math.floor(p * texts.length));
+          setIndex(idx);
+        }
+      }
+    });
+  });
+
+  // IMPORTANT: Since this ScrollTrigger is created at the bottom of the file AFTER the '#process' trigger,
+  // we must tell GSAP to sort them by DOM position so that the pin-spacer of #metric-72
+  // correctly pushes #process down instead of letting them overlap!
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+
+// TextColor Reveal Effect for Manifesto
+if (document.querySelector('.manifesto-text')) {
+  gsap.to('.manifesto-text .line', {
+    backgroundPosition: "0% 0",
+    ease: "none",
+    stagger: 0.2,
+    scrollTrigger: {
+      trigger: "#manifesto",
+      start: "top 60%",
+      end: "center 30%",
+      scrub: 1.2
+    }
+  });
+}
+
+// ═══ HERO SCROLL CANVAS — frame-by-frame scroll efekti ═══
+(function() {
+  const canvas = document.getElementById('scroll-canvas');
+  const video  = document.getElementById('hero-video');
+  if (!canvas || !video) return;
+
+  const ctx = canvas.getContext('2d');
+  const FRAME_COUNT = 91;
+  const FRAMES_PATH = 'frames';
+
+  function resize() {
+    canvas.width  = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', () => { resize(); drawFrame(Math.round(frames.current)); });
+
+  // Kareleri önceden yükle
+  const images = [];
+  let loaded = 0;
+  for (let i = 1; i <= FRAME_COUNT; i++) {
+    const img = new Image();
+    img.src = `${FRAMES_PATH}/frame_${String(i).padStart(4,'0')}.jpg`;
+    img.onload = () => { loaded++; };
+    images.push(img);
+  }
+
+  function drawFrame(idx) {
+    const img = images[Math.max(0, Math.min(idx, FRAME_COUNT - 1))];
+    if (!img || !img.complete) return;
+    const scale = Math.max(canvas.width / img.naturalWidth, canvas.height / img.naturalHeight);
+    const x = (canvas.width  - img.naturalWidth  * scale) / 2;
+    const y = (canvas.height - img.naturalHeight * scale) / 2;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(img, x, y, img.naturalWidth * scale, img.naturalHeight * scale);
+  }
+
+  const frames = { current: 0 };
+
+  // Scroll başlayınca canvas devreye girer, video solar
+  ScrollTrigger.create({
+    trigger: '#hero',
+    start: 'top top',
+    end: 'bottom top',
+    scrub: 0.6,
+    onEnter: () => {
+      canvas.style.opacity = '1';
+      video.pause();
+    },
+    onLeaveBack: () => {
+      canvas.style.opacity = '0';
+      video.play();
+    },
+    onUpdate: (self) => {
+      const idx = Math.round(self.progress * (FRAME_COUNT - 1));
+      frames.current = idx;
+      drawFrame(idx);
+    }
+  });
+})();
+
+// ═══ SCROLL-DRIVEN VIDEO HERO — Tanrının Eli (native, blob, ileri/geri) ═══
+(function(){
+  const video    = document.getElementById('hvs-video');
+  const scroller = document.getElementById('hero');
+  if(!video || !scroller) return;
+  const flash = document.getElementById('hflash');
+  const cta   = document.getElementById('heroCtaV');
+  const beats = [
+    {el:document.getElementById('hb0'), a:0.02, b:0.17},
+    {el:document.getElementById('hb1'), a:0.23, b:0.42},
+    {el:document.getElementById('hb2'), a:0.48, b:0.66},
+    {el:document.getElementById('hb3'), a:0.70, b:0.86},
+  ];
+  video.pause();
+  let ready=false;
+  function onReady(){ if(ready) return; if(!video.duration||!isFinite(video.duration)) return; ready=true; update(); }
+  video.addEventListener('loadedmetadata', onReady);
+  video.addEventListener('loadeddata', onReady);
+  fetch(video.getAttribute('data-src')).then(r=>r.blob()).then(b=>{ video.src=URL.createObjectURL(b); video.load(); }).catch(()=>{ video.src=video.getAttribute('data-src'); });
+  setTimeout(onReady, 6000);
+
+  function progress(){
+    const s = scroller.offsetHeight - window.innerHeight;
+    if(s<=0) return 0;
+    return Math.min(Math.max(-scroller.getBoundingClientRect().top / s, 0), 1);
+  }
+  let lastCT=-1;
+  function update(){
+    const t = progress();
+    if(ready && video.duration){
+      const ct = Math.min(t*video.duration, video.duration-0.04);
+      if(Math.abs(ct-lastCT) > 0.008){ video.currentTime = ct; lastCT = ct; }
+    }
+    beats.forEach(o=>{ if(o.el) o.el.classList.toggle('on', t>=o.a && t<o.b); });
+    if(cta) cta.classList.toggle('on', t>=0.80);
+    let f=0; if(t>0.88) f = t<0.94 ? (t-0.88)/0.06 : Math.max(0,1-(t-0.94)/0.05);
+    if(flash) flash.style.opacity = f.toFixed(3);
+  }
+  function tick(){ update(); requestAnimationFrame(tick); }
+  requestAnimationFrame(tick);
+  try{ if(typeof lenis!=='undefined' && lenis.on) lenis.on('scroll', update); }catch(e){}
+  window.addEventListener('resize', ()=>{ if(window.ScrollTrigger) ScrollTrigger.refresh(); });
+  window._heroUpdate = update;
+})();
+
+// Magnetic Cursor on CTA
+document.querySelectorAll('.hero-cta, .cta-btn, .nav-logo').forEach(btn => {
+  btn.addEventListener('mousemove', (e) => {
+    const rect = btn.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+    gsap.to(btn, { x: x * 0.35, y: y * 0.35, duration: 0.4, ease: 'power2.out' });
+  });
+  btn.addEventListener('mouseleave', () => {
+    gsap.to(btn, { x: 0, y: 0, duration: 0.7, ease: 'elastic.out(1, 0.3)' });
+  });
+});
+</script>
+</body>
+</html>

@@ -10,3 +10,6 @@ _contrast_audit.md
 *.bak
 index.html.bak
 apply_phase3.py
+
+# Vercel
+.vercel

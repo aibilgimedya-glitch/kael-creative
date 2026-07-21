@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAEL Creative — AI ile Büyüyen İşletmeler</title>
+  <meta name="description" content="Web sitesi, sosyal medya yönetimi, NFC ve AI reklamları. Mersin ve KKTC'nin AI ajansı.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Barlow+Condensed:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0a0604;
+      --cream: #ffedc7;
+      --muted: rgba(255, 237, 199, 0.35);
+      --accent: #dc5000;
+      --accent2: #ff7a2f;
+      --border: rgba(255, 237, 199, 0.08);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--cream);
+      font-family: 'DM Mono', monospace;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 5vw;
+      background: linear-gradient(to bottom, rgba(10,6,4,0.95), transparent);
+      backdrop-filter: blur(0px);
+    }
+    .nav-logo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.6rem; font-weight: 900;
+      letter-spacing: 0.15em; color: var(--cream);
+      text-decoration: none; text-transform: uppercase;
+    }
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 32px; }
+    .nav-links a {
+      font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--muted); text-decoration: none;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover { color: var(--cream); }
+    .nav-cta {
+      font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;
+      border: 1px solid var(--accent); color: var(--accent);
+      padding: 8px 20px; border-radius: 2px; text-decoration: none;
+      transition: all 0.3s;
+    }
+    .nav-cta:hover { background: var(--accent); color: var(--bg); }
+
+    /* ── HERO SCROLL ── */
+    #hero-scroll-wrapper {
+      position: relative;
+      height: 350vh;
+    }
+    #hero-sticky {
+      position: sticky; top: 0;
+      width: 100%; height: 100vh;
+      overflow: hidden;
+    }
+    #hero-bg {
+      position: absolute; inset: 0;
+      background: #000;
+    }
+    #hero-img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.6s ease;
+    }
+    #hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, rgba(10,6,4,0.3) 0%, rgba(10,6,4,0.6) 100%);
+    }
+    #hero-content {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      text-align: center; padding: 0 5vw;
+    }
+    .hero-tag {
+      font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 24px;
+      border: 1px solid rgba(220,80,0,0.3);
+      padding: 6px 16px; border-radius: 2px;
+      opacity: 0; transform: translateY(20px);
+      animation: fadeUp 1s 0.3s forwards;
+    }
+    .hero-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(3.5rem, 10vw, 9rem);
+      font-weight: 900; line-height: 0.9;
+      text-transform: uppercase; letter-spacing: 0.02em;
+      margin-bottom: 32px;
+      opacity: 0; transform: translateY(30px);
+      animation: fadeUp 1s 0.5s forwards;
+    }
+    .hero-title em { color: var(--accent); font-style: normal; }
+    .hero-sub {
+      font-size: clamp(0.8rem, 1.5vw, 1rem);
+      color: var(--muted); max-width: 480px; line-height: 1.7;
+      margin-bottom: 48px;
+      opacity: 0; transform: translateY(20px);
+      animation: fadeUp 1s 0.7s forwards;
+    }
+    .hero-btns {
+      display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;
+      opacity: 0; transform: translateY(20px);
+      animation: fadeUp 1s 0.9s forwards;
+    }
+    .btn-primary {
+      background: var(--accent); color: var(--bg);
+      font-family: 'DM Mono', monospace;
+      font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase;
+      padding: 14px 32px; border: none; border-radius: 2px;
+      text-decoration: none; cursor: pointer;
+      transition: background 0.3s;
+    }
+    .btn-primary:hover { background: var(--accent2); }
+    .btn-ghost {
+      border: 1px solid var(--muted); color: var(--cream);
+      font-family: 'DM Mono', monospace;
+      font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase;
+      padding: 14px 32px; border-radius: 2px;
+      text-decoration: none; background: transparent;
+      transition: all 0.3s;
+    }
+    .btn-ghost:hover { border-color: var(--cream); }
+
+    /* scroll progress line */
+    #scroll-bar {
+      position: absolute; bottom: 0; left: 0;
+      height: 2px; background: var(--accent);
+      width: 0%; transition: width 0.1s linear;
+    }
+    #scroll-label {
+      position: absolute; bottom: 32px; left: 50%;
+      transform: translateX(-50%);
+      font-size: 10px; letter-spacing: 0.3em;
+      color: var(--muted); text-transform: uppercase;
+      animation: pulse 2s infinite;
+    }
+
+    /* ── STATS BAR ── */
+    .stats-bar {
+      background: rgba(255,237,199,0.03);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      display: flex; justify-content: center;
+      padding: 32px 5vw; gap: clamp(32px, 6vw, 80px);
+      flex-wrap: wrap;
+    }
+    .stat { text-align: center; }
+    .stat-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 2.5rem; font-weight: 900;
+      color: var(--accent); letter-spacing: 0.05em;
+    }
+    .stat-label {
+      font-size: 10px; letter-spacing: 0.2em;
+      color: var(--muted); text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    /* ── SECTION BASE ── */
+    section { padding: 100px 5vw; }
+    .section-tag {
+      font-size: 10px; letter-spacing: 0.35em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 16px;
+    }
+    .section-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      font-weight: 900; text-transform: uppercase;
+      line-height: 0.95; margin-bottom: 24px;
+    }
+    .section-sub {
+      font-size: 13px; color: var(--muted); line-height: 1.8;
+      max-width: 480px;
+    }
+
+    /* ── SERVICES ── */
+    #services { background: var(--bg); }
+    .services-header { margin-bottom: 64px; }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2px;
+    }
+    .service-card {
+      background: rgba(255,237,199,0.025);
+      border: 1px solid var(--border);
+      padding: 48px 40px;
+      position: relative; overflow: hidden;
+      cursor: default;
+      transition: background 0.4s, border-color 0.4s;
+    }
+    .service-card::before {
+      content: ''; position: absolute; top: 0; left: 0;
+      width: 3px; height: 0;
+      background: var(--accent);
+      transition: height 0.4s;
+    }
+    .service-card:hover { background: rgba(220,80,0,0.04); border-color: rgba(220,80,0,0.2); }
+    .service-card:hover::before { height: 100%; }
+    .service-num {
+      font-size: 10px; letter-spacing: 0.3em; color: var(--accent);
+      margin-bottom: 24px; opacity: 0.7;
+    }
+    .service-icon { font-size: 2rem; margin-bottom: 20px; }
+    .service-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.8rem; font-weight: 900;
+      text-transform: uppercase; letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+    .service-desc {
+      font-size: 12px; color: var(--muted); line-height: 1.8;
+      margin-bottom: 24px;
+    }
+    .service-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag {
+      font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase;
+      border: 1px solid var(--border); color: var(--muted);
+      padding: 4px 10px; border-radius: 2px;
+    }
+
+    /* ── PORTFOLIO ── */
+    #portfolio { background: rgba(255,237,199,0.015); }
+    .portfolio-header { margin-bottom: 64px; }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2px;
+    }
+    .portfolio-card {
+      position: relative; overflow: hidden;
+      aspect-ratio: 4/3;
+      background: rgba(255,237,199,0.03);
+      border: 1px solid var(--border);
+      cursor: pointer;
+    }
+    .portfolio-card img {
+      width: 100%; height: 100%;
+      object-fit: cover; display: block;
+      transition: transform 0.6s, opacity 0.4s;
+      opacity: 0.7;
+    }
+    .portfolio-card:hover img { transform: scale(1.05); opacity: 0.9; }
+    .portfolio-info {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 24px; background: linear-gradient(to top, rgba(10,6,4,0.95), transparent);
+      transform: translateY(8px); transition: transform 0.3s;
+    }
+    .portfolio-card:hover .portfolio-info { transform: translateY(0); }
+    .portfolio-client {
+      font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 8px;
+    }
+    .portfolio-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.4rem; font-weight: 900;
+      text-transform: uppercase; color: var(--cream);
+    }
+    .portfolio-type { font-size: 11px; color: var(--muted); margin-top: 4px; }
+    .portfolio-placeholder {
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 3rem; opacity: 0.15;
+    }
+
+    /* ── HOW IT WORKS ── */
+    #how { background: var(--bg); }
+    .how-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0; margin-top: 64px;
+      border: 1px solid var(--border);
+    }
+    .step {
+      padding: 40px 32px;
+      border-right: 1px solid var(--border);
+      position: relative;
+    }
+    .step:last-child { border-right: none; }
+    .step-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 5rem; font-weight: 900;
+      color: rgba(220,80,0,0.1); line-height: 1;
+      margin-bottom: 16px;
+    }
+    .step-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.3rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.05em;
+      margin-bottom: 12px; color: var(--cream);
+    }
+    .step-desc { font-size: 12px; color: var(--muted); line-height: 1.7; }
+
+    /* ── CONTACT ── */
+    #contact {
+      background: linear-gradient(135deg, rgba(220,80,0,0.06) 0%, rgba(10,6,4,1) 60%);
+      border-top: 1px solid var(--border);
+    }
+    .contact-wrap {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: start;
+    }
+    @media (max-width: 768px) { .contact-wrap { grid-template-columns: 1fr; gap: 48px; } }
+    .contact-info p { font-size: 12px; color: var(--muted); line-height: 1.8; margin-bottom: 32px; }
+    .contact-detail {
+      display: flex; align-items: center; gap: 12px;
+      font-size: 12px; color: var(--muted);
+      margin-bottom: 12px; text-decoration: none;
+    }
+    .contact-detail:hover { color: var(--cream); }
+    .contact-detail .d-label {
+      font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--accent); width: 80px; flex-shrink: 0;
+    }
+
+    form { display: flex; flex-direction: column; gap: 16px; }
+    .field { display: flex; flex-direction: column; gap: 6px; }
+    .field label {
+      font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--muted);
+    }
+    .field input, .field select, .field textarea {
+      background: rgba(255,237,199,0.04);
+      border: 1px solid var(--border);
+      color: var(--cream);
+      font-family: 'DM Mono', monospace; font-size: 13px;
+      padding: 12px 16px; border-radius: 2px;
+      outline: none; transition: border-color 0.3s;
+    }
+    .field input:focus, .field select:focus, .field textarea:focus {
+      border-color: var(--accent);
+    }
+    .field input::placeholder, .field textarea::placeholder { color: var(--muted); }
+    .field select option { background: #1a1008; }
+    .field textarea { resize: vertical; min-height: 100px; }
+    .form-submit {
+      background: var(--accent); color: var(--bg);
+      font-family: 'DM Mono', monospace;
+      font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase;
+      padding: 16px 32px; border: none; border-radius: 2px;
+      cursor: pointer; transition: background 0.3s; align-self: flex-start;
+    }
+    .form-submit:hover { background: var(--accent2); }
+    #form-success {
+      display: none; padding: 16px;
+      border: 1px solid rgba(220,80,0,0.3);
+      font-size: 12px; color: var(--accent);
+      letter-spacing: 0.1em;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 5vw;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 16px;
+    }
+    .footer-logo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.2rem; font-weight: 900;
+      letter-spacing: 0.15em; color: var(--cream);
+    }
+    .footer-logo span { color: var(--accent); }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a {
+      font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--muted); text-decoration: none;
+    }
+    .footer-links a:hover { color: var(--cream); }
+    .footer-copy { font-size: 10px; color: var(--muted); }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.4; } 50% { opacity: 0.9; }
+    }
+
+    /* fade-in on scroll */
+    .reveal {
+      opacity: 0; transform: translateY(40px);
+      transition: opacity 0.7s, transform 0.7s;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 600px) {
+      .nav-links { display: none; }
+      .hero-btns { flex-direction: column; align-items: center; }
+      .how-steps { grid-template-columns: 1fr; }
+      .step { border-right: none; border-bottom: 1px solid var(--border); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">KA<span>EL</span></a>
+  <div class="nav-links">
+    <a href="#services">Hizmetler</a>
+    <a href="#portfolio">Portföy</a>
+    <a href="#how">Nasıl Çalışır</a>
+    <a href="#contact">İletişim</a>
+  </div>
+  <a href="#contact" class="nav-cta">Başla</a>
+</nav>
+
+<!-- HERO SCROLL -->
+<div id="hero-scroll-wrapper">
+  <div id="hero-sticky">
+    <div id="hero-bg">
+      <img id="hero-img" src="scene1_clouds.png" alt="KAEL Hero">
+    </div>
+    <div id="hero-overlay"></div>
+    <div id="hero-content">
+      <div class="hero-tag">AI Yaratıcı Ajans</div>
+      <h1 class="hero-title">
+        Yaratıcılık<br><em>Yeniden</em><br>Tanımlandı
+      </h1>
+      <p class="hero-sub">
+        Web sitesi, sosyal medya, NFC ve AI reklam.<br>
+        İşletmenizi AI ile büyütüyoruz.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">Proje Başlat</a>
+        <a href="#portfolio" class="btn-ghost">Portföyü Gör</a>
+      </div>
+    </div>
+    <div id="scroll-bar"></div>
+    <div id="scroll-label">Kaydır ↓</div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-bar reveal">
+  <div class="stat">
+    <div class="stat-num">12+</div>
+    <div class="stat-label">Tamamlanan Proje</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">4</div>
+    <div class="stat-label">Aktif Hizmet</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">48h</div>
+    <div class="stat-label">Ortalama Teslimat</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">AI</div>
+    <div class="stat-label">Destekli Üretim</div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="services-header">
+    <div class="section-tag reveal">// Hizmetler</div>
+    <h2 class="section-title reveal">Ne Yapıyoruz</h2>
+    <p class="section-sub reveal">
+      Her hizmet, gerçek sonuç üretecek şekilde tasarlandı.
+      AI araçları + yaratıcı yön = rakipsiz hız ve kalite.
+    </p>
+  </div>
+  <div class="services-grid">
+
+    <div class="service-card reveal">
+      <div class="service-num">01</div>
+      <div class="service-icon">🌐</div>
+      <div class="service-name">Web Sitesi</div>
+      <p class="service-desc">
+        Sinematik, hızlı ve dönüşüm odaklı siteler.
+        Tasarım + geliştirme + deploy — hepsi dahil.
+        Stonova, Adanalılar BMW, Myia Beauty referanslarımız.
+      </p>
+      <div class="service-tags">
+        <span class="tag">Tasarım</span>
+        <span class="tag">Geliştirme</span>
+        <span class="tag">SEO</span>
+        <span class="tag">Deploy</span>
+      </div>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-num">02</div>
+      <div class="service-icon">📱</div>
+      <div class="service-name">Sosyal Medya</div>
+      <p class="service-desc">
+        Aylık içerik takvimi, AI görsel üretimi, Reels ve carousel.
+        Markanız için tutarlı, büyüyen bir sosyal varlık.
+      </p>
+      <div class="service-tags">
+        <span class="tag">Instagram</span>
+        <span class="tag">Reels</span>
+        <span class="tag">Carousel</span>
+        <span class="tag">Strateji</span>
+      </div>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-num">03</div>
+      <div class="service-icon">📡</div>
+      <div class="service-name">NFC Dijital Kartvizit</div>
+      <p class="service-desc">
+        Tek dokunuşta menü, yorum, WiFi veya profil.
+        Restoran, kafe, otel ve kişisel marka için akıllı NFC çözümü.
+      </p>
+      <div class="service-tags">
+        <span class="tag">NFC</span>
+        <span class="tag">QR</span>
+        <span class="tag">Panel</span>
+        <span class="tag">Analytics</span>
+      </div>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-num">04</div>
+      <div class="service-icon">🎬</div>
+      <div class="service-name">AI Reklam & Video</div>
+      <p class="service-desc">
+        Higgsfield ve Seedance ile sinematik ürün videosu, UGC reklam
+        ve sosyal medya içerikleri. İnsan kamera ekibine gerek yok.
+      </p>
+      <div class="service-tags">
+        <span class="tag">UGC</span>
+        <span class="tag">Reels</span>
+        <span class="tag">Ürün Videosu</span>
+        <span class="tag">AI</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="portfolio-header">
+    <div class="section-tag reveal">// Portföy</div>
+    <h2 class="section-title reveal">Gerçek İşler,<br>Gerçek Sonuçlar</h2>
+    <p class="section-sub reveal">Her proje sıfırdan, müşteriye özel.</p>
+  </div>
+  <div class="portfolio-grid">
+
+    <div class="portfolio-card reveal">
+      <img src="porto_adanalilar.webp" alt="Adanalılar BMW" loading="lazy">
+      <div class="portfolio-info">
+        <div class="portfolio-client">Web Sitesi</div>
+        <div class="portfolio-name">Adanalılar BMW</div>
+        <div class="portfolio-type">Mersin — Premium Oto Servis</div>
+      </div>
+    </div>
+
+    <div class="portfolio-card reveal">
+      <img src="porto_stonova.jpg" alt="Stonova" loading="lazy"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+      <div class="portfolio-placeholder" style="display:none">🪨</div>
+      <div class="portfolio-info">
+        <div class="portfolio-client">Web Sitesi</div>
+        <div class="portfolio-name">Stonova Design</div>
+        <div class="portfolio-type">Türkiye — Beton Dekor</div>
+      </div>
+    </div>
+
+    <div class="portfolio-card reveal">
+      <img src="porto_myia.jpg" alt="Myia Beauty Hair" loading="lazy">
+      <div class="portfolio-info">
+        <div class="portfolio-client">Web Sitesi</div>
+        <div class="portfolio-name">Myia Beauty Hair</div>
+        <div class="portfolio-type">KKTC — Güzellik Salonu</div>
+      </div>
+    </div>
+
+    <div class="portfolio-card reveal" style="background:linear-gradient(135deg,#1a1208,#2d1f00)">
+      <div style="display:flex;align-items:center;justify-content:center;height:100%;flex-direction:column;gap:12px;padding:2rem">
+        <div style="font-size:3rem;opacity:0.6">✦</div>
+        <div style="font-family:'DM Mono',monospace;color:var(--accent);font-size:0.75rem;letter-spacing:0.2em">PROJE BAŞLATILIYOR</div>
+        <div style="color:var(--cream);font-weight:700;font-size:1.1rem">NFC Akıllı Menü</div>
+        <div style="color:var(--muted);font-size:0.8rem">Restoran & Otel Dijital Dokunuşu</div>
+      </div>
+      <div class="portfolio-info">
+        <div class="portfolio-client">NFC Ürünü</div>
+        <div class="portfolio-name">KAEL NFC Hub</div>
+        <div class="portfolio-type">Mersin + KKTC — Restoran & Otel</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="section-tag reveal">// Nasıl Çalışır</div>
+  <h2 class="section-title reveal">48 Saatte<br>Teslim</h2>
+  <div class="how-steps">
+    <div class="step reveal">
+      <div class="step-num">01</div>
+      <div class="step-title">Brief</div>
+      <p class="step-desc">İşletmenizi, hedeflerinizi ve beklentilerinizi 15 dakikada anlıyoruz.</p>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">02</div>
+      <div class="step-title">Strateji</div>
+      <p class="step-desc">Platform, format ve içerik planı hazırlanır. Onayınız alınır.</p>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">03</div>
+      <div class="step-title">Üretim</div>
+      <p class="step-desc">AI araçlarıyla içerik, görsel ve video üretimi başlar.</p>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">04</div>
+      <div class="step-title">Teslim</div>
+      <p class="step-desc">Onaylı çıktılar yayına alınır. Haftalık raporlama başlar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-wrap">
+    <div class="contact-info reveal">
+      <div class="section-tag">// İletişim</div>
+      <h2 class="section-title">Projenizi<br>Konuşalım</h2>
+      <p>Web sitesi, sosyal medya veya NFC için teklif almak 5 dakika sürer. Formu doldurun, 24 saat içinde dönelim.</p>
+      <a href="mailto:ai.bilgimedya@gmail.com" class="contact-detail">
+        <span class="d-label">E-Posta</span>
+        ai.bilgimedya@gmail.com
+      </a>
+      <a href="https://instagram.com/kaelcreative" class="contact-detail" target="_blank">
+        <span class="d-label">Instagram</span>
+        @kaelcreative
+      </a>
+      <a href="https://kaelcreative.com/nfc" class="contact-detail" target="_blank">
+        <span class="d-label">NFC Ürünü</span>
+        kaelcreative.com/nfc
+      </a>
+    </div>
+
+    <div class="reveal">
+      <form id="contact-form">
+        <div class="field">
+          <label>Ad Soyad</label>
+          <input type="text" name="name" placeholder="Ahmet Yılmaz" required>
+        </div>
+        <div class="field">
+          <label>İşletme / Marka</label>
+          <input type="text" name="business" placeholder="İşletme adı">
+        </div>
+        <div class="field">
+          <label>İletişim (Tel / Instagram)</label>
+          <input type="text" name="contact" placeholder="+90 555 000 00 00" required>
+        </div>
+        <div class="field">
+          <label>İhtiyacınız</label>
+          <select name="service">
+            <option value="">Seçin...</option>
+            <option value="web">Web Sitesi</option>
+            <option value="smm">Sosyal Medya Yönetimi</option>
+            <option value="nfc">NFC Dijital Kartvizit</option>
+            <option value="video">AI Reklam & Video</option>
+            <option value="paket">Komple Paket</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Kısaca anlat</label>
+          <textarea name="message" placeholder="Projeniz hakkında 2-3 cümle..."></textarea>
+        </div>
+        <input type="hidden" name="access_key" value="b092944e-81f1-484a-8e9c-b330104c27a9">
+        <input type="hidden" name="subject" value="KAEL - Yeni Proje Talebi">
+        <input type="hidden" name="from_name" value="KAEL Ajans Sitesi">
+        <input type="hidden" name="subject" value="KAEL Creative — Yeni Proje Talebi">
+        <button type="submit" class="form-submit">Gönder →</button>
+        <div id="form-success">Mesajınız alındı. 24 saat içinde dönüyoruz.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">KA<span>EL</span> Creative</div>
+  <div class="footer-links">
+    <a href="/sartlar.html">Şartlar</a>
+    <a href="/gizlilik.html">Gizlilik</a>
+    <a href="#contact">İletişim</a>
+  </div>
+  <div class="footer-copy">© 2026 KAEL Creative</div>
+</footer>
+
+<script>
+  // ── HERO SCROLL ──
+  const wrapper = document.getElementById('hero-scroll-wrapper');
+  const img = document.getElementById('hero-img');
+  const scrollBar = document.getElementById('scroll-bar');
+  const scrollLabel = document.getElementById('scroll-label');
+  const scenes = [
+    'scene1_clouds.png',
+    'scene2_hand.png',
+    'scene3_activation.png'
+  ];
+  let currentScene = 0;
+
+  // preload
+  scenes.forEach(src => { const i = new Image(); i.src = src; });
+
+  // fade in first scene
+  window.addEventListener('load', () => {
+    img.src = scenes[0];
+    img.style.opacity = '1';
+  });
+
+  window.addEventListener('scroll', () => {
+    const rect = wrapper.getBoundingClientRect();
+    const total = wrapper.offsetHeight - window.innerHeight;
+    const scrolled = -rect.top;
+    const progress = Math.max(0, Math.min(1, scrolled / total));
+
+    // scroll bar
+    scrollBar.style.width = (progress * 100) + '%';
+
+    // hide scroll label after start
+    scrollLabel.style.opacity = progress > 0.05 ? '0' : '';
+
+    // scene switch (0–33%, 33–66%, 66–100%)
+    let targetScene;
+    if (progress < 0.33) targetScene = 0;
+    else if (progress < 0.66) targetScene = 1;
+    else targetScene = 2;
+
+    if (targetScene !== currentScene) {
+      currentScene = targetScene;
+      img.style.opacity = '0';
+      setTimeout(() => {
+        img.src = scenes[currentScene];
+        img.style.opacity = '1';
+      }, 300);
+    }
+  }, { passive: true });
+
+  // ── REVEAL ON SCROLL ──
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => io.observe(el));
+
+  // ── FORM ──
+  document.getElementById('contact-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = e.target.querySelector('.form-submit');
+    btn.textContent = 'Gönderiliyor...';
+    btn.disabled = true;
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(Object.fromEntries(new FormData(e.target)))
+      });
+      if (res.ok) {
+        document.getElementById('form-success').style.display = 'block';
+        e.target.reset();
+      }
+    } catch {}
+    btn.textContent = 'Gönder →';
+    btn.disabled = false;
+  });
+</script>
+
+</body>
+</html>

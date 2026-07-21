@@ -1,0 +1,8 @@
+mascot/
+_GOLDEN_ARSIV/
+_referanslar/
+index.html.backup_*
+*.backup*
+*.tar.gz
+frames/
+*.md
