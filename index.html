@@ -992,10 +992,15 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
 
 /* 2) #web-design — site slab'ları (gerçek proje ekranları) */
 .site-slabs{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start;padding-left:40px;margin-top:12px;}
-.site-slab{margin:0;border:1px solid var(--border);background:#160b07;overflow:hidden;}
+.site-slab{margin:0;border:1px solid var(--border);background:#160b07;overflow:hidden;display:block;text-decoration:none;transition:transform .4s cubic-bezier(.2,.7,.2,1),border-color .4s;}
+.site-slab:hover,.site-slab:focus-visible{transform:translateY(-4px);border-color:rgba(220,80,0,.6);}
+.slab-bar{display:flex;align-items:center;gap:5px;height:26px;padding:0 10px;border-bottom:1px solid var(--border);background:#0d0705;font:10px 'DM Mono',monospace;letter-spacing:.08em;}
+.slab-bar i{width:6px;height:6px;border-radius:50%;background:rgba(255,237,199,.22);}
+.slab-bar b{font-weight:400;color:var(--muted);margin-left:8px;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.slab-bar em{font-style:normal;color:var(--accent);}
 .site-slab.tall{grid-row:span 2;}
-.site-slab img{display:block;width:100%;height:220px;object-fit:cover;object-position:top;filter:saturate(.78);}
-.site-slab.tall img{height:456px;}
+.site-slab img{display:block;width:100%;height:194px;object-fit:cover;object-position:top;}
+.site-slab.tall img{height:430px;}
 .slab-caption{grid-column:1/-1;margin:4px 0 0;color:var(--accent);font:10px 'DM Mono',monospace;letter-spacing:.18em;}
 
 /* 2b) #social-media — editoryal yayın şeridi (poster JPG, video yok) */
@@ -1051,7 +1056,7 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
   .site-slabs{grid-template-columns:1fr 1fr;padding-left:0;margin-top:24px;}
   .site-slab.tall{grid-column:1/-1;grid-row:auto;}
   .site-slab.tall img{height:220px;}
-  .site-slab img{height:150px;}
+  .site-slab img{height:150px;object-position:left top;}
 
   .content-rhythm{grid-template-columns:1fr 1fr;grid-auto-rows:110px;padding-left:0;margin-top:24px;}
   .content-rhythm .rhythm-lead{grid-column:1/-1;grid-row:auto;aspect-ratio:16/9;height:auto;}
@@ -1375,9 +1380,9 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
     <div class="tech-badge" style="margin-top:20px;">SES-RENK DİSİPLİNİ<span class="tm">™</span></div>
   </div>
   <div class="site-slabs">
-    <figure class="site-slab tall"><img src="porto_stonova.jpg" loading="lazy" alt="Stonova web sitesi proje görünümü"></figure>
-    <figure class="site-slab"><img src="porto_myia.jpg" loading="lazy" alt="MYIA web sitesi proje görünümü"></figure>
-    <figure class="site-slab"><img src="porto_adanalilar.webp" loading="lazy" alt="Adanalılar web sitesi proje görünümü"></figure>
+    <a class="site-slab tall" href="https://www.stonova.design" target="_blank" rel="noopener"><span class="slab-bar"><i></i><i></i><i></i><b>stonova.design</b><em>↗</em></span><img src="site_stonova.webp" loading="lazy" alt="Stonova Design web sitesi — mobil görünüm"></a>
+    <a class="site-slab" href="https://adanalilar-bmw.vercel.app" target="_blank" rel="noopener"><span class="slab-bar"><i></i><i></i><i></i><b>adanalılar</b><em>↗</em></span><img src="site_adanalilar.webp" loading="lazy" alt="Adanalılar BMW Servisi web sitesi"></a>
+    <a class="site-slab" href="https://tapopen.co" target="_blank" rel="noopener"><span class="slab-bar"><i></i><i></i><i></i><b>tapopen.co</b><em>↗</em></span><img src="site_tapopen.webp" loading="lazy" alt="TapOpen NFC web sitesi"></a>
     <p class="slab-caption">MARKA → EKRAN → CANLI</p>
   </div>
   <div class="side-label">KAEL CREATIVE — v1.0</div>
