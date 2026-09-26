@@ -575,6 +575,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
    SECTION 08 — CTA
 ═══════════════════════════════════════════ */
 #cta{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;}
+@media (min-width:721px){#cta{padding-bottom:190px;padding-top:110px;min-height:100vh;height:auto;}.cta-infobox{bottom:150px!important;}}
+.cta-form .form-consent{text-align:left;}
 .cta-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 60%, rgba(220,80,0,0.08) 0%, transparent 65%);}
 .cta-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(48px,8vw,110px);line-height:.85;color:var(--cream);position:relative;z-index:1;opacity:0;transform:translateY(30px);transition:opacity 0.8s ease,transform 0.8s ease;}
 .cta-title.visible{opacity:1;transform:translateY(0);}
@@ -659,6 +661,16 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
 /* SHOWREEL — dövüş klipleri grid */
 .showreel{margin:0 0 40px;opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease;}
 .showreel.visible{opacity:1;transform:translateY(0);}
+/* dokunma hedefleri ≥44px (Codex canlı denetim P1, 2026-09-27) */
+@media (hover:none),(max-width:720px){
+  #reelSoundToggle{min-height:44px;}
+  .console-top a{display:inline-flex;align-items:center;min-height:44px;min-width:44px;justify-content:flex-end;}
+  .cta-contact a{display:inline-flex;align-items:center;min-height:44px;}
+  .cta-form .form-consent input[type="checkbox"]{width:22px;height:22px;min-width:22px;margin-top:0;}
+  .cta-form .form-consent{padding:10px 0;}
+  .kc-consent button{min-height:44px!important;}
+  .kc-consent .kc-close{min-width:44px!important;min-height:44px!important;display:inline-flex!important;align-items:center;justify-content:center;}
+}
 .hint-touch{display:none;}@media (hover:none){.hint-hover{display:none;}.hint-touch{display:inline;}}
 .showreel-label{font-size:10px;letter-spacing:0.25em;color:var(--accent);margin-bottom:12px;text-transform:uppercase;}
 .showreel-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;}
@@ -855,7 +867,7 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
 .cta-form button:hover{background:var(--accent);border-color:var(--accent);}
 .cta-form input.invalid,.cta-form textarea.invalid{border-color:#ff4040;}
 .cta-form .form-consent{display:flex;gap:10px;align-items:flex-start;font-family:'DM Mono',monospace;font-size:10px;line-height:1.6;color:var(--muted);letter-spacing:0.04em;padding:6px 0;cursor:pointer;}
-.cta-form .form-consent input[type="checkbox"]{appearance:none;-webkit-appearance:none;width:14px;height:14px;min-width:14px;border:1px solid var(--border);background:transparent;margin-top:2px;cursor:pointer;position:relative;transition:.2s;}
+.cta-form .form-consent input[type="checkbox"]{padding:0;flex:none;appearance:none;-webkit-appearance:none;width:14px;height:14px;min-width:14px;border:1px solid var(--border);background:transparent;margin-top:2px;cursor:pointer;position:relative;transition:.2s;}
 .cta-form .form-consent input[type="checkbox"]:checked{background:var(--accent);border-color:var(--accent);}
 .cta-form .form-consent input[type="checkbox"]:checked::after{content:"✓";position:absolute;top:-3px;left:1px;color:#fff;font-size:12px;font-weight:bold;}
 .cta-form .form-consent input[type="checkbox"].invalid{border-color:#ff4040;}
@@ -949,7 +961,11 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
   .ink-drop-bg.ink-hero{width:100%;right:-20%;opacity:0.10;}
   .hero-cta{bottom:160px;right:24px;left:24px;justify-content:center;padding:14px;}
   .hero-infobox{bottom:24px;}
-  .blueprint-footer{left:24px;right:24px;bottom:16px;}
+  #cta{padding:110px 24px 32px;justify-content:flex-start;min-height:auto;height:auto;}
+  .cta-form .form-consent{text-align:left;}
+  .cta-contact{flex-wrap:wrap;justify-content:center;gap:4px 16px;}
+  .cta-infobox{position:static;margin-top:32px;align-self:stretch;}
+  .blueprint-footer{position:static;margin-top:24px;align-self:stretch;}
   .blueprint-footer .bp-row{font-size:9px;gap:6px;}
   body::before{background-size:40px 40px;}
   body::after{background-size:24px 24px;}
