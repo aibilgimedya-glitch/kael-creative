@@ -448,7 +448,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 /* ═══════════════════════════════════════════
    SECTION 04 — WEB TASARIM
 ═══════════════════════════════════════════ */
-#web-design,#social-media{display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:120px 80px 80px;}
+#web-design,#qr-menu{display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:120px 80px 80px;}
 .web-features{display:flex;flex-direction:column;gap:0;padding-left:40px;}
 .web-feature{padding:24px 0;border-bottom:1px solid var(--border);opacity:0;transform:translateX(30px);transition:opacity 0.5s ease,transform 0.5s ease;}
 .web-feature.visible{opacity:1;transform:translateX(0);}
@@ -637,7 +637,8 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
 ═══════════════════════════════════════════ */
 #works{padding:120px 80px 80px;display:flex;flex-direction:column;justify-content:center;}
 .works-header{margin-bottom:48px;}
-.works-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);flex:1;max-height:calc(100vh - 280px);}
+.works-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:minmax(260px,32vh);gap:1px;background:var(--border);flex:1;}
+.work-card:nth-child(5){transition-delay:0.45s;}.work-card:nth-child(6){transition-delay:0.55s;}
 .work-card{background:var(--bg);position:relative;overflow:hidden;cursor:pointer;opacity:0;transform:translateY(30px);transition:opacity 0.6s ease,transform 0.6s ease;text-decoration:none;display:block;color:inherit;}
 .work-card.visible{opacity:1;transform:translateY(0);}
 .work-card:nth-child(1){transition-delay:0.05s;}
@@ -938,7 +939,7 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
   .hero-subtitle{left:24px;font-size:13px;}
   .hero-desc{right:24px;left:24px;top:auto;bottom:180px;transform:none;max-width:100%;font-size:12px;}
   .hero-infobox{left:24px;bottom:70px;}
-  #ai-video,#web-design,#social-media,#systems{grid-template-columns:1fr;padding:100px 24px 60px;}
+  #ai-video,#web-design,#qr-menu,#systems{grid-template-columns:1fr;padding:100px 24px 60px;}
   .pipeline{padding-left:0;margin-top:32px;}
   .web-features{padding-left:0;margin-top:32px;}
   #why-kael{padding:100px 24px 60px;}
@@ -1019,11 +1020,21 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
 .site-slab.tall img{height:430px;}
 .slab-caption{grid-column:1/-1;margin:4px 0 0;color:var(--accent);font:10px 'DM Mono',monospace;letter-spacing:.18em;}
 
-/* 2b) #social-media — editoryal yayın şeridi (poster JPG, video yok) */
-.content-rhythm{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:130px;gap:8px;padding-left:40px;margin-top:12px;}
-.content-rhythm figure{margin:0;border:1px solid var(--border);overflow:hidden;background:#160b07;}
-.content-rhythm img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.85);}
-.content-rhythm .rhythm-lead{grid-column:span 2;grid-row:span 2;}
+/* 2b) #qr-menu — NFC/QR menü vitrini */
+.qr-stage{padding-left:40px;}
+.qr-phones{display:flex;gap:28px;justify-content:center;}
+.qr-phone{display:flex;flex-direction:column;align-items:center;gap:12px;text-decoration:none;transition:transform .4s cubic-bezier(.2,.7,.2,1);}
+.qr-phone img{width:200px;aspect-ratio:390/844;object-fit:cover;object-position:top;border-radius:28px;border:6px solid #0d0705;outline:1px solid var(--border);box-shadow:0 30px 60px -30px rgba(220,80,0,.45);display:block;}
+.qr-phone span{font:10px 'DM Mono',monospace;letter-spacing:.2em;color:var(--muted);}
+.qr-phone em{font-style:normal;color:var(--accent);}
+.qr-phone:hover,.qr-phone:focus-visible{transform:translateY(-6px);}
+.qr-phone:nth-child(2){margin-top:48px;}
+.qr-foto-label{margin:36px 0 10px;font:10px 'DM Mono',monospace;letter-spacing:.2em;color:var(--accent);}
+.qr-foto{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;}
+.qr-foto figure{margin:0;aspect-ratio:1;overflow:hidden;border:1px solid var(--border);}
+.qr-foto img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;}
+.qr-foto figure:hover img{transform:scale(1.08);}
+@media (max-width:720px){.qr-stage{padding-left:0;margin-top:32px;}.qr-phones{gap:16px;}.qr-phone img{width:140px;border-radius:20px;border-width:4px;}.qr-phone:nth-child(2){margin-top:28px;}.qr-foto{grid-template-columns:repeat(3,1fr);}}
 
 /* 3) #systems — çalışan sistem konsolu */
 .system-console{border:1px solid var(--border);background:linear-gradient(135deg,#140906,#090605);padding:28px;position:relative;overflow:hidden;}
@@ -1074,8 +1085,6 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
   .site-slab.tall img{height:220px;}
   .site-slab img{height:150px;object-position:left top;}
 
-  .content-rhythm{grid-template-columns:1fr 1fr;grid-auto-rows:110px;padding-left:0;margin-top:24px;}
-  .content-rhythm .rhythm-lead{grid-column:1/-1;grid-row:auto;aspect-ratio:16/9;height:auto;}
 
   .system-chain li{grid-template-columns:1fr;gap:4px;padding:16px 0;}
   .system-chain li>span,.system-chain li>b{display:inline-block;margin-right:8px;}
@@ -1234,23 +1243,23 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
     <div class="tech-badge" style="margin-top:20px;">PARALEL AJAN ÇEKİRDEĞİ<span class="tm">™</span></div>
   </div>
   <div class="video-contact-sheet" aria-label="AI video örnekleri">
-    <button class="video-proof is-lead" type="button" aria-label="Devirler reklam filmi örneğini oynat">
-      <video class="proof-media" muted loop playsinline preload="none" poster="videos/w3_devirler_poster.jpg">
-        <source src="videos/w3_devirler.mp4" type="video/mp4">
+    <button class="video-proof is-lead" type="button" aria-label="Gece araba sahnesi örneğini oynat">
+      <video class="proof-media" muted loop playsinline preload="none" poster="videos/a1_gece_araba_poster.jpg">
+        <source src="videos/a1_gece_araba.mp4" type="video/mp4">
       </video>
-      <span class="proof-meta">01 — REKLAM FİLMİ <b>DEVİRLER</b></span>
+      <span class="proof-meta">01 — SİNEMATİK <b>GECE</b></span>
     </button>
-    <button class="video-proof" type="button" aria-label="Kahve ürün videosu örneğini oynat">
-      <video class="proof-media" muted loop playsinline preload="none" poster="videos/w2_kahve_poster.jpg">
-        <source src="videos/w2_kahve.mp4" type="video/mp4">
+    <button class="video-proof" type="button" aria-label="Aksiyon sahnesi örneğini oynat">
+      <video class="proof-media" muted loop playsinline preload="none" poster="videos/a2_aksiyon_poster.jpg">
+        <source src="videos/a2_aksiyon.mp4" type="video/mp4">
       </video>
-      <span class="proof-meta">02 — ÜRÜN <b>KAHVE</b></span>
+      <span class="proof-meta">02 — AKSİYON <b>SAHNE</b></span>
     </button>
-    <button class="video-proof" type="button" aria-label="Rafet Tibet karakter videosu örneğini oynat">
-      <video class="proof-media" muted loop playsinline preload="none" poster="videos/w5_rafet_tibet_poster.jpg">
-        <source src="videos/w5_rafet_tibet.mp4" type="video/mp4">
+    <button class="video-proof" type="button" aria-label="Drift sahnesi örneğini oynat">
+      <video class="proof-media" muted loop playsinline preload="none" poster="videos/a3_drift_poster.jpg">
+        <source src="videos/a3_drift.mp4" type="video/mp4">
       </video>
-      <span class="proof-meta">03 — KARAKTER <b>RAFET</b></span>
+      <span class="proof-meta">03 — ARAÇ <b>DRIFT</b></span>
     </button>
     <div class="pipeline-rail">BRİFİNG → SENARYO → ÜRETİM → KURGU → TESLİM</div>
   </div>
@@ -1278,36 +1287,28 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
     </div>
   </div>
   <div class="works-grid">
-    <a class="work-card" href="https://www.youtube.com/@kozmikrafet" target="_blank" rel="noopener">
-      <div class="work-thumb" style="background-image:url('thumbs/kozmikrafet.jpg');"></div>
+    <a class="work-card" href="https://www.stonova.design" target="_blank" rel="noopener">
+      <div class="work-thumb" style="background-image:url('thumbs/w_stonova.webp');"></div>
       <div class="work-overlay">
-        <div class="work-tag">AI VİDEO · MOCKUMENTARY</div>
-        <div class="work-title">KOZMİK RAFET</div>
-        <div class="work-meta">10 BÖLÜM · HIGGSFIELD · SEEDANCE</div>
+        <div class="work-tag">WEB SİTESİ · MİMARİ ÜRÜN</div>
+        <div class="work-title">STONOVA DESIGN</div>
+        <div class="work-meta">STONOVA.DESIGN →</div>
       </div>
     </a>
-    <a class="work-card" href="https://www.youtube.com/@vahsisohbet" target="_blank" rel="noopener">
-      <div class="work-thumb" style="background-image:url('thumbs/vahsisohbet.jpg');"></div>
+    <a class="work-card" href="https://www.adanalilarbmwservisi.com" target="_blank" rel="noopener">
+      <div class="work-thumb" style="background-image:url('thumbs/w_adanalilar.webp');"></div>
       <div class="work-overlay">
-        <div class="work-tag">AI VİDEO · BELGESEL</div>
-        <div class="work-title">VAHŞİ SOHBET</div>
-        <div class="work-meta">10 BÖLÜM · KARAKTER TUTARLILIĞI</div>
+        <div class="work-tag">WEB SİTESİ · OTO SERVİS</div>
+        <div class="work-title">ADANALILAR BMW</div>
+        <div class="work-meta">4 DİL · WHATSAPP RANDEVU →</div>
       </div>
     </a>
-    <a class="work-card" href="https://papirus.app" target="_blank" rel="noopener">
-      <div class="work-thumb" style="background-image:url('thumbs/papirus.jpg');"></div>
+    <a class="work-card" href="https://tapopen.co" target="_blank" rel="noopener">
+      <div class="work-thumb" style="background-image:url('thumbs/w_tapopen.webp');"></div>
       <div class="work-overlay">
-        <div class="work-tag">WEB TASARIM · SAAS</div>
-        <div class="work-title">PAPİRUS</div>
-        <div class="work-meta">FATURA AI · 21 GÜNDE CANLI →</div>
-      </div>
-    </a>
-    <a class="work-card" href="https://www.youtube.com/@yigitkaya" target="_blank" rel="noopener">
-      <div class="work-thumb" style="background-image:url('thumbs/kael_lab.jpg');"></div>
-      <div class="work-overlay">
-        <div class="work-tag">İÇERİK SİSTEMİ · YOUTUBE</div>
-        <div class="work-title">KAEL LAB</div>
-        <div class="work-meta">HAFTALIK YAYIN · YOUTUBE →</div>
+        <div class="work-tag">MARKA + WEB · NFC / QR</div>
+        <div class="work-title">TAPOPEN</div>
+        <div class="work-meta">TAPOPEN.CO →</div>
       </div>
     </a>
   </div>
@@ -1397,33 +1398,29 @@ footer{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:
   </div>
   <div class="site-slabs">
     <a class="site-slab tall" href="https://www.stonova.design" target="_blank" rel="noopener"><span class="slab-bar"><i></i><i></i><i></i><b>stonova.design</b><em>↗</em></span><img src="site_stonova.webp" loading="lazy" alt="Stonova Design web sitesi — mobil görünüm"></a>
-    <a class="site-slab" href="https://adanalilar-bmw.vercel.app" target="_blank" rel="noopener"><span class="slab-bar"><i></i><i></i><i></i><b>adanalılar</b><em>↗</em></span><img src="site_adanalilar.webp" loading="lazy" alt="Adanalılar BMW Servisi web sitesi"></a>
+    <a class="site-slab" href="https://www.adanalilarbmwservisi.com" target="_blank" rel="noopener"><span class="slab-bar"><i></i><i></i><i></i><b>adanalılar</b><em>↗</em></span><img src="site_adanalilar.webp" loading="lazy" alt="Adanalılar BMW Servisi web sitesi"></a>
     <a class="site-slab" href="https://tapopen.co" target="_blank" rel="noopener"><span class="slab-bar"><i></i><i></i><i></i><b>tapopen.co</b><em>↗</em></span><img src="site_tapopen.webp" loading="lazy" alt="TapOpen NFC web sitesi"></a>
     <p class="slab-caption">MARKA → EKRAN → CANLI</p>
   </div>
   <div class="side-label">KAEL CREATIVE — v1.0</div>
 </section>
 
-<!-- SECTION — SOSYAL MEDYA -->
-<section id="social-media">
+<!-- SECTION — NFC / QR MENÜ -->
+<section id="qr-menu">
   <div>
-    <div class="section-label">05 / SOSYAL</div>
-    <div class="section-title">SOSYAL<br>MEDYA</div>
-    <div class="section-desc">Haftada 4 reels.<br>Hesabınız her gün canlı.</div>
-    <div class="section-note">INSTAGRAM — TIKTOK — YOUTUBE SHORTS — LINKEDIN — X</div>
-    <div class="section-stat-row" style="display:flex;gap:32px;margin-top:24px;flex-wrap:wrap;">
-      <div><span style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.5rem;color:var(--accent);">4</span><span style="display:block;font-size:10px;letter-spacing:.15em;color:var(--muted);margin-top:2px;">REELS/HAFTA</span></div>
-      <div><span style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.5rem;color:var(--cream);">5</span><span style="display:block;font-size:10px;letter-spacing:.15em;color:var(--muted);margin-top:2px;">PLATFORM</span></div>
-      <div><span style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.5rem;color:var(--cream);">48h</span><span style="display:block;font-size:10px;letter-spacing:.15em;color:var(--muted);margin-top:2px;">ONAY DÖNGÜSÜ</span></div>
-    </div>
-    <div class="tech-badge" style="margin-top:20px;">ÇOKLU PLATFORM ÇEKİRDEĞİ<span class="tm">™</span></div>
+    <div class="section-label">05 / NFC · QR MENÜ</div>
+    <div class="section-title">DOKUN.<br>MENÜ AÇILSIN.</div>
+    <div class="section-desc">Masaya NFC + QR.<br>Menü, garson çağır, hesap, yorum — tek dokunuşta.</div>
+    <div class="section-note">MENÜ — SERVİS ÇAĞRISI — HESAP BÖLME — GOOGLE YORUM — ÇOK DİLLİ</div>
+    <div class="tech-badge" style="margin-top:20px;">MEKÂN DENEYİMİ ÇEKİRDEĞİ<span class="tm">™</span></div>
   </div>
-  <div class="content-rhythm">
-    <figure class="rhythm-lead"><img src="videos/w2_kahve_poster.jpg" loading="lazy" alt="Kahve içerik yayını örneği"></figure>
-    <figure><img src="videos/w1_bukel_catidan_poster.jpg" loading="lazy" alt="Bukale çatıdan içerik yayını örneği"></figure>
-    <figure><img src="videos/w4_rafet_300_poster.jpg" loading="lazy" alt="Rafet 300 içerik yayını örneği"></figure>
-    <figure><img src="videos/w3_devirler_poster.jpg" loading="lazy" alt="Devirler içerik yayını örneği"></figure>
-    <figure><img src="videos/w5_rafet_tibet_poster.jpg" loading="lazy" alt="Rafet Tibet içerik yayını örneği"></figure>
+  <div class="qr-stage">
+    <div class="qr-phones">
+      <a class="qr-phone" href="https://pelmeshka.tapopen.co" target="_blank" rel="noopener"><img src="qr/pelm_ekran.webp" loading="lazy" alt="Pelmeshka QR menü ekranı"><span>PELMESHKA <em>↗</em></span></a>
+      <a class="qr-phone" href="https://nfc.kaelcreative.com/m/lemon-villa" target="_blank" rel="noopener"><img src="qr/lemon_ekran.webp" loading="lazy" alt="Lemon Tree Restoran QR menü ekranı"><span>LEMON TREE <em>↗</em></span></a>
+    </div>
+    <div class="qr-foto-label">MENÜ FOTOĞRAFI DA BİZDEN · PELMESHKA</div>
+    <div class="qr-foto"><figure><img src="qr/pelm_foto_1.webp" loading="lazy" alt="Pelmeshka menü fotoğrafı 1"></figure><figure><img src="qr/pelm_foto_2.webp" loading="lazy" alt="Pelmeshka menü fotoğrafı 2"></figure><figure><img src="qr/pelm_foto_3.webp" loading="lazy" alt="Pelmeshka menü fotoğrafı 3"></figure><figure><img src="qr/pelm_foto_4.webp" loading="lazy" alt="Pelmeshka menü fotoğrafı 4"></figure><figure><img src="qr/pelm_foto_5.webp" loading="lazy" alt="Pelmeshka menü fotoğrafı 5"></figure><figure><img src="qr/pelm_foto_6.webp" loading="lazy" alt="Pelmeshka menü fotoğrafı 6"></figure></div>
   </div>
   <div class="side-label">KAEL CREATIVE — v1.0</div>
 </section>
@@ -1776,7 +1773,7 @@ const sectionsList = [
   { id: 'process', name: 'SÜREÇ' },
   { id: 'meme-coord', name: 'KOORDİNASYON' },
   { id: 'web-design', name: 'WEB' },
-  { id: 'social-media', name: 'SOSYAL MEDYA' },
+  { id: 'qr-menu', name: 'QR MENÜ' },
   { id: 'systems', name: 'SİSTEMLER' },
   { id: 'kael-divider', name: 'İMZA' },
   { id: 'about', name: 'BİZ KİMİZ' },
@@ -2566,7 +2563,7 @@ document.querySelectorAll('.ink-bloom').forEach(el => inkObserver.observe(el));
   const MAP = [
     ['#ai-video .section-title','rv-spot'],
     ['#web-design .section-title','rv-spot'],
-    ['#social-media .section-title','rv-spot'],
+    ['#qr-menu .section-title','rv-spot'],
     ['#why-kael .why-header h2','rv-chroma'],
     ['.about-title','rv-ink'],
   ];
